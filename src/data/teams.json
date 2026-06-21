@@ -1,7 +1,455 @@
 [
   {
-    "id": "2007-ne-patriots",
-    "year": 2007,
+    "id": "1999-2000-stl-rams",
+    "year": "1999-2000",
+    "team_name": "St. Louis Rams",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XXXIV",
+    "roster": {
+      "QB": { "name": "Kurt Warner", "jersey": 13, "height": "6'2\"", "weight": 214, "yards": 4353, "tds": 41 },
+      "RB": { "name": "Marshall Faulk", "jersey": 28, "height": "5'10\"", "weight": 211, "yards": 1381, "tds": 7 },
+      "WR1": { "name": "Isaac Bruce", "jersey": 80, "height": "6'0\"", "weight": 188, "yards": 1165, "tds": 12 },
+      "WR2": { "name": "Torry Holt", "jersey": 81, "height": "6'0\"", "weight": 190, "yards": 788, "tds": 6 },
+      "TE": { "name": "Ernie Conwell", "jersey": 88, "height": "6'2\"", "weight": 262, "yards": 259, "tds": 2 }
+    }
+  },
+  {
+    "id": "1999-2000-tb-buccaneers",
+    "year": "1999-2000",
+    "team_name": "Tampa Bay Buccaneers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Shaun King", "jersey": 11, "height": "6'0\"", "weight": 214, "yards": 1629, "tds": 11 },
+      "RB": { "name": "Warrick Dunn", "jersey": 28, "height": "5'9\"", "weight": 180, "yards": 1133, "tds": 4 },
+      "WR1": { "name": "Keyshawn Johnson", "jersey": 19, "height": "6'4\"", "weight": 212, "yards": 874, "tds": 8 },
+      "WR2": { "name": "Karl Williams", "jersey": 83, "height": "5'11\"", "weight": 170, "yards": 409, "tds": 1 },
+      "TE": { "name": "Dave Moore", "jersey": 87, "height": "6'2\"", "weight": 252, "yards": 244, "tds": 4 }
+    }
+  },
+  {
+    "id": "1999-2000-jax-jaguars",
+    "year": "1999-2000",
+    "team_name": "Jacksonville Jaguars",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Mark Brunell", "jersey": 8, "height": "6'1\"", "weight": 217, "yards": 3659, "tds": 14 },
+      "RB": { "name": "Fred Taylor", "jersey": 28, "height": "6'1\"", "weight": 234, "yards": 1223, "tds": 8 },
+      "WR1": { "name": "Jimmy Smith", "jersey": 82, "height": "6'1\"", "weight": 208, "yards": 1636, "tds": 6 },
+      "WR2": { "name": "Keenan McCardell", "jersey": 87, "height": "6'1\"", "weight": 191, "yards": 848, "tds": 5 },
+      "TE": { "name": "Kyle Brady", "jersey": 88, "height": "6'6\"", "weight": 278, "yards": 213, "tds": 1 }
+    }
+  },
+  {
+    "id": "1999-2000-ten-titans",
+    "year": "1999-2000",
+    "team_name": "Tennessee Titans",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl XXXIV",
+    "roster": {
+      "QB": { "name": "Steve McNair", "jersey": 9, "height": "6'2\"", "weight": 235, "yards": 2179, "tds": 12 },
+      "RB": { "name": "Eddie George", "jersey": 27, "height": "6'3\"", "weight": 240, "yards": 1304, "tds": 9 },
+      "WR1": { "name": "Derrick Mason", "jersey": 85, "height": "5'10\"", "weight": 190, "yards": 545, "tds": 3 },
+      "WR2": { "name": "Kevin Dyson", "jersey": 87, "height": "6'1\"", "weight": 196, "yards": 462, "tds": 2 },
+      "TE": { "name": "Frank Wycheck", "jersey": 89, "height": "6'3\"", "weight": 252, "yards": 511, "tds": 2 }
+    }
+  },
+  {
+    "id": "2000-2001-ny-giants",
+    "year": "2000-2001",
+    "team_name": "New York Giants",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XXXV",
+    "roster": {
+      "QB": { "name": "Kerry Collins", "jersey": 5, "height": "6'5\"", "weight": 240, "yards": 3610, "tds": 22 },
+      "RB": { "name": "Tiki Barber", "jersey": 21, "height": "5'10\"", "weight": 200, "yards": 1006, "tds": 8 },
+      "WR1": { "name": "Amani Toomer", "jersey": 81, "height": "6'3\"", "weight": 208, "yards": 1094, "tds": 7 },
+      "WR2": { "name": "Ike Hilliard", "jersey": 88, "height": "5'11\"", "weight": 196, "yards": 787, "tds": 4 },
+      "TE": { "name": "Pete Mitchell", "jersey": 84, "height": "6'2\"", "weight": 242, "yards": 309, "tds": 2 }
+    }
+  },
+  {
+    "id": "2000-2001-min-vikings",
+    "year": "2000-2001",
+    "team_name": "Minnesota Vikings",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Daunte Culpepper", "jersey": 11, "height": "6'4\"", "weight": 264, "yards": 3937, "tds": 33 },
+      "RB": { "name": "Robert Smith", "jersey": 26, "height": "6'2\"", "weight": 212, "yards": 1521, "tds": 7 },
+      "WR1": { "name": "Randy Moss", "jersey": 84, "height": "6'4\"", "weight": 210, "yards": 1437, "tds": 15 },
+      "WR2": { "name": "Cris Carter", "jersey": 80, "height": "6'3\"", "weight": 202, "yards": 905, "tds": 9 },
+      "TE": { "name": "Jim Kleinsasser", "jersey": 40, "height": "6'3\"", "weight": 272, "yards": 196, "tds": 2 }
+    }
+  },
+  {
+    "id": "2000-2001-bal-ravens",
+    "year": "2000-2001",
+    "team_name": "Baltimore Ravens",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XXXV",
+    "roster": {
+      "QB": { "name": "Trent Dilfer", "jersey": 12, "height": "6'4\"", "weight": 235, "yards": 1502, "tds": 12 },
+      "RB": { "name": "Jamal Lewis", "jersey": 31, "height": "5'11\"", "weight": 245, "yards": 1364, "tds": 6 },
+      "WR1": { "name": "Shannon Sharpe", "jersey": 84, "height": "6'2\"", "weight": 228, "yards": 810, "tds": 5 },
+      "WR2": { "name": "Qadry Ismail", "jersey": 80, "height": "6'0\"", "weight": 193, "yards": 751, "tds": 6 },
+      "TE": { "name": "Shannon Sharpe", "jersey": 84, "height": "6'2\"", "weight": 228, "yards": 810, "tds": 5 }
+    }
+  },
+  {
+    "id": "2000-2001-oak-raiders",
+    "year": "2000-2001",
+    "team_name": "Oakland Raiders",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Rich Gannon", "jersey": 12, "height": "6'3\"", "weight": 210, "yards": 3430, "tds": 28 },
+      "RB": { "name": "Tyrone Wheatley", "jersey": 47, "height": "6'0\"", "weight": 232, "yards": 1046, "tds": 9 },
+      "WR1": { "name": "Tim Brown", "jersey": 81, "height": "6'0\"", "weight": 195, "yards": 1128, "tds": 11 },
+      "WR2": { "name": "Jerry Rice", "jersey": 80, "height": "6'2\"", "weight": 196, "yards": 896, "tds": 8 },
+      "TE": { "name": "Rickey Dudley", "jersey": 88, "height": "6'6\"", "weight": 255, "yards": 383, "tds": 4 }
+    }
+  },
+  {
+    "id": "2001-2002-stl-rams",
+    "year": "2001-2002",
+    "team_name": "St. Louis Rams",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XXXVI",
+    "roster": {
+      "QB": { "name": "Kurt Warner", "jersey": 13, "height": "6'2\"", "weight": 214, "yards": 4830, "tds": 36 },
+      "RB": { "name": "Marshall Faulk", "jersey": 28, "height": "5'10\"", "weight": 211, "yards": 1382, "tds": 12 },
+      "WR1": { "name": "Torry Holt", "jersey": 81, "height": "6'0\"", "weight": 190, "yards": 1363, "tds": 6 },
+      "WR2": { "name": "Isaac Bruce", "jersey": 80, "height": "6'0\"", "weight": 188, "yards": 1106, "tds": 6 },
+      "TE": { "name": "Ernie Conwell", "jersey": 88, "height": "6'2\"", "weight": 262, "yards": 237, "tds": 1 }
+    }
+  },
+  {
+    "id": "2001-2002-phi-eagles",
+    "year": "2001-2002",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Donovan McNabb", "jersey": 5, "height": "6'2\"", "weight": 240, "yards": 3233, "tds": 25 },
+      "RB": { "name": "Duce Staley", "jersey": 22, "height": "5'11\"", "weight": 220, "yards": 604, "tds": 5 },
+      "WR1": { "name": "James Thrash", "jersey": 80, "height": "6'0\"", "weight": 188, "yards": 833, "tds": 5 },
+      "WR2": { "name": "Todd Pinkston", "jersey": 87, "height": "6'4\"", "weight": 170, "yards": 586, "tds": 6 },
+      "TE": { "name": "Chad Lewis", "jersey": 89, "height": "6'6\"", "weight": 253, "yards": 397, "tds": 4 }
+    }
+  },
+  {
+    "id": "2001-2002-ne-patriots",
+    "year": "2001-2002",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XXXVI",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 2843, "tds": 18 },
+      "RB": { "name": "Antowain Smith", "jersey": 32, "height": "6'2\"", "weight": 232, "yards": 1157, "tds": 12 },
+      "WR1": { "name": "Troy Brown", "jersey": 80, "height": "5'10\"", "weight": 196, "yards": 1199, "tds": 5 },
+      "WR2": { "name": "David Patten", "jersey": 86, "height": "5'10\"", "weight": 190, "yards": 749, "tds": 4 },
+      "TE": { "name": "Jermaine Wiggins", "jersey": 85, "height": "6'2\"", "weight": 255, "yards": 466, "tds": 2 }
+    }
+  },
+  {
+    "id": "2001-2002-pit-steelers",
+    "year": "2001-2002",
+    "team_name": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Kordell Stewart", "jersey": 10, "height": "6'1\"", "weight": 218, "yards": 3109, "tds": 14 },
+      "RB": { "name": "Jerome Bettis", "jersey": 36, "height": "5'11\"", "weight": 252, "yards": 1072, "tds": 4 },
+      "WR1": { "name": "Hines Ward", "jersey": 86, "height": "6'0\"", "weight": 205, "yards": 1003, "tds": 4 },
+      "WR2": { "name": "Plaxico Burress", "jersey": 80, "height": "6'5\"", "weight": 226, "yards": 1008, "tds": 6 },
+      "TE": { "name": "Mark Bruener", "jersey": 88, "height": "6'4\"", "weight": 254, "yards": 141, "tds": 2 }
+    }
+  },
+  {
+    "id": "2002-2003-tb-buccaneers",
+    "year": "2002-2003",
+    "team_name": "Tampa Bay Buccaneers",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XXXVII",
+    "roster": {
+      "QB": { "name": "Brad Johnson", "jersey": 14, "height": "6'5\"", "weight": 226, "yards": 3049, "tds": 22 },
+      "RB": { "name": "Michael Pittman", "jersey": 32, "height": "6'0\"", "weight": 218, "yards": 718, "tds": 3 },
+      "WR1": { "name": "Keyshawn Johnson", "jersey": 19, "height": "6'4\"", "weight": 212, "yards": 1088, "tds": 5 },
+      "WR2": { "name": "Keenan McCardell", "jersey": 87, "height": "6'1\"", "weight": 191, "yards": 670, "tds": 6 },
+      "TE": { "name": "Ken Dilger", "jersey": 80, "height": "6'5\"", "weight": 252, "yards": 343, "tds": 1 }
+    }
+  },
+  {
+    "id": "2002-2003-phi-eagles",
+    "year": "2002-2003",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Donovan McNabb", "jersey": 5, "height": "6'2\"", "weight": 240, "yards": 2289, "tds": 17 },
+      "RB": { "name": "Duce Staley", "jersey": 22, "height": "5'11\"", "weight": 220, "yards": 1029, "tds": 5 },
+      "WR1": { "name": "James Thrash", "jersey": 80, "height": "6'0\"", "weight": 188, "yards": 635, "tds": 3 },
+      "WR2": { "name": "Todd Pinkston", "jersey": 87, "height": "6'4\"", "weight": 170, "yards": 578, "tds": 3 },
+      "TE": { "name": "Chad Lewis", "jersey": 89, "height": "6'6\"", "weight": 253, "yards": 461, "tds": 4 }
+    }
+  },
+  {
+    "id": "2002-2003-oak-raiders",
+    "year": "2002-2003",
+    "team_name": "Oakland Raiders",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl XXXVII",
+    "roster": {
+      "QB": { "name": "Rich Gannon", "jersey": 12, "height": "6'3\"", "weight": 210, "yards": 4689, "tds": 26 },
+      "RB": { "name": "Charlie Garner", "jersey": 25, "height": "5'9\"", "weight": 187, "yards": 962, "tds": 5 },
+      "WR1": { "name": "Jerry Rice", "jersey": 80, "height": "6'2\"", "weight": 196, "yards": 869, "tds": 7 },
+      "WR2": { "name": "Tim Brown", "jersey": 81, "height": "6'0\"", "weight": 195, "yards": 930, "tds": 2 },
+      "TE": { "name": "Doug Jolley", "jersey": 88, "height": "6'4\"", "weight": 250, "yards": 400, "tds": 3 }
+    }
+  },
+  {
+    "id": "2002-2003-ten-titans",
+    "year": "2002-2003",
+    "team_name": "Tennessee Titans",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Steve McNair", "jersey": 9, "height": "6'2\"", "weight": 235, "yards": 3387, "tds": 22 },
+      "RB": { "name": "Eddie George", "jersey": 27, "height": "6'3\"", "weight": 240, "yards": 1165, "tds": 8 },
+      "WR1": { "name": "Derrick Mason", "jersey": 85, "height": "5'10\"", "weight": 190, "yards": 806, "tds": 4 },
+      "WR2": { "name": "Justin McCareins", "jersey": 19, "height": "6'2\"", "weight": 207, "yards": 576, "tds": 5 },
+      "TE": { "name": "Frank Wycheck", "jersey": 89, "height": "6'3\"", "weight": 252, "yards": 367, "tds": 3 }
+    }
+  },
+  {
+    "id": "2003-2004-car-panthers",
+    "year": "2003-2004",
+    "team_name": "Carolina Panthers",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XXXVIII",
+    "roster": {
+      "QB": { "name": "Jake Delhomme", "jersey": 17, "height": "6'2\"", "weight": 215, "yards": 3219, "tds": 19 },
+      "RB": { "name": "Stephen Davis", "jersey": 48, "height": "6'0\"", "weight": 230, "yards": 1444, "tds": 8 },
+      "WR1": { "name": "Steve Smith", "jersey": 89, "height": "5'9\"", "weight": 185, "yards": 1110, "tds": 7 },
+      "WR2": { "name": "Muhsin Muhammad", "jersey": 87, "height": "6'2\"", "weight": 217, "yards": 590, "tds": 4 },
+      "TE": { "name": "Wesley Walls", "jersey": 85, "height": "6'5\"", "weight": 248, "yards": 229, "tds": 3 }
+    }
+  },
+  {
+    "id": "2003-2004-phi-eagles",
+    "year": "2003-2004",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Donovan McNabb", "jersey": 5, "height": "6'2\"", "weight": 240, "yards": 3216, "tds": 16 },
+      "RB": { "name": "Brian Westbrook", "jersey": 36, "height": "5'10\"", "weight": 200, "yards": 613, "tds": 7 },
+      "WR1": { "name": "Todd Pinkston", "jersey": 87, "height": "6'4\"", "weight": 170, "yards": 575, "tds": 4 },
+      "WR2": { "name": "Freddie Mitchell", "jersey": 84, "height": "5'11\"", "weight": 193, "yards": 380, "tds": 2 },
+      "TE": { "name": "Chad Lewis", "jersey": 89, "height": "6'6\"", "weight": 253, "yards": 447, "tds": 3 }
+    }
+  },
+  {
+    "id": "2003-2004-ne-patriots",
+    "year": "2003-2004",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XXXVIII",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 3620, "tds": 23 },
+      "RB": { "name": "Antowain Smith", "jersey": 32, "height": "6'2\"", "weight": 232, "yards": 642, "tds": 3 },
+      "WR1": { "name": "Deion Branch", "jersey": 83, "height": "5'9\"", "weight": 193, "yards": 803, "tds": 3 },
+      "WR2": { "name": "Troy Brown", "jersey": 80, "height": "5'10\"", "weight": 196, "yards": 629, "tds": 4 },
+      "TE": { "name": "Daniel Graham", "jersey": 82, "height": "6'3\"", "weight": 257, "yards": 409, "tds": 4 }
+    }
+  },
+  {
+    "id": "2003-2004-ind-colts",
+    "year": "2003-2004",
+    "team_name": "Indianapolis Colts",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Peyton Manning", "jersey": 18, "height": "6'5\"", "weight": 230, "yards": 4267, "tds": 29 },
+      "RB": { "name": "Edgerrin James", "jersey": 32, "height": "6'0\"", "weight": 214, "yards": 1259, "tds": 11 },
+      "WR1": { "name": "Marvin Harrison", "jersey": 88, "height": "6'0\"", "weight": 175, "yards": 1272, "tds": 10 },
+      "WR2": { "name": "Reggie Wayne", "jersey": 87, "height": "6'0\"", "weight": 197, "yards": 838, "tds": 7 },
+      "TE": { "name": "Marcus Pollard", "jersey": 84, "height": "6'3\"", "weight": 244, "yards": 290, "tds": 4 }
+    }
+  },
+  {
+    "id": "2004-2005-phi-eagles",
+    "year": "2004-2005",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XXXIX",
+    "roster": {
+      "QB": { "name": "Donovan McNabb", "jersey": 5, "height": "6'2\"", "weight": 240, "yards": 3875, "tds": 31 },
+      "RB": { "name": "Brian Westbrook", "jersey": 36, "height": "5'10\"", "weight": 200, "yards": 812, "tds": 6 },
+      "WR1": { "name": "Terrell Owens", "jersey": 81, "height": "6'3\"", "weight": 226, "yards": 1200, "tds": 14 },
+      "WR2": { "name": "Todd Pinkston", "jersey": 87, "height": "6'4\"", "weight": 170, "yards": 451, "tds": 2 },
+      "TE": { "name": "Chad Lewis", "jersey": 89, "height": "6'6\"", "weight": 253, "yards": 267, "tds": 4 }
+    }
+  },
+  {
+    "id": "2004-2005-atl-falcons",
+    "year": "2004-2005",
+    "team_name": "Atlanta Falcons",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Michael Vick", "jersey": 7, "height": "6'0\"", "weight": 215, "yards": 2313, "tds": 14 },
+      "RB": { "name": "Warrick Dunn", "jersey": 28, "height": "5'9\"", "weight": 180, "yards": 1106, "tds": 9 },
+      "WR1": { "name": "Peerless Price", "jersey": 87, "height": "6'0\"", "weight": 190, "yards": 837, "tds": 4 },
+      "WR2": { "name": "Brian Finneran", "jersey": 85, "height": "6'5\"", "weight": 210, "yards": 558, "tds": 4 },
+      "TE": { "name": "Alge Crumpler", "jersey": 83, "height": "6'2\"", "weight": 262, "yards": 774, "tds": 6 }
+    }
+  },
+  {
+    "id": "2004-2005-ne-patriots",
+    "year": "2004-2005",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XXXIX",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 3692, "tds": 28 },
+      "RB": { "name": "Corey Dillon", "jersey": 28, "height": "6'1\"", "weight": 225, "yards": 1635, "tds": 12 },
+      "WR1": { "name": "David Givens", "jersey": 87, "height": "6'0\"", "weight": 215, "yards": 874, "tds": 3 },
+      "WR2": { "name": "Deion Branch", "jersey": 83, "height": "5'9\"", "weight": 193, "yards": 454, "tds": 4 },
+      "TE": { "name": "Daniel Graham", "jersey": 82, "height": "6'3\"", "weight": 257, "yards": 364, "tds": 7 }
+    }
+  },
+  {
+    "id": "2004-2005-pit-steelers",
+    "year": "2004-2005",
+    "team_name": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Ben Roethlisberger", "jersey": 7, "height": "6'5\"", "weight": 241, "yards": 2621, "tds": 17 },
+      "RB": { "name": "Jerome Bettis", "jersey": 36, "height": "5'11\"", "weight": 252, "yards": 941, "tds": 13 },
+      "WR1": { "name": "Hines Ward", "jersey": 86, "height": "6'0\"", "weight": 205, "yards": 1004, "tds": 4 },
+      "WR2": { "name": "Plaxico Burress", "jersey": 80, "height": "6'5\"", "weight": 226, "yards": 1008, "tds": 5 },
+      "TE": { "name": "Jerame Tuman", "jersey": 88, "height": "6'4\"", "weight": 253, "yards": 181, "tds": 1 }
+    }
+  },
+  {
+    "id": "2005-2006-sea-seahawks",
+    "year": "2005-2006",
+    "team_name": "Seattle Seahawks",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XL",
+    "roster": {
+      "QB": { "name": "Matt Hasselbeck", "jersey": 8, "height": "6'4\"", "weight": 223, "yards": 3459, "tds": 24 },
+      "RB": { "name": "Shaun Alexander", "jersey": 37, "height": "5'11\"", "weight": 225, "yards": 1880, "tds": 27 },
+      "WR1": { "name": "Darrell Jackson", "jersey": 81, "height": "5'10\"", "weight": 196, "yards": 966, "tds": 6 },
+      "WR2": { "name": "Bobby Engram", "jersey": 88, "height": "5'10\"", "weight": 188, "yards": 778, "tds": 3 },
+      "TE": { "name": "Jeremy Stevens", "jersey": 86, "height": "6'7\"", "weight": 260, "yards": 554, "tds": 5 }
+    }
+  },
+  {
+    "id": "2005-2006-car-panthers",
+    "year": "2005-2006",
+    "team_name": "Carolina Panthers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Jake Delhomme", "jersey": 17, "height": "6'2\"", "weight": 215, "yards": 3421, "tds": 24 },
+      "RB": { "name": "DeShaun Foster", "jersey": 26, "height": "6'0\"", "weight": 222, "yards": 879, "tds": 4 },
+      "WR1": { "name": "Steve Smith", "jersey": 89, "height": "5'9\"", "weight": 185, "yards": 1563, "tds": 12 },
+      "WR2": { "name": "Keyshawn Johnson", "jersey": 19, "height": "6'4\"", "weight": 212, "yards": 414, "tds": 1 },
+      "TE": { "name": "Kris Mangum", "jersey": 86, "height": "6'4\"", "weight": 252, "yards": 186, "tds": 0 }
+    }
+  },
+  {
+    "id": "2005-2006-pit-steelers",
+    "year": "2005-2006",
+    "team_name": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XL",
+    "roster": {
+      "QB": { "name": "Ben Roethlisberger", "jersey": 7, "height": "6'5\"", "weight": 241, "yards": 2385, "tds": 17 },
+      "RB": { "name": "Willie Parker", "jersey": 39, "height": "5'10\"", "weight": 208, "yards": 1202, "tds": 4 },
+      "WR1": { "name": "Hines Ward", "jersey": 86, "height": "6'0\"", "weight": 205, "yards": 975, "tds": 11 },
+      "WR2": { "name": "Cedrick Wilson", "jersey": 14, "height": "5'10\"", "weight": 185, "yards": 504, "tds": 4 },
+      "TE": { "name": "Heath Miller", "jersey": 83, "height": "6'5\"", "weight": 256, "yards": 459, "tds": 6 }
+    }
+  },
+  {
+    "id": "2005-2006-den-broncos",
+    "year": "2005-2006",
+    "team_name": "Denver Broncos",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Jake Plummer", "jersey": 16, "height": "6'2\"", "weight": 212, "yards": 3366, "tds": 18 },
+      "RB": { "name": "Mike Anderson", "jersey": 30, "height": "6'0\"", "weight": 230, "yards": 1014, "tds": 12 },
+      "WR1": { "name": "Rod Smith", "jersey": 80, "height": "6'0\"", "weight": 200, "yards": 1105, "tds": 6 },
+      "WR2": { "name": "Ashley Lelie", "jersey": 81, "height": "6'1\"", "weight": 185, "yards": 700, "tds": 3 },
+      "TE": { "name": "Stephen Alexander", "jersey": 85, "height": "6'4\"", "weight": 252, "yards": 244, "tds": 3 }
+    }
+  },
+  {
+    "id": "2006-2007-chi-bears",
+    "year": "2006-2007",
+    "team_name": "Chicago Bears",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XLI",
+    "roster": {
+      "QB": { "name": "Rex Grossman", "jersey": 8, "height": "6'1\"", "weight": 222, "yards": 3193, "tds": 23 },
+      "RB": { "name": "Thomas Jones", "jersey": 20, "height": "5'10\"", "weight": 215, "yards": 1210, "tds": 6 },
+      "WR1": { "name": "Muhsin Muhammad", "jersey": 87, "height": "6'2\"", "weight": 217, "yards": 863, "tds": 5 },
+      "WR2": { "name": "Rashied Davis", "jersey": 11, "height": "5'8\"", "weight": 178, "yards": 373, "tds": 3 },
+      "TE": { "name": "Desmond Clark", "jersey": 89, "height": "6'3\"", "weight": 256, "yards": 626, "tds": 5 }
+    }
+  },
+  {
+    "id": "2006-2007-no-saints",
+    "year": "2006-2007",
+    "team_name": "New Orleans Saints",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Drew Brees", "jersey": 9, "height": "6'0\"", "weight": 209, "yards": 4418, "tds": 26 },
+      "RB": { "name": "Deuce McAllister", "jersey": 26, "height": "6'1\"", "weight": 232, "yards": 1057, "tds": 10 },
+      "WR1": { "name": "Marques Colston", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 1038, "tds": 8 },
+      "WR2": { "name": "Joe Horn", "jersey": 87, "height": "6'1\"", "weight": 210, "yards": 679, "tds": 2 },
+      "TE": { "name": "Ernie Conwell", "jersey": 47, "height": "6'2\"", "weight": 255, "yards": 144, "tds": 1 }
+    }
+  },
+  {
+    "id": "2006-2007-ind-colts",
+    "year": "2006-2007",
+    "team_name": "Indianapolis Colts",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XLI",
+    "roster": {
+      "QB": { "name": "Peyton Manning", "jersey": 18, "height": "6'5\"", "weight": 230, "yards": 4397, "tds": 31 },
+      "RB": { "name": "Joseph Addai", "jersey": 29, "height": "5'11\"", "weight": 210, "yards": 1081, "tds": 7 },
+      "WR1": { "name": "Marvin Harrison", "jersey": 88, "height": "6'0\"", "weight": 175, "yards": 1366, "tds": 12 },
+      "WR2": { "name": "Reggie Wayne", "jersey": 87, "height": "6'0\"", "weight": 197, "yards": 1310, "tds": 9 },
+      "TE": { "name": "Dallas Clark", "jersey": 44, "height": "6'3\"", "weight": 252, "yards": 735, "tds": 4 }
+    }
+  },
+  {
+    "id": "2006-2007-ne-patriots",
+    "year": "2006-2007",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 3529, "tds": 24 },
+      "RB": { "name": "Corey Dillon", "jersey": 28, "height": "6'1\"", "weight": 225, "yards": 812, "tds": 13 },
+      "WR1": { "name": "Troy Brown", "jersey": 80, "height": "5'10\"", "weight": 196, "yards": 384, "tds": 2 },
+      "WR2": { "name": "Reche Caldwell", "jersey": 87, "height": "5'11\"", "weight": 188, "yards": 760, "tds": 4 },
+      "TE": { "name": "Benjamin Watson", "jersey": 84, "height": "6'3\"", "weight": 255, "yards": 441, "tds": 3 }
+    }
+  },
+  {
+    "id": "2007-2008-ne-patriots",
+    "year": "2007-2008",
     "team_name": "New England Patriots",
     "conference": "AFC",
     "season_finish": "16-0, Lost Super Bowl XLII",
@@ -11,6 +459,1000 @@
       "WR1": { "name": "Randy Moss", "jersey": 81, "height": "6'4\"", "weight": 210, "yards": 1493, "tds": 23 },
       "WR2": { "name": "Wes Welker", "jersey": 83, "height": "5'9\"", "weight": 185, "yards": 1175, "tds": 8 },
       "TE": { "name": "Benjamin Watson", "jersey": 84, "height": "6'3\"", "weight": 255, "yards": 389, "tds": 6 }
+    }
+  },
+  {
+    "id": "2007-2008-ny-giants",
+    "year": "2007-2008",
+    "team_name": "New York Giants",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XLII",
+    "roster": {
+      "QB": { "name": "Eli Manning", "jersey": 10, "height": "6'4\"", "weight": 218, "yards": 3336, "tds": 23 },
+      "RB": { "name": "Brandon Jacobs", "jersey": 27, "height": "6'4\"", "weight": 264, "yards": 1009, "tds": 4 },
+      "WR1": { "name": "Plaxico Burress", "jersey": 17, "height": "6'5\"", "weight": 226, "yards": 1025, "tds": 12 },
+      "WR2": { "name": "Amani Toomer", "jersey": 81, "height": "6'3\"", "weight": 208, "yards": 760, "tds": 3 },
+      "TE": { "name": "Jeremy Shockey", "jersey": 80, "height": "6'5\"", "weight": 251, "yards": 619, "tds": 3 }
+    }
+  },
+  {
+    "id": "2007-2008-gb-packers",
+    "year": "2007-2008",
+    "team_name": "Green Bay Packers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Brett Favre", "jersey": 4, "height": "6'2\"", "weight": 222, "yards": 4155, "tds": 28 },
+      "RB": { "name": "Ryan Grant", "jersey": 25, "height": "6'1\"", "weight": 222, "yards": 956, "tds": 8 },
+      "WR1": { "name": "Donald Driver", "jersey": 80, "height": "5'11\"", "weight": 190, "yards": 1048, "tds": 2 },
+      "WR2": { "name": "Greg Jennings", "jersey": 85, "height": "5'11\"", "weight": 197, "yards": 1292, "tds": 9 },
+      "TE": { "name": "Donald Lee", "jersey": 86, "height": "6'4\"", "weight": 253, "yards": 369, "tds": 3 }
+    }
+  },
+  {
+    "id": "2007-2008-sd-chargers",
+    "year": "2007-2008",
+    "team_name": "San Diego Chargers",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Philip Rivers", "jersey": 17, "height": "6'5\"", "weight": 228, "yards": 3152, "tds": 21 },
+      "RB": { "name": "LaDainian Tomlinson", "jersey": 21, "height": "5'10\"", "weight": 221, "yards": 1474, "tds": 15 },
+      "WR1": { "name": "Vincent Jackson", "jersey": 83, "height": "6'5\"", "weight": 230, "yards": 1098, "tds": 7 },
+      "WR2": { "name": "Chris Chambers", "jersey": 84, "height": "5'11\"", "weight": 197, "yards": 440, "tds": 2 },
+      "TE": { "name": "Antonio Gates", "jersey": 85, "height": "6'4\"", "weight": 255, "yards": 642, "tds": 5 }
+    }
+  },
+  {
+    "id": "2008-2009-ari-cardinals",
+    "year": "2008-2009",
+    "team_name": "Arizona Cardinals",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XLIII",
+    "roster": {
+      "QB": { "name": "Kurt Warner", "jersey": 13, "height": "6'2\"", "weight": 214, "yards": 4583, "tds": 30 },
+      "RB": { "name": "Edgerrin James", "jersey": 32, "height": "6'0\"", "weight": 214, "yards": 1159, "tds": 7 },
+      "WR1": { "name": "Larry Fitzgerald", "jersey": 11, "height": "6'3\"", "weight": 218, "yards": 1431, "tds": 12 },
+      "WR2": { "name": "Anquan Boldin", "jersey": 81, "height": "6'1\"", "weight": 223, "yards": 1038, "tds": 11 },
+      "TE": { "name": "Ben Patrick", "jersey": 47, "height": "6'5\"", "weight": 254, "yards": 273, "tds": 3 }
+    }
+  },
+  {
+    "id": "2008-2009-phi-eagles",
+    "year": "2008-2009",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Donovan McNabb", "jersey": 5, "height": "6'2\"", "weight": 240, "yards": 3916, "tds": 23 },
+      "RB": { "name": "Brian Westbrook", "jersey": 36, "height": "5'10\"", "weight": 200, "yards": 936, "tds": 7 },
+      "WR1": { "name": "DeSean Jackson", "jersey": 10, "height": "5'10\"", "weight": 175, "yards": 912, "tds": 2 },
+      "WR2": { "name": "Kevin Curtis", "jersey": 11, "height": "5'11\"", "weight": 185, "yards": 697, "tds": 4 },
+      "TE": { "name": "L.J. Smith", "jersey": 82, "height": "6'3\"", "weight": 258, "yards": 289, "tds": 2 }
+    }
+  },
+  {
+    "id": "2008-2009-pit-steelers",
+    "year": "2008-2009",
+    "team_name": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XLIII",
+    "roster": {
+      "QB": { "name": "Ben Roethlisberger", "jersey": 7, "height": "6'5\"", "weight": 241, "yards": 3301, "tds": 17 },
+      "RB": { "name": "Willie Parker", "jersey": 39, "height": "5'10\"", "weight": 208, "yards": 791, "tds": 5 },
+      "WR1": { "name": "Hines Ward", "jersey": 86, "height": "6'0\"", "weight": 205, "yards": 1043, "tds": 7 },
+      "WR2": { "name": "Santonio Holmes", "jersey": 10, "height": "5'11\"", "weight": 192, "yards": 821, "tds": 5 },
+      "TE": { "name": "Heath Miller", "jersey": 83, "height": "6'5\"", "weight": 256, "yards": 514, "tds": 3 }
+    }
+  },
+  {
+    "id": "2008-2009-bal-ravens",
+    "year": "2008-2009",
+    "team_name": "Baltimore Ravens",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Joe Flacco", "jersey": 5, "height": "6'6\"", "weight": 236, "yards": 2971, "tds": 14 },
+      "RB": { "name": "Ray Rice", "jersey": 27, "height": "5'8\"", "weight": 212, "yards": 454, "tds": 0 },
+      "WR1": { "name": "Derrick Mason", "jersey": 85, "height": "5'10\"", "weight": 190, "yards": 1037, "tds": 5 },
+      "WR2": { "name": "Mark Clayton", "jersey": 89, "height": "5'10\"", "weight": 190, "yards": 695, "tds": 4 },
+      "TE": { "name": "Todd Heap", "jersey": 86, "height": "6'5\"", "weight": 252, "yards": 512, "tds": 5 }
+    }
+  },
+  {
+    "id": "2009-2010-no-saints",
+    "year": "2009-2010",
+    "team_name": "New Orleans Saints",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XLIV",
+    "roster": {
+      "QB": { "name": "Drew Brees", "jersey": 9, "height": "6'0\"", "weight": 209, "yards": 4388, "tds": 34 },
+      "RB": { "name": "Pierre Thomas", "jersey": 23, "height": "5'11\"", "weight": 215, "yards": 793, "tds": 6 },
+      "WR1": { "name": "Marques Colston", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 1074, "tds": 9 },
+      "WR2": { "name": "Robert Meachem", "jersey": 17, "height": "6'2\"", "weight": 213, "yards": 722, "tds": 9 },
+      "TE": { "name": "Jeremy Shockey", "jersey": 88, "height": "6'5\"", "weight": 251, "yards": 569, "tds": 4 }
+    }
+  },
+  {
+    "id": "2009-2010-min-vikings",
+    "year": "2009-2010",
+    "team_name": "Minnesota Vikings",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Brett Favre", "jersey": 4, "height": "6'2\"", "weight": 222, "yards": 4202, "tds": 33 },
+      "RB": { "name": "Adrian Peterson", "jersey": 28, "height": "6'1\"", "weight": 217, "yards": 1383, "tds": 18 },
+      "WR1": { "name": "Sidney Rice", "jersey": 18, "height": "6'4\"", "weight": 202, "yards": 1312, "tds": 8 },
+      "WR2": { "name": "Percy Harvin", "jersey": 12, "height": "5'11\"", "weight": 184, "yards": 790, "tds": 6 },
+      "TE": { "name": "Visanthe Shiancoe", "jersey": 81, "height": "6'4\"", "weight": 251, "yards": 566, "tds": 5 }
+    }
+  },
+  {
+    "id": "2009-2010-ind-colts",
+    "year": "2009-2010",
+    "team_name": "Indianapolis Colts",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl XLIV",
+    "roster": {
+      "QB": { "name": "Peyton Manning", "jersey": 18, "height": "6'5\"", "weight": 230, "yards": 4500, "tds": 33 },
+      "RB": { "name": "Joseph Addai", "jersey": 29, "height": "5'11\"", "weight": 210, "yards": 828, "tds": 7 },
+      "WR1": { "name": "Reggie Wayne", "jersey": 87, "height": "6'0\"", "weight": 197, "yards": 1264, "tds": 10 },
+      "WR2": { "name": "Pierre Garcon", "jersey": 88, "height": "6'0\"", "weight": 210, "yards": 765, "tds": 5 },
+      "TE": { "name": "Dallas Clark", "jersey": 44, "height": "6'3\"", "weight": 252, "yards": 1106, "tds": 10 }
+    }
+  },
+  {
+    "id": "2009-2010-ny-jets",
+    "year": "2009-2010",
+    "team_name": "New York Jets",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Mark Sanchez", "jersey": 6, "height": "6'2\"", "weight": 225, "yards": 2444, "tds": 12 },
+      "RB": { "name": "Thomas Jones", "jersey": 20, "height": "5'10\"", "weight": 215, "yards": 1402, "tds": 14 },
+      "WR1": { "name": "Braylon Edwards", "jersey": 17, "height": "6'3\"", "weight": 212, "yards": 904, "tds": 7 },
+      "WR2": { "name": "Jerricho Cotchery", "jersey": 89, "height": "6'1\"", "weight": 200, "yards": 605, "tds": 5 },
+      "TE": { "name": "Dustin Keller", "jersey": 81, "height": "6'2\"", "weight": 242, "yards": 687, "tds": 3 }
+    }
+  },
+  {
+    "id": "2010-2011-gb-packers",
+    "year": "2010-2011",
+    "team_name": "Green Bay Packers",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XLV",
+    "roster": {
+      "QB": { "name": "Aaron Rodgers", "jersey": 12, "height": "6'2\"", "weight": 225, "yards": 3922, "tds": 28 },
+      "RB": { "name": "Ryan Grant", "jersey": 25, "height": "6'1\"", "weight": 222, "yards": 559, "tds": 5 },
+      "WR1": { "name": "Greg Jennings", "jersey": 85, "height": "5'11\"", "weight": 197, "yards": 1265, "tds": 12 },
+      "WR2": { "name": "Donald Driver", "jersey": 80, "height": "5'11\"", "weight": 190, "yards": 1137, "tds": 6 },
+      "TE": { "name": "Jermichael Finley", "jersey": 88, "height": "6'5\"", "weight": 247, "yards": 428, "tds": 2 }
+    }
+  },
+  {
+    "id": "2010-2011-chi-bears",
+    "year": "2010-2011",
+    "team_name": "Chicago Bears",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Jay Cutler", "jersey": 6, "height": "6'3\"", "weight": 233, "yards": 3274, "tds": 23 },
+      "RB": { "name": "Matt Forte", "jersey": 22, "height": "6'2\"", "weight": 218, "yards": 1069, "tds": 6 },
+      "WR1": { "name": "Johnny Knox", "jersey": 13, "height": "5'10\"", "weight": 175, "yards": 960, "tds": 5 },
+      "WR2": { "name": "Devin Hester", "jersey": 23, "height": "5'11\"", "weight": 190, "yards": 541, "tds": 5 },
+      "TE": { "name": "Greg Olsen", "jersey": 82, "height": "6'5\"", "weight": 254, "yards": 492, "tds": 5 }
+    }
+  },
+  {
+    "id": "2010-2011-pit-steelers",
+    "year": "2010-2011",
+    "team_name": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl XLV",
+    "roster": {
+      "QB": { "name": "Ben Roethlisberger", "jersey": 7, "height": "6'5\"", "weight": 241, "yards": 3200, "tds": 17 },
+      "RB": { "name": "Rashard Mendenhall", "jersey": 34, "height": "5'10\"", "weight": 225, "yards": 1273, "tds": 13 },
+      "WR1": { "name": "Mike Wallace", "jersey": 17, "height": "5'11\"", "weight": 195, "yards": 1257, "tds": 10 },
+      "WR2": { "name": "Hines Ward", "jersey": 86, "height": "6'0\"", "weight": 205, "yards": 755, "tds": 5 },
+      "TE": { "name": "Heath Miller", "jersey": 83, "height": "6'5\"", "weight": 256, "yards": 512, "tds": 4 }
+    }
+  },
+  {
+    "id": "2010-2011-ny-jets",
+    "year": "2010-2011",
+    "team_name": "New York Jets",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Mark Sanchez", "jersey": 6, "height": "6'2\"", "weight": 225, "yards": 3291, "tds": 17 },
+      "RB": { "name": "Shonn Greene", "jersey": 23, "height": "5'11\"", "weight": 227, "yards": 766, "tds": 9 },
+      "WR1": { "name": "Santonio Holmes", "jersey": 10, "height": "5'11\"", "weight": 192, "yards": 654, "tds": 6 },
+      "WR2": { "name": "Braylon Edwards", "jersey": 17, "height": "6'3\"", "weight": 212, "yards": 622, "tds": 7 },
+      "TE": { "name": "Dustin Keller", "jersey": 81, "height": "6'2\"", "weight": 242, "yards": 602, "tds": 2 }
+    }
+  },
+  {
+    "id": "2011-2012-ny-giants",
+    "year": "2011-2012",
+    "team_name": "New York Giants",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XLVI",
+    "roster": {
+      "QB": { "name": "Eli Manning", "jersey": 10, "height": "6'4\"", "weight": 218, "yards": 4933, "tds": 29 },
+      "RB": { "name": "Ahmad Bradshaw", "jersey": 44, "height": "5'9\"", "weight": 214, "yards": 1015, "tds": 9 },
+      "WR1": { "name": "Hakeem Nicks", "jersey": 88, "height": "6'1\"", "weight": 208, "yards": 1192, "tds": 7 },
+      "WR2": { "name": "Victor Cruz", "jersey": 80, "height": "6'0\"", "weight": 204, "yards": 1536, "tds": 9 },
+      "TE": { "name": "Jake Ballard", "jersey": 85, "height": "6'6\"", "weight": 268, "yards": 604, "tds": 4 }
+    }
+  },
+  {
+    "id": "2011-2012-sf-49ers",
+    "year": "2011-2012",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Alex Smith", "jersey": 11, "height": "6'4\"", "weight": 217, "yards": 3144, "tds": 17 },
+      "RB": { "name": "Frank Gore", "jersey": 21, "height": "5'9\"", "weight": 212, "yards": 1211, "tds": 8 },
+      "WR1": { "name": "Michael Crabtree", "jersey": 15, "height": "6'1\"", "weight": 214, "yards": 874, "tds": 4 },
+      "WR2": { "name": "Vernon Davis", "jersey": 85, "height": "6'3\"", "weight": 250, "yards": 792, "tds": 6 },
+      "TE": { "name": "Vernon Davis", "jersey": 85, "height": "6'3\"", "weight": 250, "yards": 792, "tds": 6 }
+    }
+  },
+  {
+    "id": "2011-2012-ne-patriots",
+    "year": "2011-2012",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl XLVI",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 5235, "tds": 39 },
+      "RB": { "name": "BenJarvus Green-Ellis", "jersey": 42, "height": "5'11\"", "weight": 215, "yards": 1008, "tds": 11 },
+      "WR1": { "name": "Wes Welker", "jersey": 83, "height": "5'9\"", "weight": 185, "yards": 1569, "tds": 9 },
+      "WR2": { "name": "Chad Ochocinco", "jersey": 85, "height": "6'1\"", "weight": 191, "yards": 276, "tds": 1 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 1327, "tds": 17 }
+    }
+  },
+  {
+    "id": "2011-2012-bal-ravens",
+    "year": "2011-2012",
+    "team_name": "Baltimore Ravens",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Joe Flacco", "jersey": 5, "height": "6'6\"", "weight": 236, "yards": 3610, "tds": 20 },
+      "RB": { "name": "Ray Rice", "jersey": 27, "height": "5'8\"", "weight": 212, "yards": 1364, "tds": 12 },
+      "WR1": { "name": "Anquan Boldin", "jersey": 81, "height": "6'1\"", "weight": 223, "yards": 921, "tds": 4 },
+      "WR2": { "name": "Lee Evans", "jersey": 83, "height": "5'11\"", "weight": 197, "yards": 552, "tds": 3 },
+      "TE": { "name": "Todd Heap", "jersey": 86, "height": "6'5\"", "weight": 252, "yards": 236, "tds": 2 }
+    }
+  },
+  {
+    "id": "2012-2013-sf-49ers",
+    "year": "2012-2013",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XLVII",
+    "roster": {
+      "QB": { "name": "Colin Kaepernick", "jersey": 7, "height": "6'4\"", "weight": 230, "yards": 3197, "tds": 21 },
+      "RB": { "name": "Frank Gore", "jersey": 21, "height": "5'9\"", "weight": 212, "yards": 1214, "tds": 8 },
+      "WR1": { "name": "Michael Crabtree", "jersey": 15, "height": "6'1\"", "weight": 214, "yards": 1105, "tds": 9 },
+      "WR2": { "name": "Randy Moss", "jersey": 84, "height": "6'4\"", "weight": 210, "yards": 434, "tds": 3 },
+      "TE": { "name": "Vernon Davis", "jersey": 85, "height": "6'3\"", "weight": 250, "yards": 549, "tds": 5 }
+    }
+  },
+  {
+    "id": "2012-2013-atl-falcons",
+    "year": "2012-2013",
+    "team_name": "Atlanta Falcons",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Matt Ryan", "jersey": 2, "height": "6'4\"", "weight": 217, "yards": 4719, "tds": 32 },
+      "RB": { "name": "Michael Turner", "jersey": 33, "height": "5'10\"", "weight": 237, "yards": 800, "tds": 10 },
+      "WR1": { "name": "Julio Jones", "jersey": 11, "height": "6'3\"", "weight": 220, "yards": 1198, "tds": 10 },
+      "WR2": { "name": "Roddy White", "jersey": 84, "height": "6'0\"", "weight": 211, "yards": 1351, "tds": 7 },
+      "TE": { "name": "Tony Gonzalez", "jersey": 88, "height": "6'5\"", "weight": 247, "yards": 930, "tds": 8 }
+    }
+  },
+  {
+    "id": "2012-2013-bal-ravens",
+    "year": "2012-2013",
+    "team_name": "Baltimore Ravens",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XLVII",
+    "roster": {
+      "QB": { "name": "Joe Flacco", "jersey": 5, "height": "6'6\"", "weight": 236, "yards": 3817, "tds": 22 },
+      "RB": { "name": "Ray Rice", "jersey": 27, "height": "5'8\"", "weight": 212, "yards": 1143, "tds": 9 },
+      "WR1": { "name": "Anquan Boldin", "jersey": 81, "height": "6'1\"", "weight": 223, "yards": 921, "tds": 4 },
+      "WR2": { "name": "Torrey Smith", "jersey": 82, "height": "6'1\"", "weight": 205, "yards": 855, "tds": 8 },
+      "TE": { "name": "Dennis Pitta", "jersey": 88, "height": "6'4\"", "weight": 245, "yards": 548, "tds": 7 }
+    }
+  },
+  {
+    "id": "2012-2013-ne-patriots",
+    "year": "2012-2013",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4827, "tds": 34 },
+      "RB": { "name": "Stevan Ridley", "jersey": 22, "height": "5'11\"", "weight": 220, "yards": 1263, "tds": 12 },
+      "WR1": { "name": "Wes Welker", "jersey": 83, "height": "5'9\"", "weight": 185, "yards": 1354, "tds": 6 },
+      "WR2": { "name": "Brandon Lloyd", "jersey": 85, "height": "6'0\"", "weight": 192, "yards": 911, "tds": 4 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 790, "tds": 11 }
+    }
+  },
+  {
+    "id": "2013-2014-sea-seahawks",
+    "year": "2013-2014",
+    "team_name": "Seattle Seahawks",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl XLVIII",
+    "roster": {
+      "QB": { "name": "Russell Wilson", "jersey": 3, "height": "5'11\"", "weight": 206, "yards": 3357, "tds": 26 },
+      "RB": { "name": "Marshawn Lynch", "jersey": 24, "height": "5'11\"", "weight": 215, "yards": 1257, "tds": 12 },
+      "WR1": { "name": "Percy Harvin", "jersey": 11, "height": "5'11\"", "weight": 184, "yards": 532, "tds": 4 },
+      "WR2": { "name": "Doug Baldwin", "jersey": 89, "height": "5'10\"", "weight": 189, "yards": 778, "tds": 5 },
+      "TE": { "name": "Zach Miller", "jersey": 86, "height": "6'5\"", "weight": 257, "yards": 387, "tds": 1 }
+    }
+  },
+  {
+    "id": "2013-2014-sf-49ers",
+    "year": "2013-2014",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Colin Kaepernick", "jersey": 7, "height": "6'4\"", "weight": 230, "yards": 3197, "tds": 21 },
+      "RB": { "name": "Frank Gore", "jersey": 21, "height": "5'9\"", "weight": 212, "yards": 1128, "tds": 9 },
+      "WR1": { "name": "Anquan Boldin", "jersey": 81, "height": "6'1\"", "weight": 223, "yards": 1179, "tds": 7 },
+      "WR2": { "name": "Michael Crabtree", "jersey": 15, "height": "6'1\"", "weight": 214, "yards": 284, "tds": 1 },
+      "TE": { "name": "Vernon Davis", "jersey": 85, "height": "6'3\"", "weight": 250, "yards": 426, "tds": 2 }
+    }
+  },
+  {
+    "id": "2013-2014-den-broncos",
+    "year": "2013-2014",
+    "team_name": "Denver Broncos",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl XLVIII",
+    "roster": {
+      "QB": { "name": "Peyton Manning", "jersey": 18, "height": "6'5\"", "weight": 230, "yards": 5477, "tds": 55 },
+      "RB": { "name": "Knowshon Moreno", "jersey": 27, "height": "5'11\"", "weight": 220, "yards": 1038, "tds": 10 },
+      "WR1": { "name": "Demaryius Thomas", "jersey": 88, "height": "6'3\"", "weight": 229, "yards": 1430, "tds": 14 },
+      "WR2": { "name": "Eric Decker", "jersey": 87, "height": "6'3\"", "weight": 218, "yards": 1288, "tds": 11 },
+      "TE": { "name": "Julius Thomas", "jersey": 80, "height": "6'5\"", "weight": 256, "yards": 788, "tds": 12 }
+    }
+  },
+  {
+    "id": "2013-2014-ne-patriots",
+    "year": "2013-2014",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4343, "tds": 25 },
+      "RB": { "name": "LeGarrette Blount", "jersey": 29, "height": "6'0\"", "weight": 250, "yards": 772, "tds": 7 },
+      "WR1": { "name": "Julian Edelman", "jersey": 11, "height": "5'10\"", "weight": 198, "yards": 1056, "tds": 6 },
+      "WR2": { "name": "Danny Amendola", "jersey": 80, "height": "5'11\"", "weight": 195, "yards": 633, "tds": 2 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 592, "tds": 4 }
+    }
+  },
+  {
+    "id": "2014-2015-sea-seahawks",
+    "year": "2014-2015",
+    "team_name": "Seattle Seahawks",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl XLIX",
+    "roster": {
+      "QB": { "name": "Russell Wilson", "jersey": 3, "height": "5'11\"", "weight": 206, "yards": 3475, "tds": 20 },
+      "RB": { "name": "Marshawn Lynch", "jersey": 24, "height": "5'11\"", "weight": 215, "yards": 1306, "tds": 13 },
+      "WR1": { "name": "Doug Baldwin", "jersey": 89, "height": "5'10\"", "weight": 189, "yards": 825, "tds": 5 },
+      "WR2": { "name": "Jermaine Kearse", "jersey": 15, "height": "6'1\"", "weight": 209, "yards": 537, "tds": 3 },
+      "TE": { "name": "Luke Willson", "jersey": 82, "height": "6'5\"", "weight": 251, "yards": 362, "tds": 3 }
+    }
+  },
+  {
+    "id": "2014-2015-gb-packers",
+    "year": "2014-2015",
+    "team_name": "Green Bay Packers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Aaron Rodgers", "jersey": 12, "height": "6'2\"", "weight": 225, "yards": 4381, "tds": 38 },
+      "RB": { "name": "Eddie Lacy", "jersey": 27, "height": "5'11\"", "weight": 230, "yards": 1139, "tds": 9 },
+      "WR1": { "name": "Jordy Nelson", "jersey": 87, "height": "6'3\"", "weight": 217, "yards": 1519, "tds": 13 },
+      "WR2": { "name": "Randall Cobb", "jersey": 18, "height": "5'10\"", "weight": 192, "yards": 1287, "tds": 12 },
+      "TE": { "name": "Richard Rodgers", "jersey": 82, "height": "6'4\"", "weight": 257, "yards": 342, "tds": 2 }
+    }
+  },
+  {
+    "id": "2014-2015-ne-patriots",
+    "year": "2014-2015",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl XLIX",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4109, "tds": 33 },
+      "RB": { "name": "LeGarrette Blount", "jersey": 29, "height": "6'0\"", "weight": 250, "yards": 1161, "tds": 7 },
+      "WR1": { "name": "Julian Edelman", "jersey": 11, "height": "5'10\"", "weight": 198, "yards": 972, "tds": 4 },
+      "WR2": { "name": "Brandon LaFell", "jersey": 19, "height": "6'2\"", "weight": 210, "yards": 953, "tds": 7 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 1124, "tds": 12 }
+    }
+  },
+  {
+    "id": "2014-2015-ind-colts",
+    "year": "2014-2015",
+    "team_name": "Indianapolis Colts",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Andrew Luck", "jersey": 12, "height": "6'4\"", "weight": 240, "yards": 4761, "tds": 40 },
+      "RB": { "name": "Trent Richardson", "jersey": 34, "height": "5'10\"", "weight": 228, "yards": 519, "tds": 5 },
+      "WR1": { "name": "T.Y. Hilton", "jersey": 13, "height": "5'10\"", "weight": 178, "yards": 1345, "tds": 7 },
+      "WR2": { "name": "Reggie Wayne", "jersey": 87, "height": "6'0\"", "weight": 197, "yards": 779, "tds": 2 },
+      "TE": { "name": "Coby Fleener", "jersey": 80, "height": "6'6\"", "weight": 247, "yards": 774, "tds": 8 }
+    }
+  },
+  {
+    "id": "2015-2016-car-panthers",
+    "year": "2015-2016",
+    "team_name": "Carolina Panthers",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl 50",
+    "roster": {
+      "QB": { "name": "Cam Newton", "jersey": 1, "height": "6'5\"", "weight": 245, "yards": 3837, "tds": 35 },
+      "RB": { "name": "Jonathan Stewart", "jersey": 28, "height": "5'10\"", "weight": 235, "yards": 989, "tds": 6 },
+      "WR1": { "name": "Ted Ginn Jr.", "jersey": 19, "height": "5'11\"", "weight": 178, "yards": 739, "tds": 10 },
+      "WR2": { "name": "Devin Funchess", "jersey": 17, "height": "6'4\"", "weight": 232, "yards": 473, "tds": 5 },
+      "TE": { "name": "Greg Olsen", "jersey": 88, "height": "6'5\"", "weight": 254, "yards": 1104, "tds": 7 }
+    }
+  },
+  {
+    "id": "2015-2016-ari-cardinals",
+    "year": "2015-2016",
+    "team_name": "Arizona Cardinals",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Carson Palmer", "jersey": 3, "height": "6'5\"", "weight": 235, "yards": 4671, "tds": 35 },
+      "RB": { "name": "Chris Johnson", "jersey": 23, "height": "5'11\"", "weight": 197, "yards": 814, "tds": 3 },
+      "WR1": { "name": "Larry Fitzgerald", "jersey": 11, "height": "6'3\"", "weight": 218, "yards": 1215, "tds": 9 },
+      "WR2": { "name": "John Brown", "jersey": 12, "height": "5'11\"", "weight": 179, "yards": 1003, "tds": 7 },
+      "TE": { "name": "Jermaine Gresham", "jersey": 84, "height": "6'5\"", "weight": 261, "yards": 388, "tds": 4 }
+    }
+  },
+  {
+    "id": "2015-2016-den-broncos",
+    "year": "2015-2016",
+    "team_name": "Denver Broncos",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl 50",
+    "roster": {
+      "QB": { "name": "Peyton Manning", "jersey": 18, "height": "6'5\"", "weight": 230, "yards": 2249, "tds": 9 },
+      "RB": { "name": "C.J. Anderson", "jersey": 22, "height": "5'8\"", "weight": 224, "yards": 720, "tds": 5 },
+      "WR1": { "name": "Demaryius Thomas", "jersey": 88, "height": "6'3\"", "weight": 229, "yards": 1304, "tds": 6 },
+      "WR2": { "name": "Emmanuel Sanders", "jersey": 10, "height": "5'11\"", "weight": 186, "yards": 1135, "tds": 6 },
+      "TE": { "name": "Owen Daniels", "jersey": 81, "height": "6'3\"", "weight": 240, "yards": 378, "tds": 3 }
+    }
+  },
+  {
+    "id": "2015-2016-ne-patriots",
+    "year": "2015-2016",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4770, "tds": 36 },
+      "RB": { "name": "Dion Lewis", "jersey": 33, "height": "5'8\"", "weight": 195, "yards": 844, "tds": 5 },
+      "WR1": { "name": "Julian Edelman", "jersey": 11, "height": "5'10\"", "weight": 198, "yards": 692, "tds": 7 },
+      "WR2": { "name": "Danny Amendola", "jersey": 80, "height": "5'11\"", "weight": 195, "yards": 483, "tds": 3 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 1176, "tds": 11 }
+    }
+  },
+  {
+    "id": "2016-2017-atl-falcons",
+    "year": "2016-2017",
+    "team_name": "Atlanta Falcons",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl LI",
+    "roster": {
+      "QB": { "name": "Matt Ryan", "jersey": 2, "height": "6'4\"", "weight": 217, "yards": 4944, "tds": 38 },
+      "RB": { "name": "Devonta Freeman", "jersey": 24, "height": "5'8\"", "weight": 206, "yards": 1079, "tds": 11 },
+      "WR1": { "name": "Julio Jones", "jersey": 11, "height": "6'3\"", "weight": 220, "yards": 1409, "tds": 6 },
+      "WR2": { "name": "Mohamed Sanu", "jersey": 12, "height": "6'2\"", "weight": 210, "yards": 653, "tds": 4 },
+      "TE": { "name": "Austin Hooper", "jersey": 81, "height": "6'4\"", "weight": 254, "yards": 271, "tds": 3 }
+    }
+  },
+  {
+    "id": "2016-2017-gb-packers",
+    "year": "2016-2017",
+    "team_name": "Green Bay Packers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Aaron Rodgers", "jersey": 12, "height": "6'2\"", "weight": 225, "yards": 4428, "tds": 40 },
+      "RB": { "name": "Ty Montgomery", "jersey": 88, "height": "6'0\"", "weight": 216, "yards": 457, "tds": 3 },
+      "WR1": { "name": "Jordy Nelson", "jersey": 87, "height": "6'3\"", "weight": 217, "yards": 1257, "tds": 14 },
+      "WR2": { "name": "Davante Adams", "jersey": 17, "height": "6'1\"", "weight": 215, "yards": 997, "tds": 12 },
+      "TE": { "name": "Jared Cook", "jersey": 89, "height": "6'5\"", "weight": 254, "yards": 535, "tds": 3 }
+    }
+  },
+  {
+    "id": "2016-2017-ne-patriots",
+    "year": "2016-2017",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl LI",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 3554, "tds": 28 },
+      "RB": { "name": "LeGarrette Blount", "jersey": 29, "height": "6'0\"", "weight": 250, "yards": 1161, "tds": 18 },
+      "WR1": { "name": "Julian Edelman", "jersey": 11, "height": "5'10\"", "weight": 198, "yards": 1106, "tds": 6 },
+      "WR2": { "name": "Chris Hogan", "jersey": 15, "height": "6'1\"", "weight": 210, "yards": 680, "tds": 4 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 540, "tds": 3 }
+    }
+  },
+  {
+    "id": "2016-2017-pit-steelers",
+    "year": "2016-2017",
+    "team_name": "Pittsburgh Steelers",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Ben Roethlisberger", "jersey": 7, "height": "6'5\"", "weight": 241, "yards": 3819, "tds": 29 },
+      "RB": { "name": "Le'Veon Bell", "jersey": 26, "height": "6'1\"", "weight": 225, "yards": 1268, "tds": 7 },
+      "WR1": { "name": "Antonio Brown", "jersey": 84, "height": "5'10\"", "weight": 181, "yards": 1284, "tds": 12 },
+      "WR2": { "name": "Eli Rogers", "jersey": 11, "height": "5'10\"", "weight": 180, "yards": 594, "tds": 3 },
+      "TE": { "name": "Jesse James", "jersey": 83, "height": "6'7\"", "weight": 261, "yards": 367, "tds": 4 }
+    }
+  },
+  {
+    "id": "2017-2018-phi-eagles",
+    "year": "2017-2018",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl LII",
+    "roster": {
+      "QB": { "name": "Nick Foles", "jersey": 9, "height": "6'6\"", "weight": 243, "yards": 1106, "tds": 8 },
+      "RB": { "name": "LeGarrette Blount", "jersey": 29, "height": "6'0\"", "weight": 250, "yards": 766, "tds": 2 },
+      "WR1": { "name": "Alshon Jeffery", "jersey": 17, "height": "6'3\"", "weight": 218, "yards": 789, "tds": 9 },
+      "WR2": { "name": "Nelson Agholor", "jersey": 13, "height": "6'0\"", "weight": 198, "yards": 768, "tds": 8 },
+      "TE": { "name": "Zach Ertz", "jersey": 86, "height": "6'5\"", "weight": 250, "yards": 824, "tds": 8 }
+    }
+  },
+  {
+    "id": "2017-2018-min-vikings",
+    "year": "2017-2018",
+    "team_name": "Minnesota Vikings",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Case Keenum", "jersey": 7, "height": "6'1\"", "weight": 215, "yards": 3547, "tds": 22 },
+      "RB": { "name": "Latavius Murray", "jersey": 25, "height": "6'2\"", "weight": 230, "yards": 842, "tds": 8 },
+      "WR1": { "name": "Stefon Diggs", "jersey": 14, "height": "6'0\"", "weight": 191, "yards": 849, "tds": 8 },
+      "WR2": { "name": "Adam Thielen", "jersey": 19, "height": "6'2\"", "weight": 200, "yards": 1276, "tds": 4 },
+      "TE": { "name": "Kyle Rudolph", "jersey": 82, "height": "6'6\"", "weight": 259, "yards": 532, "tds": 8 }
+    }
+  },
+  {
+    "id": "2017-2018-ne-patriots",
+    "year": "2017-2018",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl LII",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4577, "tds": 32 },
+      "RB": { "name": "Dion Lewis", "jersey": 33, "height": "5'8\"", "weight": 195, "yards": 896, "tds": 6 },
+      "WR1": { "name": "Brandin Cooks", "jersey": 14, "height": "5'10\"", "weight": 183, "yards": 1082, "tds": 7 },
+      "WR2": { "name": "Julian Edelman", "jersey": 11, "height": "5'10\"", "weight": 198, "yards": 482, "tds": 3 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 1084, "tds": 8 }
+    }
+  },
+  {
+    "id": "2017-2018-jax-jaguars",
+    "year": "2017-2018",
+    "team_name": "Jacksonville Jaguars",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Blake Bortles", "jersey": 5, "height": "6'5\"", "weight": 236, "yards": 3687, "tds": 21 },
+      "RB": { "name": "Leonard Fournette", "jersey": 27, "height": "6'0\"", "weight": 228, "yards": 1040, "tds": 9 },
+      "WR1": { "name": "Allen Robinson", "jersey": 15, "height": "6'3\"", "weight": 220, "yards": 455, "tds": 2 },
+      "WR2": { "name": "Marqise Lee", "jersey": 11, "height": "5'11\"", "weight": 193, "yards": 702, "tds": 3 },
+      "TE": { "name": "Marcedes Lewis", "jersey": 89, "height": "6'6\"", "weight": 267, "yards": 214, "tds": 3 }
+    }
+  },
+  {
+    "id": "2018-2019-la-rams",
+    "year": "2018-2019",
+    "team_name": "Los Angeles Rams",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl LIII",
+    "roster": {
+      "QB": { "name": "Jared Goff", "jersey": 16, "height": "6'4\"", "weight": 222, "yards": 4688, "tds": 32 },
+      "RB": { "name": "Todd Gurley", "jersey": 30, "height": "6'1\"", "weight": 224, "yards": 1251, "tds": 17 },
+      "WR1": { "name": "Brandin Cooks", "jersey": 12, "height": "5'10\"", "weight": 183, "yards": 1204, "tds": 5 },
+      "WR2": { "name": "Robert Woods", "jersey": 17, "height": "6'0\"", "weight": 195, "yards": 1219, "tds": 6 },
+      "TE": { "name": "Tyler Higbee", "jersey": 89, "height": "6'6\"", "weight": 257, "yards": 292, "tds": 2 }
+    }
+  },
+  {
+    "id": "2018-2019-no-saints",
+    "year": "2018-2019",
+    "team_name": "New Orleans Saints",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Drew Brees", "jersey": 9, "height": "6'0\"", "weight": 209, "yards": 3992, "tds": 32 },
+      "RB": { "name": "Alvin Kamara", "jersey": 41, "height": "5'10\"", "weight": 215, "yards": 883, "tds": 14 },
+      "WR1": { "name": "Michael Thomas", "jersey": 13, "height": "6'3\"", "weight": 212, "yards": 1405, "tds": 9 },
+      "WR2": { "name": "Ted Ginn Jr.", "jersey": 19, "height": "5'11\"", "weight": 178, "yards": 569, "tds": 4 },
+      "TE": { "name": "Benjamin Watson", "jersey": 82, "height": "6'3\"", "weight": 255, "yards": 400, "tds": 2 }
+    }
+  },
+  {
+    "id": "2018-2019-ne-patriots",
+    "year": "2018-2019",
+    "team_name": "New England Patriots",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl LIII",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4355, "tds": 29 },
+      "RB": { "name": "Sony Michel", "jersey": 26, "height": "5'11\"", "weight": 215, "yards": 931, "tds": 6 },
+      "WR1": { "name": "Julian Edelman", "jersey": 11, "height": "5'10\"", "weight": 198, "yards": 850, "tds": 6 },
+      "WR2": { "name": "Chris Hogan", "jersey": 15, "height": "6'1\"", "weight": 210, "yards": 532, "tds": 3 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 682, "tds": 3 }
+    }
+  },
+  {
+    "id": "2018-2019-kc-chiefs",
+    "year": "2018-2019",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 5097, "tds": 50 },
+      "RB": { "name": "Kareem Hunt", "jersey": 27, "height": "5'11\"", "weight": 216, "yards": 824, "tds": 7 },
+      "WR1": { "name": "Tyreek Hill", "jersey": 10, "height": "5'10\"", "weight": 185, "yards": 1479, "tds": 12 },
+      "WR2": { "name": "Sammy Watkins", "jersey": 14, "height": "6'1\"", "weight": 211, "yards": 519, "tds": 3 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 1336, "tds": 10 }
+    }
+  },
+  {
+    "id": "2019-2020-sf-49ers",
+    "year": "2019-2020",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl LIV",
+    "roster": {
+      "QB": { "name": "Jimmy Garoppolo", "jersey": 10, "height": "6'2\"", "weight": 225, "yards": 3978, "tds": 27 },
+      "RB": { "name": "Raheem Mostert", "jersey": 31, "height": "5'10\"", "weight": 200, "yards": 772, "tds": 8 },
+      "WR1": { "name": "Deebo Samuel", "jersey": 19, "height": "5'11\"", "weight": 214, "yards": 802, "tds": 3 },
+      "WR2": { "name": "Emmanuel Sanders", "jersey": 17, "height": "5'11\"", "weight": 186, "yards": 502, "tds": 3 },
+      "TE": { "name": "George Kittle", "jersey": 85, "height": "6'4\"", "weight": 250, "yards": 1053, "tds": 5 }
+    }
+  },
+  {
+    "id": "2019-2020-gb-packers",
+    "year": "2019-2020",
+    "team_name": "Green Bay Packers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Aaron Rodgers", "jersey": 12, "height": "6'2\"", "weight": 225, "yards": 4002, "tds": 26 },
+      "RB": { "name": "Aaron Jones", "jersey": 33, "height": "5'9\"", "weight": 208, "yards": 1084, "tds": 16 },
+      "WR1": { "name": "Davante Adams", "jersey": 17, "height": "6'1\"", "weight": 215, "yards": 997, "tds": 5 },
+      "WR2": { "name": "Allen Lazard", "jersey": 13, "height": "6'5\"", "weight": 227, "yards": 477, "tds": 3 },
+      "TE": { "name": "Jimmy Graham", "jersey": 80, "height": "6'7\"", "weight": 265, "yards": 447, "tds": 3 }
+    }
+  },
+  {
+    "id": "2019-2020-kc-chiefs",
+    "year": "2019-2020",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl LIV",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 4031, "tds": 26 },
+      "RB": { "name": "Damien Williams", "jersey": 26, "height": "5'11\"", "weight": 204, "yards": 498, "tds": 5 },
+      "WR1": { "name": "Tyreek Hill", "jersey": 10, "height": "5'10\"", "weight": 185, "yards": 860, "tds": 7 },
+      "WR2": { "name": "Sammy Watkins", "jersey": 14, "height": "6'1\"", "weight": 211, "yards": 673, "tds": 9 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 1229, "tds": 5 }
+    }
+  },
+  {
+    "id": "2019-2020-ten-titans",
+    "year": "2019-2020",
+    "team_name": "Tennessee Titans",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Ryan Tannehill", "jersey": 17, "height": "6'4\"", "weight": 217, "yards": 2742, "tds": 22 },
+      "RB": { "name": "Derrick Henry", "jersey": 22, "height": "6'3\"", "weight": 247, "yards": 1540, "tds": 16 },
+      "WR1": { "name": "A.J. Brown", "jersey": 11, "height": "6'0\"", "weight": 226, "yards": 1051, "tds": 8 },
+      "WR2": { "name": "Adam Humphries", "jersey": 10, "height": "5'11\"", "weight": 195, "yards": 374, "tds": 2 },
+      "TE": { "name": "Jonnu Smith", "jersey": 81, "height": "6'3\"", "weight": 248, "yards": 439, "tds": 3 }
+    }
+  },
+  {
+    "id": "2020-2021-tb-buccaneers",
+    "year": "2020-2021",
+    "team_name": "Tampa Bay Buccaneers",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl LV",
+    "roster": {
+      "QB": { "name": "Tom Brady", "jersey": 12, "height": "6'4\"", "weight": 225, "yards": 4633, "tds": 40 },
+      "RB": { "name": "Ronald Jones II", "jersey": 27, "height": "5'11\"", "weight": 196, "yards": 978, "tds": 7 },
+      "WR1": { "name": "Mike Evans", "jersey": 13, "height": "6'5\"", "weight": 231, "yards": 1006, "tds": 13 },
+      "WR2": { "name": "Antonio Brown", "jersey": 81, "height": "5'10\"", "weight": 181, "yards": 483, "tds": 4 },
+      "TE": { "name": "Rob Gronkowski", "jersey": 87, "height": "6'6\"", "weight": 265, "yards": 623, "tds": 7 }
+    }
+  },
+  {
+    "id": "2020-2021-gb-packers",
+    "year": "2020-2021",
+    "team_name": "Green Bay Packers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Aaron Rodgers", "jersey": 12, "height": "6'2\"", "weight": 225, "yards": 4299, "tds": 48 },
+      "RB": { "name": "Aaron Jones", "jersey": 33, "height": "5'9\"", "weight": 208, "yards": 1104, "tds": 9 },
+      "WR1": { "name": "Davante Adams", "jersey": 17, "height": "6'1\"", "weight": 215, "yards": 1374, "tds": 18 },
+      "WR2": { "name": "Allen Lazard", "jersey": 13, "height": "6'5\"", "weight": 227, "yards": 451, "tds": 3 },
+      "TE": { "name": "Robert Tonyan", "jersey": 85, "height": "6'5\"", "weight": 237, "yards": 586, "tds": 11 }
+    }
+  },
+  {
+    "id": "2020-2021-kc-chiefs",
+    "year": "2020-2021",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl LV",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 4740, "tds": 38 },
+      "RB": { "name": "Clyde Edwards-Helaire", "jersey": 25, "height": "5'8\"", "weight": 207, "yards": 803, "tds": 4 },
+      "WR1": { "name": "Tyreek Hill", "jersey": 10, "height": "5'10\"", "weight": 185, "yards": 1276, "tds": 15 },
+      "WR2": { "name": "Sammy Watkins", "jersey": 14, "height": "6'1\"", "weight": 211, "yards": 421, "tds": 2 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 1416, "tds": 11 }
+    }
+  },
+  {
+    "id": "2020-2021-buf-bills",
+    "year": "2020-2021",
+    "team_name": "Buffalo Bills",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Josh Allen", "jersey": 17, "height": "6'5\"", "weight": 237, "yards": 4544, "tds": 37 },
+      "RB": { "name": "Devin Singletary", "jersey": 26, "height": "5'7\"", "weight": 203, "yards": 687, "tds": 2 },
+      "WR1": { "name": "Stefon Diggs", "jersey": 14, "height": "6'0\"", "weight": 191, "yards": 1535, "tds": 8 },
+      "WR2": { "name": "Cole Beasley", "jersey": 11, "height": "5'8\"", "weight": 174, "yards": 967, "tds": 4 },
+      "TE": { "name": "Dawson Knox", "jersey": 88, "height": "6'4\"", "weight": 254, "yards": 288, "tds": 3 }
+    }
+  },
+  {
+    "id": "2021-2022-la-rams",
+    "year": "2021-2022",
+    "team_name": "Los Angeles Rams",
+    "conference": "NFC",
+    "season_finish": "Won Super Bowl LVI",
+    "roster": {
+      "QB": { "name": "Matthew Stafford", "jersey": 9, "height": "6'3\"", "weight": 220, "yards": 4886, "tds": 41 },
+      "RB": { "name": "Cam Akers", "jersey": 23, "height": "5'10\"", "weight": 217, "yards": 318, "tds": 1 },
+      "WR1": { "name": "Cooper Kupp", "jersey": 10, "height": "6'2\"", "weight": 208, "yards": 1947, "tds": 16 },
+      "WR2": { "name": "Odell Beckham Jr.", "jersey": 3, "height": "5'11\"", "weight": 198, "yards": 593, "tds": 5 },
+      "TE": { "name": "Tyler Higbee", "jersey": 89, "height": "6'6\"", "weight": 257, "yards": 560, "tds": 5 }
+    }
+  },
+  {
+    "id": "2021-2022-sf-49ers",
+    "year": "2021-2022",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Jimmy Garoppolo", "jersey": 10, "height": "6'2\"", "weight": 225, "yards": 3810, "tds": 20 },
+      "RB": { "name": "Elijah Mitchell", "jersey": 25, "height": "5'10\"", "weight": 201, "yards": 963, "tds": 5 },
+      "WR1": { "name": "Deebo Samuel", "jersey": 19, "height": "5'11\"", "weight": 214, "yards": 1405, "tds": 6 },
+      "WR2": { "name": "Brandon Aiyuk", "jersey": 11, "height": "6'0\"", "weight": 206, "yards": 826, "tds": 5 },
+      "TE": { "name": "George Kittle", "jersey": 85, "height": "6'4\"", "weight": 250, "yards": 910, "tds": 6 }
+    }
+  },
+  {
+    "id": "2021-2022-kc-chiefs",
+    "year": "2021-2022",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Lost Super Bowl LVI",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 4839, "tds": 37 },
+      "RB": { "name": "Darrel Williams", "jersey": 31, "height": "5'11\"", "weight": 214, "yards": 558, "tds": 6 },
+      "WR1": { "name": "Tyreek Hill", "jersey": 10, "height": "5'10\"", "weight": 185, "yards": 1239, "tds": 9 },
+      "WR2": { "name": "Byron Pringle", "jersey": 13, "height": "6'1\"", "weight": 202, "yards": 568, "tds": 5 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 1125, "tds": 9 }
+    }
+  },
+  {
+    "id": "2021-2022-cin-bengals",
+    "year": "2021-2022",
+    "team_name": "Cincinnati Bengals",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Joe Burrow", "jersey": 9, "height": "6'4\"", "weight": 221, "yards": 4611, "tds": 34 },
+      "RB": { "name": "Joe Mixon", "jersey": 28, "height": "6'1\"", "weight": 228, "yards": 1205, "tds": 13 },
+      "WR1": { "name": "Ja'Marr Chase", "jersey": 1, "height": "6'0\"", "weight": 201, "yards": 1455, "tds": 13 },
+      "WR2": { "name": "Tee Higgins", "jersey": 85, "height": "6'4\"", "weight": 216, "yards": 1091, "tds": 6 },
+      "TE": { "name": "C.J. Uzomah", "jersey": 87, "height": "6'5\"", "weight": 265, "yards": 493, "tds": 5 }
+    }
+  },
+  {
+    "id": "2022-2023-phi-eagles",
+    "year": "2022-2023",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl LVII",
+    "roster": {
+      "QB": { "name": "Jalen Hurts", "jersey": 1, "height": "6'1\"", "weight": 223, "yards": 3701, "tds": 35 },
+      "RB": { "name": "Miles Sanders", "jersey": 26, "height": "5'11\"", "weight": 211, "yards": 1269, "tds": 11 },
+      "WR1": { "name": "A.J. Brown", "jersey": 11, "height": "6'0\"", "weight": 226, "yards": 1496, "tds": 11 },
+      "WR2": { "name": "DeVonta Smith", "jersey": 6, "height": "6'0\"", "weight": 170, "yards": 1196, "tds": 7 },
+      "TE": { "name": "Dallas Goedert", "jersey": 88, "height": "6'5\"", "weight": 256, "yards": 702, "tds": 3 }
+    }
+  },
+  {
+    "id": "2022-2023-sf-49ers",
+    "year": "2022-2023",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Brock Purdy", "jersey": 13, "height": "6'1\"", "weight": 212, "yards": 1374, "tds": 13 },
+      "RB": { "name": "Christian McCaffrey", "jersey": 23, "height": "5'11\"", "weight": 205, "yards": 1139, "tds": 8 },
+      "WR1": { "name": "Deebo Samuel", "jersey": 19, "height": "5'11\"", "weight": 214, "yards": 632, "tds": 3 },
+      "WR2": { "name": "Brandon Aiyuk", "jersey": 11, "height": "6'0\"", "weight": 206, "yards": 1015, "tds": 8 },
+      "TE": { "name": "George Kittle", "jersey": 85, "height": "6'4\"", "weight": 250, "yards": 765, "tds": 11 }
+    }
+  },
+  {
+    "id": "2022-2023-kc-chiefs",
+    "year": "2022-2023",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl LVII",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 5250, "tds": 41 },
+      "RB": { "name": "Isiah Pacheco", "jersey": 10, "height": "5'10\"", "weight": 216, "yards": 830, "tds": 5 },
+      "WR1": { "name": "JuJu Smith-Schuster", "jersey": 9, "height": "5'11\"", "weight": 215, "yards": 933, "tds": 3 },
+      "WR2": { "name": "Marquez Valdes-Scantling", "jersey": 11, "height": "6'4\"", "weight": 206, "yards": 687, "tds": 6 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 1338, "tds": 12 }
+    }
+  },
+  {
+    "id": "2022-2023-cin-bengals",
+    "year": "2022-2023",
+    "team_name": "Cincinnati Bengals",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Joe Burrow", "jersey": 9, "height": "6'4\"", "weight": 221, "yards": 4475, "tds": 35 },
+      "RB": { "name": "Joe Mixon", "jersey": 28, "height": "6'1\"", "weight": 228, "yards": 814, "tds": 7 },
+      "WR1": { "name": "Ja'Marr Chase", "jersey": 1, "height": "6'0\"", "weight": 201, "yards": 1046, "tds": 9 },
+      "WR2": { "name": "Tee Higgins", "jersey": 85, "height": "6'4\"", "weight": 216, "yards": 1029, "tds": 7 },
+      "TE": { "name": "Hayden Hurst", "jersey": 88, "height": "6'4\"", "weight": 245, "yards": 414, "tds": 2 }
+    }
+  },
+  {
+    "id": "2023-2024-sf-49ers",
+    "year": "2023-2024",
+    "team_name": "San Francisco 49ers",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl LVIII",
+    "roster": {
+      "QB": { "name": "Brock Purdy", "jersey": 13, "height": "6'1\"", "weight": 212, "yards": 4280, "tds": 31 },
+      "RB": { "name": "Christian McCaffrey", "jersey": 23, "height": "5'11\"", "weight": 205, "yards": 1459, "tds": 14 },
+      "WR1": { "name": "Brandon Aiyuk", "jersey": 11, "height": "6'0\"", "weight": 206, "yards": 1342, "tds": 7 },
+      "WR2": { "name": "Deebo Samuel", "jersey": 19, "height": "5'11\"", "weight": 214, "yards": 892, "tds": 7 },
+      "TE": { "name": "George Kittle", "jersey": 85, "height": "6'4\"", "weight": 250, "yards": 1020, "tds": 6 }
+    }
+  },
+  {
+    "id": "2023-2024-det-lions",
+    "year": "2023-2024",
+    "team_name": "Detroit Lions",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Jared Goff", "jersey": 16, "height": "6'4\"", "weight": 222, "yards": 4575, "tds": 30 },
+      "RB": { "name": "David Montgomery", "jersey": 5, "height": "5'10\"", "weight": 222, "yards": 1015, "tds": 13 },
+      "WR1": { "name": "Amon-Ra St. Brown", "jersey": 14, "height": "6'0\"", "weight": 197, "yards": 1515, "tds": 10 },
+      "WR2": { "name": "Jameson Williams", "jersey": 9, "height": "6'2\"", "weight": 184, "yards": 689, "tds": 8 },
+      "TE": { "name": "Sam LaPorta", "jersey": 80, "height": "6'3\"", "weight": 245, "yards": 889, "tds": 10 }
+    }
+  },
+  {
+    "id": "2023-2024-kc-chiefs",
+    "year": "2023-2024",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl LVIII",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 4183, "tds": 27 },
+      "RB": { "name": "Isiah Pacheco", "jersey": 10, "height": "5'10\"", "weight": 216, "yards": 935, "tds": 7 },
+      "WR1": { "name": "Rashee Rice", "jersey": 4, "height": "6'1\"", "weight": 204, "yards": 938, "tds": 5 },
+      "WR2": { "name": "Hollywood Brown", "jersey": 5, "height": "5'11\"", "weight": 178, "yards": 354, "tds": 3 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 984, "tds": 5 }
+    }
+  },
+  {
+    "id": "2023-2024-bal-ravens",
+    "year": "2023-2024",
+    "team_name": "Baltimore Ravens",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Lamar Jackson", "jersey": 8, "height": "6'2\"", "weight": 212, "yards": 3678, "tds": 24 },
+      "RB": { "name": "Derrick Henry", "jersey": 22, "height": "6'3\"", "weight": 247, "yards": 1167, "tds": 16 },
+      "WR1": { "name": "Zay Flowers", "jersey": 4, "height": "5'9\"", "weight": 172, "yards": 858, "tds": 5 },
+      "WR2": { "name": "Nelson Agholor", "jersey": 19, "height": "6'0\"", "weight": 198, "yards": 350, "tds": 4 },
+      "TE": { "name": "Mark Andrews", "jersey": 89, "height": "6'5\"", "weight": 256, "yards": 544, "tds": 5 }
+    }
+  },
+  {
+    "id": "2024-2025-phi-eagles",
+    "year": "2024-2025",
+    "team_name": "Philadelphia Eagles",
+    "conference": "NFC",
+    "season_finish": "Lost Super Bowl LIX",
+    "roster": {
+      "QB": { "name": "Jalen Hurts", "jersey": 1, "height": "6'1\"", "weight": 223, "yards": 3903, "tds": 30 },
+      "RB": { "name": "Saquon Barkley", "jersey": 26, "height": "5'11\"", "weight": 232, "yards": 2005, "tds": 13 },
+      "WR1": { "name": "A.J. Brown", "jersey": 11, "height": "6'0\"", "weight": 226, "yards": 1079, "tds": 8 },
+      "WR2": { "name": "DeVonta Smith", "jersey": 6, "height": "6'0\"", "weight": 170, "yards": 1066, "tds": 8 },
+      "TE": { "name": "Dallas Goedert", "jersey": 88, "height": "6'5\"", "weight": 256, "yards": 521, "tds": 4 }
+    }
+  },
+  {
+    "id": "2024-2025-was-commanders",
+    "year": "2024-2025",
+    "team_name": "Washington Commanders",
+    "conference": "NFC",
+    "season_finish": "Lost NFC Championship",
+    "roster": {
+      "QB": { "name": "Jayden Daniels", "jersey": 5, "height": "6'4\"", "weight": 210, "yards": 3568, "tds": 25 },
+      "RB": { "name": "Brian Robinson Jr.", "jersey": 8, "height": "6'1\"", "weight": 228, "yards": 734, "tds": 7 },
+      "WR1": { "name": "Terry McLaurin", "jersey": 17, "height": "6'0\"", "weight": 210, "yards": 1096, "tds": 9 },
+      "WR2": { "name": "Noah Brown", "jersey": 87, "height": "6'2\"", "weight": 225, "yards": 453, "tds": 1 },
+      "TE": { "name": "Zach Ertz", "jersey": 86, "height": "6'5\"", "weight": 250, "yards": 654, "tds": 4 }
+    }
+  },
+  {
+    "id": "2024-2025-kc-chiefs",
+    "year": "2024-2025",
+    "team_name": "Kansas City Chiefs",
+    "conference": "AFC",
+    "season_finish": "Won Super Bowl LIX",
+    "roster": {
+      "QB": { "name": "Patrick Mahomes", "jersey": 15, "height": "6'3\"", "weight": 230, "yards": 4328, "tds": 26 },
+      "RB": { "name": "Isiah Pacheco", "jersey": 10, "height": "5'10\"", "weight": 216, "yards": 741, "tds": 4 },
+      "WR1": { "name": "DeAndre Hopkins", "jersey": 10, "height": "6'1\"", "weight": 212, "yards": 574, "tds": 4 },
+      "WR2": { "name": "Xavier Worthy", "jersey": 1, "height": "5'11\"", "weight": 165, "yards": 638, "tds": 5 },
+      "TE": { "name": "Travis Kelce", "jersey": 87, "height": "6'5\"", "weight": 256, "yards": 823, "tds": 3 }
+    }
+  },
+  {
+    "id": "2024-2025-buf-bills",
+    "year": "2024-2025",
+    "team_name": "Buffalo Bills",
+    "conference": "AFC",
+    "season_finish": "Lost AFC Championship",
+    "roster": {
+      "QB": { "name": "Josh Allen", "jersey": 17, "height": "6'5\"", "weight": 237, "yards": 3731, "tds": 28 },
+      "RB": { "name": "James Cook", "jersey": 4, "height": "5'11\"", "weight": 190, "yards": 1009, "tds": 16 },
+      "WR1": { "name": "Stefon Diggs", "jersey": 14, "height": "6'0\"", "weight": 191, "yards": 567, "tds": 3 },
+      "WR2": { "name": "Khalil Shakir", "jersey": 10, "height": "5'11\"", "weight": 190, "yards": 821, "tds": 5 },
+      "TE": { "name": "Dalton Kincaid", "jersey": 86, "height": "6'4\"", "weight": 243, "yards": 548, "tds": 2 }
     }
   }
 ]
