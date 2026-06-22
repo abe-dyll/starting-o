@@ -99,7 +99,13 @@ function buildShare(challenge, solvedMap, roundSolvedMap, score) {
   ["WR1","QB","TE","WR2","RB"].forEach((pos) => {
     const r = roundSolvedMap[pos];
     const ok = solvedMap[pos];
-    const em = ok ? (r===1?"🟡":r<=2?"🟢":r<=4?"🟠":"🔴") : "⬛";
+    let em;
+    if (!ok)    em = "❌";
+    else if (r===1) em = "🟢";
+    else if (r===2) em = "🔵";
+    else if (r===3) em = "🟡";
+    else if (r===4) em = "🟠";
+    else            em = "🔴";
     lines.push(`${pos.padEnd(3)} ${em}`);
   });
   lines.push(``, `Score: ${score}/5000`);
@@ -193,29 +199,29 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
   return (
     <div onClick={!solved ? onClick : undefined}
       style={{ position:"absolute", left:LAYOUT[posKey].left, top:LAYOUT[posKey].top,
-        transform:"translate(-50%,-50%)", width:90, minHeight:82,
+        transform:"translate(-50%,-50%)", width:130, minHeight:100,
         background:bg, border, borderRadius:4,
         cursor:solved?"default":"pointer",
         display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center",
         padding:"4px 3px", boxShadow:`2px 2px 8px ${C.shadow}`,
         transition:"border 0.15s, background 0.15s", zIndex:active?10:1 }}>
 
-      <div style={{ fontFamily:"'Courier New',monospace", fontSize:8, fontWeight:"bold",
-        color:C.brown, letterSpacing:1, marginBottom:2 }}>
+      <div style={{ fontFamily:"'Courier New',monospace", fontSize:11, fontWeight:"bold",
+        color:C.brown, letterSpacing:1, marginBottom:4 }}>
         {LAYOUT[posKey].label}
       </div>
 
       {solved ? (
-        <div style={{ textAlign:"center" }}>
-          <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.brownDark }}>#{player.jersey}</div>
-          <div style={{ fontSize:10, fontFamily:"'Courier New',monospace", color:C.brownDark, fontWeight:"bold", lineHeight:1.4 }}>
+        <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
+          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brownDark, marginBottom:1 }}>#{player.jersey}</div>
+          <div style={{ fontSize:11, fontFamily:"'Courier New',monospace", color:C.brownDark, fontWeight:"bold", lineHeight:1.4 }}>
             <div>{nameParts(player.name).first}</div>
             <div>{nameParts(player.name).last}</div>
           </div>
         </div>
       ) : pending ? (
-        <div style={{ textAlign:"center", padding:"0 2px" }}>
-          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:"#1A3A6A", fontWeight:"bold", lineHeight:1.4, wordBreak:"break-word" }}>
+        <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
+          <div style={{ fontSize:11, fontFamily:"'Courier New',monospace", color:"#1A3A6A", fontWeight:"bold", lineHeight:1.4 }}>
             <div>{nameParts(pending).first}</div>
             <div>{nameParts(pending).last}</div>
           </div>
@@ -229,29 +235,31 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
             <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.4, marginBottom:2 }}>
               {round >= 3 && <div style={{ whiteSpace:"pre", letterSpacing:0.5 }}>{buildMask(player.name, round)}</div>}
               <div>#{player.jersey} · {player.height}</div>
-              <div>{player.weight}lb · {player.yards}yd</div>
+              <div>{player.weight}lb · {player.yards}yd · {player.tds}TD</div>
             </div>
           )}
-          <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.6, fontStyle:"italic", lineHeight:1.3 }}>
+          <div style={{ fontSize:10, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.8, fontStyle:"italic", lineHeight:1.4 }}>
             <div>{nameParts(lastGuess).first}</div>
             <div>{nameParts(lastGuess).last}</div>
           </div>
         </div>
       ) : round >= 2 && player ? (
-        <div style={{ textAlign:"center" }}>
+        <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
           {round >= 3 && (
-            <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.brown, letterSpacing:0.5, lineHeight:1.5, whiteSpace:"pre" }}>
-              {buildMask(player.name, round)}
+            <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.brown, lineHeight:1.45, wordBreak:"break-word" }}>
+              {buildMask(player.name, round).split("  ").map((part, i) => (
+                <div key={i}>{part}</div>
+              ))}
             </div>
           )}
-          <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.4, marginTop:2 }}>
+          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.5, marginTop:2 }}>
             <div>#{player.jersey} · {player.height}</div>
             <div>{player.weight}lb</div>
             <div>{player.yards}yd · {player.tds}TD</div>
           </div>
         </div>
       ) : (
-        <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brown, opacity:0.5 }}>?</div>
+        <div style={{ fontSize:11, fontFamily:"'Courier New',monospace", color:C.brown, opacity:0.5 }}>?</div>
       )}
     </div>
   );
@@ -619,7 +627,7 @@ export default function StartingO() {
         </div>
       </div>
 
-      <div style={{ maxWidth:900, margin:"0 auto", padding:"12px 10px" }}>
+      <div style={{ maxWidth:"100%", padding:"12px 16px" }}>
 
         {/* Instructions panel */}
         <div style={{ background:C.creamDark, border:`2px solid ${C.creamBorder}`,
