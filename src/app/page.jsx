@@ -230,19 +230,25 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
       ) : skipped ? (
         <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.red, fontStyle:"italic" }}>skipped</div>
       ) : lastGuess ? (
-        // Show last wrong guess faintly so they remember what they tried
-        <div style={{ textAlign:"center" }}>
-          {round >= 2 && player && (
-            <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.4, marginBottom:2 }}>
-              {round >= 3 && (() => {
-              const [fp, lp] = buildMask(player.name, round);
-              return <><div>{fp}</div><div>{lp}</div></>;
-            })()}
+        // Hints fill the token; wrong guess shown as small footer
+        <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
+          {round >= 3 && (() => {
+            const [fp, lp] = buildMask(player.name, round);
+            return (
+              <div style={{ fontSize:12, fontFamily:"'Courier New',monospace", color:C.brown, lineHeight:1.5, letterSpacing:0.5, marginBottom:2 }}>
+                <div>{fp}</div>
+                <div>{lp}</div>
+              </div>
+            );
+          })()}
+          {round >= 2 && (
+            <div style={{ fontSize:10, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.5, marginBottom:3 }}>
               <div>#{player.jersey} · {player.height}</div>
-              <div>{player.weight}lb · {player.yards}yd · {player.tds}TD</div>
+              <div>{player.weight}lb</div>
+              <div>{player.yards}yd · {player.tds}TD</div>
             </div>
           )}
-          <div style={{ fontSize:12, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.8, fontStyle:"italic", lineHeight:1.45 }}>
+          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.8, fontStyle:"italic", lineHeight:1.3, borderTop:`1px solid ${C.creamBorder}`, paddingTop:2, marginTop:1 }}>
             <div>{nameParts(lastGuess).first}</div>
             <div>{nameParts(lastGuess).last}</div>
           </div>
