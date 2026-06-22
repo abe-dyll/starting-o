@@ -118,7 +118,7 @@ function ScoreDisplay({ score }) {
 }
 
 // ── Autocomplete ──────────────────────────────────────────────────────────────
-function AutocompleteInput({ posKey, catalog, onCommit, resetSignal }) {
+function AutocompleteInput({ posKey, catalog, onCommit, resetSignal, usedNames=[] }) {
   const [query, setQuery]   = useState("");
   const [opts, setOpts]     = useState([]);
   const [open, setOpen]     = useState(false);
@@ -130,7 +130,7 @@ function AutocompleteInput({ posKey, catalog, onCommit, resetSignal }) {
   useEffect(() => {
     if (query.length < 2) { setOpts([]); setOpen(false); return; }
     const q = query.toLowerCase();
-    const m = (catalog[pool]||[]).filter(n=>n.toLowerCase().includes(q)).slice(0,8);
+    const m = (catalog[pool]||[]).filter(n=>n.toLowerCase().includes(q) && !usedNames.includes(n)).slice(0,8);
     setOpts(m); setOpen(m.length>0);
   }, [query, pool, catalog]);
 
@@ -172,23 +172,28 @@ function AutocompleteInput({ posKey, catalog, onCommit, resetSignal }) {
 }
 
 // ── Player token ──────────────────────────────────────────────────────────────
-function PlayerToken({ posKey, player, solved, active, round, revealState, pending, skipped, onClick }) {
+function PlayerToken({ posKey, player, solved, active, round, revealState, pending, skipped, lastGuess, onClick }) {
   const flashGreen = revealState === "correct";
-  const flashRed   = revealState === "wrong";
+  const flashRed   = revealState === "wrong" || revealState === "skipped";
 
   let bg     = C.creamDark;
   let border = `2px solid ${C.creamBorder}`;
-  if (solved)     { bg = C.gold;      border = `2px solid ${C.creamBorder}`; }
-  if (skipped)    { bg = "#FFF8C0";   border = `3px solid #D4A017`; }        // yellow
-  if (pending)    { bg = "#C8DCF0";   border = `3px solid #3A6EA8`; }        // blue
-  if (active)     { bg = C.cream;     border = `3px solid ${C.brown}`; }
-  if (flashGreen) { bg = "#C8F0C8";   border = `4px solid ${C.green}`; }
-  if (flashRed)   { bg = "#F0C8C8";   border = `4px solid ${C.red}`; }
+  if (solved)     { bg = C.gold;    border = `2px solid ${C.creamBorder}`; }
+  if (pending)    { bg = "#C8DCF0"; border = `3px solid #3A6EA8`; }   // blue = name staged
+  if (skipped)    { bg = "#F0C8C8"; border = `3px solid ${C.red}`; }  // red = skipped
+  if (active)     { bg = C.cream;   border = `3px solid ${C.brown}`; }
+  if (flashGreen) { bg = "#C8F0C8"; border = `4px solid ${C.green}`; }
+  if (flashRed)   { bg = "#F0C8C8"; border = `4px solid ${C.red}`; }
+
+  const nameParts = (name) => {
+    const parts = name.trim().split(/\s+/);
+    return { first: parts[0], last: parts.slice(1).join(" ") };
+  };
 
   return (
     <div onClick={!solved ? onClick : undefined}
       style={{ position:"absolute", left:LAYOUT[posKey].left, top:LAYOUT[posKey].top,
-        transform:"translate(-50%,-50%)", width:72, minHeight:72,
+        transform:"translate(-50%,-50%)", width:90, minHeight:82,
         background:bg, border, borderRadius:4,
         cursor:solved?"default":"pointer",
         display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center",
@@ -203,8 +208,33 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
       {solved ? (
         <div style={{ textAlign:"center" }}>
           <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.brownDark }}>#{player.jersey}</div>
-          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brownDark, fontWeight:"bold", lineHeight:1.3, wordBreak:"break-word" }}>
-            {player.name.split(" ").map((w,i)=><div key={i}>{w}</div>)}
+          <div style={{ fontSize:10, fontFamily:"'Courier New',monospace", color:C.brownDark, fontWeight:"bold", lineHeight:1.4 }}>
+            <div>{nameParts(player.name).first}</div>
+            <div>{nameParts(player.name).last}</div>
+          </div>
+        </div>
+      ) : pending ? (
+        <div style={{ textAlign:"center", padding:"0 2px" }}>
+          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:"#1A3A6A", fontWeight:"bold", lineHeight:1.4, wordBreak:"break-word" }}>
+            <div>{nameParts(pending).first}</div>
+            <div>{nameParts(pending).last}</div>
+          </div>
+        </div>
+      ) : skipped ? (
+        <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.red, fontStyle:"italic" }}>skipped</div>
+      ) : lastGuess ? (
+        // Show last wrong guess faintly so they remember what they tried
+        <div style={{ textAlign:"center" }}>
+          {round >= 2 && player && (
+            <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.4, marginBottom:2 }}>
+              {round >= 3 && <div style={{ whiteSpace:"pre", letterSpacing:0.5 }}>{buildMask(player.name, round)}</div>}
+              <div>#{player.jersey} · {player.height}</div>
+              <div>{player.weight}lb · {player.yards}yd</div>
+            </div>
+          )}
+          <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.6, fontStyle:"italic", lineHeight:1.3 }}>
+            <div>{nameParts(lastGuess).first}</div>
+            <div>{nameParts(lastGuess).last}</div>
           </div>
         </div>
       ) : round >= 2 && player ? (
@@ -220,12 +250,6 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
             <div>{player.yards}yd · {player.tds}TD</div>
           </div>
         </div>
-      ) : pending ? (
-        <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:"#3A6EA8", fontWeight:"bold", textAlign:"center", wordBreak:"break-word", padding:"0 2px" }}>
-          {pending}
-        </div>
-      ) : skipped ? (
-        <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:"#8B7000", fontStyle:"italic" }}>skip</div>
       ) : (
         <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brown, opacity:0.5 }}>?</div>
       )}
@@ -236,7 +260,7 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
 // ── Football field ────────────────────────────────────────────────────────────
 function Field({ children }) {
   return (
-    <div style={{ position:"relative", width:"100%", aspectRatio:"16/7",
+    <div style={{ position:"relative", width:"100%", aspectRatio:"16/6",
       background:C.fieldGreen, borderRadius:6, border:`4px solid ${C.brown}`,
       overflow:"visible", boxShadow:`0 4px 24px ${C.shadow}` }}>
       {Array.from({length:6}).map((_,i)=>(
@@ -351,6 +375,8 @@ export default function StartingO() {
   const [gameOver, setGameOver]       = useState(false);
   const [pending, setPending]         = useState({});       // pos→name staged this round
   const [skipped, setSkipped]         = useState({});       // pos→true skipped this round
+  const [lastGuesses, setLastGuesses] = useState({});       // pos->last wrong guess (shown faintly)
+  const [usedNames, setUsedNames]     = useState([]);       // names removed from autocomplete
 
   // Reveal animation
   const [revealing, setRevealing]     = useState(false);
@@ -371,6 +397,8 @@ export default function StartingO() {
     setActivePos(null);
     setPending({});
     setSkipped({});
+    setLastGuesses({});
+    setUsedNames([]);
     setRevealStates({});
     setRevealing(false);
     setRoundResults(null);
@@ -397,6 +425,8 @@ export default function StartingO() {
     setScore(0);
     setRound(1);
     setGameOver(false);
+    setLastGuesses({});
+    setUsedNames([]);
   }, []);
 
   useEffect(() => {
@@ -458,11 +488,11 @@ export default function StartingO() {
     // Build results for this round
     const results = {};
     POSITIONS.forEach(pos => {
-      if (solved[pos]) return; // already done
+      if (solved[pos]) return;
       const name = pending[pos];
       if (!name) { results[pos] = "skip"; return; }
       const matched = checkWR(pos, name);
-      results[pos] = matched ? matched : "wrong"; // matched = correct pos key
+      results[pos] = matched ? matched : "wrong";
     });
     setRoundResults(results);
     setRevealing(true);
@@ -473,21 +503,24 @@ export default function StartingO() {
 
     // Animate reveals left-to-right
     let delay = 0;
-    const newSolved = {...solved};
+    const newSolved    = {...solved};
     const newRoundSolved = {...roundSolved};
+    const newLastGuesses = {...lastGuesses};
+    const newUsedNames   = [...usedNames];
     let addedScore = 0;
-    const flashMap = {};
 
     REVEAL_ORDER.forEach((pos) => {
       if (solved[pos]) return;
       const result = results[pos];
+      const guessedName = pending[pos] || null;
+
       setTimeout(() => {
         if (result === "skip") {
-          setRevealStates(s=>({...s, [pos]:null}));
+          // Skipped = red flash same as wrong
+          setRevealStates(s=>({...s, [pos]:"skipped"}));
         } else if (result !== "wrong") {
-          // correct — result is the matched pos key
+          // Correct
           const matchedPos = result;
-          flashMap[matchedPos] = "correct";
           setRevealStates(s=>({...s, [matchedPos]:"correct"}));
           if (!newSolved[matchedPos]) {
             newSolved[matchedPos] = true;
@@ -495,8 +528,12 @@ export default function StartingO() {
             addedScore += ROUND_POINTS[round]||0;
           }
         } else {
-          flashMap[pos] = "wrong";
+          // Wrong — record the name they guessed, remove from autocomplete
           setRevealStates(s=>({...s, [pos]:"wrong"}));
+          if (guessedName) {
+            newLastGuesses[pos] = guessedName;
+            if (!newUsedNames.includes(guessedName)) newUsedNames.push(guessedName);
+          }
         }
       }, delay);
       delay += 600;
@@ -513,6 +550,8 @@ export default function StartingO() {
       setSolved(newSolved);
       setRoundSolved(newRoundSolved);
       setScore(s => s + addedScore);
+      setLastGuesses(newLastGuesses);
+      setUsedNames(newUsedNames);
       setRevealing(false);
       setRevealStates({});
 
@@ -580,7 +619,7 @@ export default function StartingO() {
         </div>
       </div>
 
-      <div style={{ maxWidth:680, margin:"0 auto", padding:"12px 10px" }}>
+      <div style={{ maxWidth:900, margin:"0 auto", padding:"12px 10px" }}>
 
         {/* Instructions panel */}
         <div style={{ background:C.creamDark, border:`2px solid ${C.creamBorder}`,
@@ -647,6 +686,7 @@ export default function StartingO() {
               revealState={revealStates[pos]||null}
               pending={pending[pos]||null}
               skipped={!!skipped[pos]}
+              lastGuess={lastGuesses[pos]||null}
               onClick={()=>!gameOver&&!revealing&&setActivePos(activePos===pos?null:pos)}
             />
           ))}
@@ -682,6 +722,7 @@ export default function StartingO() {
                     catalog={catalog}
                     onCommit={name=>handleCommit(activePos,name)}
                     resetSignal={inputReset}
+                    usedNames={usedNames}
                   />
                 </div>
                 <button onClick={skipPos}
