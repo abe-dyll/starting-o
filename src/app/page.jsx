@@ -647,7 +647,7 @@ export default function StartingO() {
           <div style={{ fontSize:12, color:C.brownDark, marginBottom:8, lineHeight:1.5 }}>
             You have 5 rounds to name the starting offensive skill players from these NFL divisional round winners.
           </div>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(5,1fr)", gap:4 }}>
+          <div style={{ display:"flex", flexDirection:"column", gap:3 }}>
             {[
               { r:1, text:"No hints" },
               { r:2, text:"Jersey #, Height/Weight & Key Regular Season Stats" },
@@ -656,14 +656,16 @@ export default function StartingO() {
               { r:5, text:"Full first name revealed" },
             ].map(({r, text})=>(
               <div key={r} style={{
+                display:"flex", alignItems:"center", gap:10,
                 background: round === r && !gameOver ? C.brown : r < round ? C.creamBorder : C.cream,
-                border:`2px solid ${C.creamBorder}`, borderRadius:3, padding:"6px 6px",
+                border:`2px solid ${C.creamBorder}`, borderRadius:3, padding:"5px 10px",
                 opacity: gameOver ? 0.7 : 1,
               }}>
-                <div style={{ fontSize:11, fontWeight:"bold", color: round===r&&!gameOver ? C.cream : C.brown, marginBottom:3 }}>
+                <div style={{ fontSize:11, fontWeight:"bold", minWidth:54,
+                  color: round===r&&!gameOver ? C.cream : C.brown }}>
                   Round {r}
                 </div>
-                <div style={{ fontSize:9, color: round===r&&!gameOver ? C.creamDark : C.brownDark, lineHeight:1.4 }}>
+                <div style={{ fontSize:11, color: round===r&&!gameOver ? C.creamDark : C.brownDark }}>
                   {text}
                 </div>
               </div>
@@ -693,7 +695,9 @@ export default function StartingO() {
           </div>
         </div>
 
-        {/* Field */}
+        {/* Field — horizontally scrollable on mobile, capped width on desktop */}
+        <div style={{ overflowX:"auto", overflowY:"visible", WebkitOverflowScrolling:"touch", marginLeft:-16, marginRight:-16, paddingLeft:16, paddingRight:16 }}>
+          <div style={{ minWidth:560, maxWidth:900 }}>
         <Field>
           {POSITIONS.map(pos=>(
             <PlayerToken
@@ -711,6 +715,8 @@ export default function StartingO() {
             />
           ))}
         </Field>
+          </div>
+        </div>
 
         {/* Input panel */}
         {!gameOver && !revealing && (
