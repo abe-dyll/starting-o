@@ -585,9 +585,6 @@ export default function StartingO() {
         borderBottom:`3px solid ${C.gold}` }}>
         <div style={{ display:"flex", alignItems:"center", gap:12 }}>
           <div style={{ color:C.gold, fontSize:20, fontWeight:"bold", letterSpacing:3 }}>STARTING-O</div>
-          <div style={{ color:C.creamDark, fontSize:9, letterSpacing:1, paddingTop:2 }}>
-            R1:Team · R2:Stats · R3:Last · R4:First · R5:Name
-          </div>
         </div>
         <div style={{ display:"flex", alignItems:"center", gap:8 }}>
           <ScoreDisplay score={score} />
@@ -602,6 +599,36 @@ export default function StartingO() {
 
       <div style={{ maxWidth:680, margin:"0 auto", padding:"12px 10px" }}>
 
+        {/* Instructions panel */}
+        <div style={{ background:C.creamDark, border:`2px solid ${C.creamBorder}`,
+          borderRadius:4, padding:"10px 14px", marginBottom:8 }}>
+          <div style={{ fontSize:12, color:C.brownDark, marginBottom:8, lineHeight:1.5 }}>
+            You have 5 rounds to name the starting offensive skill players from these NFL divisional round winners.
+          </div>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(5,1fr)", gap:4 }}>
+            {[
+              { r:1, text:"No hints" },
+              { r:2, text:"Jersey #, Height/Weight & Key Regular Season Stats" },
+              { r:3, text:"Last name initial revealed" },
+              { r:4, text:"First name initial revealed" },
+              { r:5, text:"Full first name revealed" },
+            ].map(({r, text})=>(
+              <div key={r} style={{
+                background: round === r && !gameOver ? C.brown : r < round ? C.creamBorder : C.cream,
+                border:`2px solid ${C.creamBorder}`, borderRadius:3, padding:"6px 6px",
+                opacity: gameOver ? 0.7 : 1,
+              }}>
+                <div style={{ fontSize:11, fontWeight:"bold", color: round===r&&!gameOver ? C.cream : C.brown, marginBottom:3 }}>
+                  Round {r}
+                </div>
+                <div style={{ fontSize:9, color: round===r&&!gameOver ? C.creamDark : C.brownDark, lineHeight:1.4 }}>
+                  {text}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Team card */}
         <div style={{ background:C.creamDark, border:`2px solid ${C.creamBorder}`,
           borderRadius:4, padding:"8px 12px", marginBottom:10,
@@ -611,14 +638,14 @@ export default function StartingO() {
             <div style={{ fontSize:10, color:C.brown, marginTop:1 }}>{challenge.year} · {challenge.conference} · {challenge.season_finish}</div>
           </div>
           <div style={{ textAlign:"right" }}>
-            <div style={{ display:"flex", gap:5, justifyContent:"flex-end" }}>
+            <div style={{ display:"flex", gap:6, justifyContent:"flex-end" }}>
               {Array.from({length:5}).map((_,i)=>(
-                <div key={i} style={{ width:10, height:10, borderRadius:"50%",
+                <div key={i} style={{ width:14, height:14, borderRadius:"50%",
                   background:i<round-1?C.brown:C.creamDark,
                   border:`2px solid ${C.creamBorder}` }} />
               ))}
             </div>
-            <div style={{ fontSize:9, color:C.brown, marginTop:3 }}>
+            <div style={{ fontSize:11, color:C.brown, marginTop:4, fontWeight:"bold", letterSpacing:1 }}>
               {gameOver ? "GAME OVER" : `ROUND ${round} OF 5`}
             </div>
           </div>
