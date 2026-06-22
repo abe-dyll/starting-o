@@ -48,10 +48,11 @@ function buildMask(name, round) {
     return Array(clean.length).fill("_").join(" ");
   };
 
-  if (round === 3) return `${fullBlank(first)}  ${blankLetters(rest)}`;
-  if (round === 4) return `${blankLetters(first)}  ${blankLetters(rest)}`;
-  if (round === 5) return `${first}  ${blankLetters(rest)}`;
-  return name;
+  // Always return [firstLinePart, lastLinePart] array for clean two-line rendering
+  if (round === 3) return [fullBlank(first), blankLetters(rest)];
+  if (round === 4) return [blankLetters(first), blankLetters(rest)];
+  if (round === 5) return [first, blankLetters(rest)];
+  return [name, ""];
 }
 
 // ── Catalog builder ───────────────────────────────────────────────────────────
@@ -213,15 +214,15 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
 
       {solved ? (
         <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
-          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brownDark, marginBottom:1 }}>#{player.jersey}</div>
-          <div style={{ fontSize:11, fontFamily:"'Courier New',monospace", color:C.brownDark, fontWeight:"bold", lineHeight:1.4 }}>
+          <div style={{ fontSize:10, fontFamily:"'Courier New',monospace", color:C.brownDark, marginBottom:2 }}>#{player.jersey}</div>
+          <div style={{ fontSize:13, fontFamily:"'Courier New',monospace", color:C.brownDark, fontWeight:"bold", lineHeight:1.45 }}>
             <div>{nameParts(player.name).first}</div>
             <div>{nameParts(player.name).last}</div>
           </div>
         </div>
       ) : pending ? (
         <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
-          <div style={{ fontSize:11, fontFamily:"'Courier New',monospace", color:"#1A3A6A", fontWeight:"bold", lineHeight:1.4 }}>
+          <div style={{ fontSize:13, fontFamily:"'Courier New',monospace", color:"#1A3A6A", fontWeight:"bold", lineHeight:1.45 }}>
             <div>{nameParts(pending).first}</div>
             <div>{nameParts(pending).last}</div>
           </div>
@@ -233,26 +234,31 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
         <div style={{ textAlign:"center" }}>
           {round >= 2 && player && (
             <div style={{ fontSize:7, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.4, marginBottom:2 }}>
-              {round >= 3 && <div style={{ whiteSpace:"pre", letterSpacing:0.5 }}>{buildMask(player.name, round)}</div>}
+              {round >= 3 && (() => {
+              const [fp, lp] = buildMask(player.name, round);
+              return <><div>{fp}</div><div>{lp}</div></>;
+            })()}
               <div>#{player.jersey} · {player.height}</div>
               <div>{player.weight}lb · {player.yards}yd · {player.tds}TD</div>
             </div>
           )}
-          <div style={{ fontSize:10, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.8, fontStyle:"italic", lineHeight:1.4 }}>
+          <div style={{ fontSize:12, fontFamily:"'Courier New',monospace", color:C.red, opacity:0.8, fontStyle:"italic", lineHeight:1.45 }}>
             <div>{nameParts(lastGuess).first}</div>
             <div>{nameParts(lastGuess).last}</div>
           </div>
         </div>
       ) : round >= 2 && player ? (
         <div style={{ textAlign:"center", padding:"0 3px", width:"100%" }}>
-          {round >= 3 && (
-            <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.brown, lineHeight:1.45, wordBreak:"break-word" }}>
-              {buildMask(player.name, round).split("  ").map((part, i) => (
-                <div key={i}>{part}</div>
-              ))}
-            </div>
-          )}
-          <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.5, marginTop:2 }}>
+          {round >= 3 && (() => {
+            const [firstPart, lastPart] = buildMask(player.name, round);
+            return (
+              <div style={{ fontSize:12, fontFamily:"'Courier New',monospace", color:C.brown, lineHeight:1.5, letterSpacing:0.5 }}>
+                <div>{firstPart}</div>
+                <div>{lastPart}</div>
+              </div>
+            );
+          })()}
+          <div style={{ fontSize:11, fontFamily:"'Courier New',monospace", color:C.brownDark, lineHeight:1.6, marginTop:3 }}>
             <div>#{player.jersey} · {player.height}</div>
             <div>{player.weight}lb</div>
             <div>{player.yards}yd · {player.tds}TD</div>
