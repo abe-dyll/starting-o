@@ -25,10 +25,10 @@ const REVEAL_ORDER = ["WR1", "QB", "TE", "WR2", "RB"]; // left-to-right
 // ── Field layout — wide 16:7 field, RB directly under QB ─────────────────────
 // Positions are in % of field width/height
 const LAYOUT = {
-  WR1: { left: "5%",  top: "35%", label: "WR" },
+  WR1: { left: "12%", top: "35%", label: "WR" },
   QB:  { left: "42%", top: "35%", label: "QB" },
   TE:  { left: "63%", top: "35%", label: "TE" },
-  WR2: { left: "90%", top: "35%", label: "WR" },
+  WR2: { left: "88%", top: "35%", label: "WR" },
   RB:  { left: "42%", top: "70%", label: "RB" },
 };
 
@@ -172,18 +172,18 @@ function AutocompleteInput({ posKey, catalog, onCommit, resetSignal }) {
 }
 
 // ── Player token ──────────────────────────────────────────────────────────────
-function PlayerToken({ posKey, player, solved, active, round, revealState, pending, onClick }) {
-  // revealState: null | "correct" | "wrong" (flash during reveal animation)
+function PlayerToken({ posKey, player, solved, active, round, revealState, pending, skipped, onClick }) {
   const flashGreen = revealState === "correct";
   const flashRed   = revealState === "wrong";
 
   let bg     = C.creamDark;
   let border = `2px solid ${C.creamBorder}`;
-  if (solved)     { bg = C.gold; }
-  if (active)     { bg = C.cream; border = `3px solid ${C.brown}`; }
-  if (flashGreen) { border = `4px solid ${C.green}`; bg = "#C8F0C8"; }
-  if (flashRed)   { border = `4px solid ${C.red}`;   bg = "#F0C8C8"; }
-  if (pending)    { border = `2px dashed ${C.brown}`; }
+  if (solved)     { bg = C.gold;      border = `2px solid ${C.creamBorder}`; }
+  if (skipped)    { bg = "#FFF8C0";   border = `3px solid #D4A017`; }        // yellow
+  if (pending)    { bg = "#C8DCF0";   border = `3px solid #3A6EA8`; }        // blue
+  if (active)     { bg = C.cream;     border = `3px solid ${C.brown}`; }
+  if (flashGreen) { bg = "#C8F0C8";   border = `4px solid ${C.green}`; }
+  if (flashRed)   { bg = "#F0C8C8";   border = `4px solid ${C.red}`; }
 
   return (
     <div onClick={!solved ? onClick : undefined}
@@ -221,7 +221,11 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
           </div>
         </div>
       ) : pending ? (
-        <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:C.brown, fontStyle:"italic" }}>staged</div>
+        <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:"#3A6EA8", fontWeight:"bold", textAlign:"center", wordBreak:"break-word", padding:"0 2px" }}>
+          {pending}
+        </div>
+      ) : skipped ? (
+        <div style={{ fontSize:8, fontFamily:"'Courier New',monospace", color:"#8B7000", fontStyle:"italic" }}>skip</div>
       ) : (
         <div style={{ fontSize:9, fontFamily:"'Courier New',monospace", color:C.brown, opacity:0.5 }}>?</div>
       )}
@@ -231,35 +235,14 @@ function PlayerToken({ posKey, player, solved, active, round, revealState, pendi
 
 // ── Football field ────────────────────────────────────────────────────────────
 function Field({ children }) {
-  // 16:7 aspect ratio, wide
   return (
     <div style={{ position:"relative", width:"100%", aspectRatio:"16/7",
       background:C.fieldGreen, borderRadius:6, border:`4px solid ${C.brown}`,
       overflow:"visible", boxShadow:`0 4px 24px ${C.shadow}` }}>
-      {/* Alternating stripes */}
-      {[0,1,2,3].map(i=>(
-        <div key={i} style={{ position:"absolute", top:`${i*25}%`, left:0, right:0,
-          height:"25%", background: i%2===0 ? C.fieldGreen : C.fieldStripe }} />
+      {Array.from({length:6}).map((_,i)=>(
+        <div key={i} style={{ position:"absolute", top:`${(i/6)*100}%`, left:0, right:0,
+          height:`${100/6}%`, background: i%2===0 ? C.fieldGreen : C.fieldStripe }} />
       ))}
-      {/* Yard lines horizontal */}
-      {[25,50,75].map(p=>(
-        <div key={p} style={{ position:"absolute", left:0, right:0, top:`${p}%`,
-          height:1, background:C.yardLine, zIndex:1 }} />
-      ))}
-      {/* Hash marks — two rows of short ticks, centered on field */}
-      {[20,40,60,80].map(top=>(
-        [38,62].map(left=>(
-          <div key={`${top}-${left}`} style={{ position:"absolute",
-            left:`${left}%`, top:`${top}%`,
-            width:10, height:2, background:C.yardLine,
-            transform:"translateX(-50%)", zIndex:1, opacity:0.5 }} />
-        ))
-      ))}
-      {/* End zones */}
-      <div style={{ position:"absolute", top:0, left:0, right:0, height:"10%",
-        background:"rgba(0,0,0,0.18)", borderBottom:`1px solid ${C.yardLine}`, zIndex:1 }} />
-      <div style={{ position:"absolute", bottom:0, left:0, right:0, height:"10%",
-        background:"rgba(0,0,0,0.18)", borderTop:`1px solid ${C.yardLine}`, zIndex:1 }} />
       {children}
     </div>
   );
@@ -662,7 +645,8 @@ export default function StartingO() {
               active={activePos===pos}
               round={round}
               revealState={revealStates[pos]||null}
-              pending={!!pending[pos]}
+              pending={pending[pos]||null}
+              skipped={!!skipped[pos]}
               onClick={()=>!gameOver&&!revealing&&setActivePos(activePos===pos?null:pos)}
             />
           ))}
@@ -710,15 +694,32 @@ export default function StartingO() {
               </div>
             )}
 
-            {/* Submit */}
-            <button onClick={submitRound}
-              style={{ width:"100%", padding:"9px 0",
-                fontFamily:"'Courier New',monospace", fontSize:13, fontWeight:"bold",
-                letterSpacing:2, textTransform:"uppercase",
-                background:C.brown, color:C.cream,
-                border:`2px solid ${C.creamBorder}`, borderRadius:3, cursor:"pointer" }}>
-              Submit Round {round}
-            </button>
+            {/* Submit — locked until every unsolved pos has a guess or skip */}
+            {(() => {
+              const unsolvedNow = POSITIONS.filter(p=>!solved[p]);
+              const allFilled = unsolvedNow.every(p=>pending[p]||skipped[p]);
+              return (
+                <>
+                  {!allFilled && (
+                    <div style={{ fontSize:9, fontFamily:"'Courier New',monospace",
+                      color:C.brown, textAlign:"center", marginBottom:6, opacity:0.8 }}>
+                      Enter a name or skip every position to submit
+                    </div>
+                  )}
+                  <button onClick={allFilled ? submitRound : undefined}
+                    style={{ width:"100%", padding:"9px 0",
+                      fontFamily:"'Courier New',monospace", fontSize:13, fontWeight:"bold",
+                      letterSpacing:2, textTransform:"uppercase",
+                      background:allFilled ? C.brown : C.creamDark,
+                      color:allFilled ? C.cream : C.creamBorder,
+                      border:`2px solid ${C.creamBorder}`, borderRadius:3,
+                      cursor:allFilled?"pointer":"default",
+                      opacity:allFilled?1:0.6 }}>
+                    Submit Round {round}
+                  </button>
+                </>
+              );
+            })()}
           </div>
         )}
 
