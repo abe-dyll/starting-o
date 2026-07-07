@@ -1,5 +1,53 @@
 <!doctype html>
-<html>
-  <head><title>NFL Starter Guessing Game</title></head>
-  <body><p>Coming soon.</p></body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NFL Divisional Daily Puzzle</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="puzzle-heading">Loading today's puzzle…</h1>
+      <div id="score-display">Score: 0/1000</div>
+
+      <div class="field">
+        <div class="field-row scrimmage">
+          <div class="slot" id="slot-WR1">
+            <label>WR1</label>
+            <div class="slot-content" id="content-WR1"></div>
+          </div>
+          <div class="slot" id="slot-QB">
+            <label>QB</label>
+            <div class="slot-content" id="content-QB"></div>
+          </div>
+          <div class="slot-group">
+            <div class="slot" id="slot-TE">
+              <label>TE</label>
+              <div class="slot-content" id="content-TE"></div>
+            </div>
+            <div class="slot" id="slot-WR2">
+              <label>WR2</label>
+              <div class="slot-content" id="content-WR2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="field-row backfield">
+          <div class="slot" id="slot-RB">
+            <label>RB</label>
+            <div class="slot-content" id="content-RB"></div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" id="submit-btn">Submit round</button>
+
+      <div id="share-section" hidden>
+        <button type="button" id="share-btn">Share results</button>
+        <span id="share-status"></span>
+      </div>
+    </main>
+    <script src="/shareText.js"></script>
+    <script src="/app.js"></script>
+  </body>
 </html>
