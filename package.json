@@ -2,7 +2,7 @@
   "name": "nfl-starter-guessing-game",
   "version": "1.0.0",
   "private": true,
-  "description": "Guess the starting QB/RB/WR/TE for a random NFL team and season.",
+  "description": "Guess the 5 starting skill players for one NFL divisional-round playoff winner, a new team each day.",
   "engines": {
     "node": ">=18"
   },
@@ -12,8 +12,7 @@
     "pull-data": "node scripts/pull-data.js"
   },
   "dependencies": {
-    "csv-parse": "^7.0.1",
-    "express": "^4.19.2"
+    "csv-parse": "^7.0.1"
   },
   "devDependencies": {
     "vercel": "^54.21.1"
