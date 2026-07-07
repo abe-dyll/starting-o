@@ -1,5 +1,11 @@
 # NFL Starter Guessing Game Implementation Plan
 
+> **Superseded after Task 8.** Tasks 1-8 below were implemented, then
+> reworked or removed by
+> [`2026-07-07-nfl-divisional-daily-puzzle.md`](2026-07-07-nfl-divisional-daily-puzzle.md)
+> (see that plan's Task 1 for exactly what was kept/changed/deleted).
+> Tasks 9-10 below were never implemented. Kept for history only.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a local full-stack app where each round shows a random NFL team+season and the user free-types guesses for the starting QB/RB/WR/TE, graded against real nflverse stat data.

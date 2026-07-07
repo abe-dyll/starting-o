@@ -1,5 +1,11 @@
 # NFL Starter Guessing Game — Design
 
+> **Superseded.** This design (local Express server, endless random
+> team+year, one-shot guesses) was replaced by
+> [`2026-07-07-nfl-divisional-daily-puzzle-design.md`](2026-07-07-nfl-divisional-daily-puzzle-design.md)
+> before the frontend/final tasks below were built. Kept for history —
+> do not implement against this version.
+
 ## Summary
 
 A local full-stack web app. Each round, the app picks a random NFL team and
