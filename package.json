@@ -7,10 +7,15 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "dev": "vercel dev",
+    "pull-data": "node scripts/pull-data.js"
   },
   "dependencies": {
     "csv-parse": "^7.0.1",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "vercel": "^54.21.1"
   }
 }
