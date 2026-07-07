@@ -1,0 +1,4034 @@
+[
+  {
+    "season": 2000,
+    "team": "BAL",
+    "teamName": "Baltimore Ravens",
+    "slots": {
+      "QB": {
+        "name": "Tony Banks",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 230,
+        "stat": "272 attempts"
+      },
+      "RB": {
+        "name": "Jamal Lewis",
+        "jersey": 31,
+        "height": "5'11\"",
+        "weight": 231,
+        "stat": "307 carries"
+      },
+      "WR1": {
+        "name": "Qadry Ismail",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "95 targets"
+      },
+      "WR2": {
+        "name": "Travis Taylor",
+        "jersey": 89,
+        "height": "6'1\"",
+        "weight": 200,
+        "stat": "55 targets"
+      },
+      "TE": {
+        "name": "Shannon Sharpe",
+        "jersey": 82,
+        "height": "6'2\"",
+        "weight": 232,
+        "stat": "105 targets"
+      }
+    }
+  },
+  {
+    "season": 2000,
+    "team": "MIN",
+    "teamName": "Minnesota Vikings",
+    "slots": {
+      "QB": {
+        "name": "Daunte Culpepper",
+        "jersey": 11,
+        "height": "6'4\"",
+        "weight": 266,
+        "stat": "469 attempts"
+      },
+      "RB": {
+        "name": "Robert Smith",
+        "jersey": 26,
+        "height": "6'2\"",
+        "weight": 210,
+        "stat": "293 carries"
+      },
+      "WR1": {
+        "name": "Cris Carter",
+        "jersey": 80,
+        "height": "6'3\"",
+        "weight": 208,
+        "stat": "158 targets"
+      },
+      "WR2": {
+        "name": "Randy Moss",
+        "jersey": 84,
+        "height": "6'4\"",
+        "weight": 198,
+        "stat": "126 targets"
+      },
+      "TE": {
+        "name": "John Davis",
+        "jersey": 86,
+        "height": "6'4\"",
+        "weight": 271,
+        "stat": "29 targets"
+      }
+    }
+  },
+  {
+    "season": 2000,
+    "team": "NYG",
+    "teamName": "New York Giants",
+    "slots": {
+      "QB": {
+        "name": "Kerry Collins",
+        "jersey": 5,
+        "height": "6'5\"",
+        "weight": 245,
+        "stat": "523 attempts"
+      },
+      "RB": {
+        "name": "Ron Dayne",
+        "jersey": 27,
+        "height": "5'10\"",
+        "weight": 253,
+        "stat": "226 carries"
+      },
+      "WR1": {
+        "name": "Amani Toomer",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 208,
+        "stat": "123 targets"
+      },
+      "WR2": {
+        "name": "Ike Hilliard",
+        "jersey": 88,
+        "height": "5'11\"",
+        "weight": 195,
+        "stat": "105 targets"
+      },
+      "TE": {
+        "name": "Pete Mitchell",
+        "jersey": 83,
+        "height": "6'2\"",
+        "weight": 248,
+        "stat": "37 targets"
+      }
+    }
+  },
+  {
+    "season": 2001,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 220,
+        "stat": "413 attempts"
+      },
+      "RB": {
+        "name": "Antowain Smith",
+        "jersey": 32,
+        "height": "6'2\"",
+        "weight": 230,
+        "stat": "287 carries"
+      },
+      "WR1": {
+        "name": "Troy Brown",
+        "jersey": 80,
+        "height": "5'10\"",
+        "weight": 193,
+        "stat": "142 targets"
+      },
+      "WR2": {
+        "name": "David Patten",
+        "jersey": 86,
+        "height": "5'10\"",
+        "weight": 190,
+        "stat": "93 targets"
+      },
+      "TE": {
+        "name": "Jermaine Wiggins",
+        "jersey": 85,
+        "height": "6'2\"",
+        "weight": 255,
+        "stat": "21 targets"
+      }
+    }
+  },
+  {
+    "season": 2001,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Donovan McNabb",
+        "jersey": 5,
+        "height": "6'2\"",
+        "weight": 226,
+        "stat": "493 attempts"
+      },
+      "RB": {
+        "name": "Duce Staley",
+        "jersey": 22,
+        "height": "5'11\"",
+        "weight": 220,
+        "stat": "166 carries"
+      },
+      "WR1": {
+        "name": "James Thrash",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "108 targets"
+      },
+      "WR2": {
+        "name": "Todd Pinkston",
+        "jersey": 87,
+        "height": "6'2\"",
+        "weight": 170,
+        "stat": "84 targets"
+      },
+      "TE": {
+        "name": "Chad Lewis",
+        "jersey": 89,
+        "height": "6'6\"",
+        "weight": 252,
+        "stat": "68 targets"
+      }
+    }
+  },
+  {
+    "season": 2001,
+    "team": "PIT",
+    "teamName": "Pittsburgh Steelers",
+    "slots": {
+      "QB": {
+        "name": "Kordell Stewart",
+        "jersey": 10,
+        "height": "6'1\"",
+        "weight": 217,
+        "stat": "442 attempts"
+      },
+      "RB": {
+        "name": "Jerome Bettis",
+        "jersey": 36,
+        "height": "5'11\"",
+        "weight": 255,
+        "stat": "225 carries"
+      },
+      "WR1": {
+        "name": "Hines Ward",
+        "jersey": 86,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "145 targets"
+      },
+      "WR2": {
+        "name": "Plaxico Burress",
+        "jersey": 80,
+        "height": "6'5\"",
+        "weight": 228,
+        "stat": "120 targets"
+      },
+      "TE": {
+        "name": "Mark Bruener",
+        "jersey": 87,
+        "height": "6'4\"",
+        "weight": 262,
+        "stat": "19 targets"
+      }
+    }
+  },
+  {
+    "season": 2002,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Donovan McNabb",
+        "jersey": 5,
+        "height": "6'2\"",
+        "weight": 226,
+        "stat": "361 attempts"
+      },
+      "RB": {
+        "name": "Duce Staley",
+        "jersey": 22,
+        "height": "5'11\"",
+        "weight": 220,
+        "stat": "269 carries"
+      },
+      "WR1": {
+        "name": "Todd Pinkston",
+        "jersey": 87,
+        "height": "6'2\"",
+        "weight": 174,
+        "stat": "113 targets"
+      },
+      "WR2": {
+        "name": "James Thrash",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "107 targets"
+      },
+      "TE": {
+        "name": "Chad Lewis",
+        "jersey": 89,
+        "height": "6'6\"",
+        "weight": 252,
+        "stat": "67 targets"
+      }
+    }
+  },
+  {
+    "season": 2002,
+    "team": "TB",
+    "teamName": "Tampa Bay Buccaneers",
+    "slots": {
+      "QB": {
+        "name": "Brad Johnson",
+        "jersey": 14,
+        "height": "6'5\"",
+        "weight": 226,
+        "stat": "451 attempts"
+      },
+      "RB": {
+        "name": "Michael Pittman",
+        "jersey": 32,
+        "height": "6'0\"",
+        "weight": 218,
+        "stat": "204 carries"
+      },
+      "WR1": {
+        "name": "Keyshawn Johnson",
+        "jersey": 19,
+        "height": "6'4\"",
+        "weight": 212,
+        "stat": "142 targets"
+      },
+      "WR2": {
+        "name": "Keenan McCardell",
+        "jersey": 87,
+        "height": "6'1\"",
+        "weight": 191,
+        "stat": "101 targets"
+      },
+      "TE": {
+        "name": "Ken Dilger",
+        "jersey": 85,
+        "height": "6'5\"",
+        "weight": 250,
+        "stat": "48 targets"
+      }
+    }
+  },
+  {
+    "season": 2002,
+    "team": "TEN",
+    "teamName": "Tennessee Titans",
+    "slots": {
+      "QB": {
+        "name": "Steve McNair",
+        "jersey": 9,
+        "height": "6'2\"",
+        "weight": 229,
+        "stat": "492 attempts"
+      },
+      "RB": {
+        "name": "Eddie George",
+        "jersey": 27,
+        "height": "6'3\"",
+        "weight": 236,
+        "stat": "343 carries"
+      },
+      "WR1": {
+        "name": "Derrick Mason",
+        "jersey": 85,
+        "height": "5'10\"",
+        "weight": 192,
+        "stat": "125 targets"
+      },
+      "WR2": {
+        "name": "Kevin Dyson",
+        "jersey": 87,
+        "height": "6'1\"",
+        "weight": 208,
+        "stat": "69 targets"
+      },
+      "TE": {
+        "name": "Frank Wycheck",
+        "jersey": 89,
+        "height": "6'3\"",
+        "weight": 253,
+        "stat": "66 targets"
+      }
+    }
+  },
+  {
+    "season": 2003,
+    "team": "CAR",
+    "teamName": "Carolina Panthers",
+    "slots": {
+      "QB": {
+        "name": "Jake Delhomme",
+        "jersey": 17,
+        "height": "6'2\"",
+        "weight": 215,
+        "stat": "449 attempts"
+      },
+      "RB": {
+        "name": "Stephen Davis",
+        "jersey": 48,
+        "height": "6'0\"",
+        "weight": 230,
+        "stat": "318 carries"
+      },
+      "WR1": {
+        "name": "Steve Smith",
+        "jersey": 89,
+        "height": "5'9\"",
+        "weight": 185,
+        "stat": "88 targets"
+      },
+      "WR2": {
+        "name": "Muhsin Muhammad",
+        "jersey": 87,
+        "height": "6'2\"",
+        "weight": 217,
+        "stat": "54 targets"
+      },
+      "TE": {
+        "name": "Kris Mangum",
+        "jersey": 86,
+        "height": "6'4\"",
+        "weight": 252,
+        "stat": "17 targets"
+      }
+    }
+  },
+  {
+    "season": 2003,
+    "team": "IND",
+    "teamName": "Indianapolis Colts",
+    "slots": {
+      "QB": {
+        "name": "Peyton Manning",
+        "jersey": 18,
+        "height": "6'5\"",
+        "weight": 230,
+        "stat": "566 attempts"
+      },
+      "RB": {
+        "name": "Edgerrin James",
+        "jersey": 32,
+        "height": "6'0\"",
+        "weight": 214,
+        "stat": "309 carries"
+      },
+      "WR1": {
+        "name": "Marvin Harrison",
+        "jersey": 88,
+        "height": "6'0\"",
+        "weight": 175,
+        "stat": "94 targets"
+      },
+      "WR2": {
+        "name": "Reggie Wayne",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 203,
+        "stat": "68 targets"
+      },
+      "TE": {
+        "name": "Marcus Pollard",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 247,
+        "stat": "40 targets"
+      }
+    }
+  },
+  {
+    "season": 2003,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "528 attempts"
+      },
+      "RB": {
+        "name": "Antowain Smith",
+        "jersey": 32,
+        "height": "6'2\"",
+        "weight": 232,
+        "stat": "182 carries"
+      },
+      "WR1": {
+        "name": "Deion Branch",
+        "jersey": 83,
+        "height": "5'9\"",
+        "weight": 193,
+        "stat": "57 targets"
+      },
+      "WR2": {
+        "name": "Troy Brown",
+        "jersey": 80,
+        "height": "5'10\"",
+        "weight": 196,
+        "stat": "40 targets"
+      },
+      "TE": {
+        "name": "Daniel Graham",
+        "jersey": 82,
+        "height": "6'3\"",
+        "weight": 257,
+        "stat": "38 targets"
+      }
+    }
+  },
+  {
+    "season": 2003,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Donovan McNabb",
+        "jersey": 5,
+        "height": "6'2\"",
+        "weight": 240,
+        "stat": "479 attempts"
+      },
+      "RB": {
+        "name": "Correll Buckhalter",
+        "jersey": 28,
+        "height": "6'0\"",
+        "weight": 222,
+        "stat": "126 carries"
+      },
+      "WR1": {
+        "name": "James Thrash",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "49 targets"
+      },
+      "WR2": {
+        "name": "Todd Pinkston",
+        "jersey": 87,
+        "height": "6'2\"",
+        "weight": 174,
+        "stat": "36 targets"
+      },
+      "TE": {
+        "name": "L.J. Smith",
+        "jersey": 82,
+        "height": "6'3\"",
+        "weight": 258,
+        "stat": "27 targets"
+      }
+    }
+  },
+  {
+    "season": 2004,
+    "team": "ATL",
+    "teamName": "Atlanta Falcons",
+    "slots": {
+      "QB": {
+        "name": "Mike Vick",
+        "jersey": 7,
+        "height": "6'0\"",
+        "weight": 215,
+        "stat": "321 attempts"
+      },
+      "RB": {
+        "name": "Warrick Dunn",
+        "jersey": 28,
+        "height": "5'9\"",
+        "weight": 180,
+        "stat": "265 carries"
+      },
+      "WR1": {
+        "name": "Peerless Price",
+        "jersey": 81,
+        "height": "5'11\"",
+        "weight": 190,
+        "stat": "45 targets"
+      },
+      "WR2": {
+        "name": "Dez White",
+        "jersey": 89,
+        "height": "6'1\"",
+        "weight": 215,
+        "stat": "30 targets"
+      },
+      "TE": {
+        "name": "Alge Crumpler",
+        "jersey": 83,
+        "height": "6'2\"",
+        "weight": 262,
+        "stat": "48 targets"
+      }
+    }
+  },
+  {
+    "season": 2004,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "474 attempts"
+      },
+      "RB": {
+        "name": "Corey Dillon",
+        "jersey": 28,
+        "height": "6'1\"",
+        "weight": 225,
+        "stat": "345 carries"
+      },
+      "WR1": {
+        "name": "David Givens",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 215,
+        "stat": "56 targets"
+      },
+      "WR2": {
+        "name": "David Patten",
+        "jersey": 86,
+        "height": "5'10\"",
+        "weight": 190,
+        "stat": "44 targets"
+      },
+      "TE": {
+        "name": "Daniel Graham",
+        "jersey": 82,
+        "height": "6'3\"",
+        "weight": 257,
+        "stat": "30 targets"
+      }
+    }
+  },
+  {
+    "season": 2004,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Donovan McNabb",
+        "jersey": 5,
+        "height": "6'2\"",
+        "weight": 240,
+        "stat": "469 attempts"
+      },
+      "RB": {
+        "name": "Brian Westbrook",
+        "jersey": 36,
+        "height": "5'10\"",
+        "weight": 205,
+        "stat": "178 carries"
+      },
+      "WR1": {
+        "name": "Terrell Owens",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 226,
+        "stat": "77 targets"
+      },
+      "WR2": {
+        "name": "Todd Pinkston",
+        "jersey": 87,
+        "height": "6'3\"",
+        "weight": 180,
+        "stat": "36 targets"
+      },
+      "TE": {
+        "name": "L.J. Smith",
+        "jersey": 82,
+        "height": "6'3\"",
+        "weight": 258,
+        "stat": "34 targets"
+      }
+    }
+  },
+  {
+    "season": 2004,
+    "team": "PIT",
+    "teamName": "Pittsburgh Steelers",
+    "slots": {
+      "QB": {
+        "name": "Ben Roethlisberger",
+        "jersey": 7,
+        "height": "6'4\"",
+        "weight": 241,
+        "stat": "295 attempts"
+      },
+      "RB": {
+        "name": "Jerome Bettis",
+        "jersey": 36,
+        "height": "5'11\"",
+        "weight": 255,
+        "stat": "250 carries"
+      },
+      "WR1": {
+        "name": "Hines Ward",
+        "jersey": 86,
+        "height": "6'0\"",
+        "weight": 215,
+        "stat": "80 targets"
+      },
+      "WR2": {
+        "name": "Plaxico Burress",
+        "jersey": 80,
+        "height": "6'5\"",
+        "weight": 226,
+        "stat": "35 targets"
+      },
+      "TE": {
+        "name": "Jerame Tuman",
+        "jersey": 84,
+        "height": "6'4\"",
+        "weight": 253,
+        "stat": "9 targets"
+      }
+    }
+  },
+  {
+    "season": 2005,
+    "team": "CAR",
+    "teamName": "Carolina Panthers",
+    "slots": {
+      "QB": {
+        "name": "Jake Delhomme",
+        "jersey": 17,
+        "height": "6'2\"",
+        "weight": 215,
+        "stat": "435 attempts"
+      },
+      "RB": {
+        "name": "DeShaun Foster",
+        "jersey": 26,
+        "height": "6'0\"",
+        "weight": 222,
+        "stat": "206 carries"
+      },
+      "WR1": {
+        "name": "Steve Smith",
+        "jersey": 89,
+        "height": "5'9\"",
+        "weight": 185,
+        "stat": "103 targets"
+      },
+      "WR2": {
+        "name": "Ricky Proehl",
+        "jersey": 81,
+        "height": "6'0\"",
+        "weight": 190,
+        "stat": "25 targets"
+      },
+      "TE": {
+        "name": "Kris Mangum",
+        "jersey": 86,
+        "height": "6'4\"",
+        "weight": 252,
+        "stat": "23 targets"
+      }
+    }
+  },
+  {
+    "season": 2005,
+    "team": "DEN",
+    "teamName": "Denver Broncos",
+    "slots": {
+      "QB": {
+        "name": "Jake Plummer",
+        "jersey": 16,
+        "height": "6'2\"",
+        "weight": 212,
+        "stat": "456 attempts"
+      },
+      "RB": {
+        "name": "Mike Anderson",
+        "jersey": 38,
+        "height": "6'0\"",
+        "weight": 230,
+        "stat": "239 carries"
+      },
+      "WR1": {
+        "name": "Rod Smith",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "85 targets"
+      },
+      "WR2": {
+        "name": "Ashley Lelie",
+        "jersey": 85,
+        "height": "6'3\"",
+        "weight": 200,
+        "stat": "42 targets"
+      },
+      "TE": {
+        "name": "Jeb Putzier",
+        "jersey": 88,
+        "height": "6'4\"",
+        "weight": 256,
+        "stat": "37 targets"
+      }
+    }
+  },
+  {
+    "season": 2005,
+    "team": "PIT",
+    "teamName": "Pittsburgh Steelers",
+    "slots": {
+      "QB": {
+        "name": "Ben Roethlisberger",
+        "jersey": 7,
+        "height": "6'5\"",
+        "weight": 241,
+        "stat": "268 attempts"
+      },
+      "RB": {
+        "name": "Willie Parker",
+        "jersey": 39,
+        "height": "5'10\"",
+        "weight": 209,
+        "stat": "255 carries"
+      },
+      "WR1": {
+        "name": "Hines Ward",
+        "jersey": 86,
+        "height": "6'0\"",
+        "weight": 215,
+        "stat": "69 targets"
+      },
+      "WR2": {
+        "name": "Cedrick Wilson",
+        "jersey": 80,
+        "height": "5'10\"",
+        "weight": 183,
+        "stat": "26 targets"
+      },
+      "TE": {
+        "name": "Heath Miller",
+        "jersey": 83,
+        "height": "6'5\"",
+        "weight": 256,
+        "stat": "39 targets"
+      }
+    }
+  },
+  {
+    "season": 2005,
+    "team": "SEA",
+    "teamName": "Seattle Seahawks",
+    "slots": {
+      "QB": {
+        "name": "Matt Hasselbeck",
+        "jersey": 8,
+        "height": "6'4\"",
+        "weight": 223,
+        "stat": "450 attempts"
+      },
+      "RB": {
+        "name": "Shaun Alexander",
+        "jersey": 37,
+        "height": "5'11\"",
+        "weight": 225,
+        "stat": "370 carries"
+      },
+      "WR1": {
+        "name": "Bobby Engram",
+        "jersey": 84,
+        "height": "5'10\"",
+        "weight": 188,
+        "stat": "67 targets"
+      },
+      "WR2": {
+        "name": "Joe Jurevicius",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 230,
+        "stat": "55 targets"
+      },
+      "TE": {
+        "name": "Jerramy Stevens",
+        "jersey": 86,
+        "height": "6'7\"",
+        "weight": 260,
+        "stat": "45 targets"
+      }
+    }
+  },
+  {
+    "season": 2006,
+    "team": "CHI",
+    "teamName": "Chicago Bears",
+    "slots": {
+      "QB": {
+        "name": "Rex Grossman",
+        "jersey": 8,
+        "height": "6'1\"",
+        "weight": 217,
+        "stat": "480 attempts"
+      },
+      "RB": {
+        "name": "Thomas Jones",
+        "jersey": 20,
+        "height": "5'10\"",
+        "weight": 220,
+        "stat": "297 carries"
+      },
+      "WR1": {
+        "name": "Muhsin Muhammad",
+        "jersey": 87,
+        "height": "6'2\"",
+        "weight": 215,
+        "stat": "60 targets"
+      },
+      "WR2": {
+        "name": "Bernard Berrian",
+        "jersey": 80,
+        "height": "6'1\"",
+        "weight": 180,
+        "stat": "51 targets"
+      },
+      "TE": {
+        "name": "Desmond Clark",
+        "jersey": 88,
+        "height": "6'3\"",
+        "weight": 254,
+        "stat": "45 targets"
+      }
+    }
+  },
+  {
+    "season": 2006,
+    "team": "IND",
+    "teamName": "Indianapolis Colts",
+    "slots": {
+      "QB": {
+        "name": "Peyton Manning",
+        "jersey": 18,
+        "height": "6'5\"",
+        "weight": 230,
+        "stat": "557 attempts"
+      },
+      "RB": {
+        "name": "Joseph Addai",
+        "jersey": 29,
+        "height": "5'11\"",
+        "weight": 214,
+        "stat": "226 carries"
+      },
+      "WR1": {
+        "name": "Marvin Harrison",
+        "jersey": 88,
+        "height": "6'0\"",
+        "weight": 185,
+        "stat": "95 targets"
+      },
+      "WR2": {
+        "name": "Reggie Wayne",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 198,
+        "stat": "86 targets"
+      },
+      "TE": {
+        "name": "Ben Utecht",
+        "jersey": 86,
+        "height": "6'6\"",
+        "weight": 251,
+        "stat": "37 targets"
+      }
+    }
+  },
+  {
+    "season": 2006,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "517 attempts"
+      },
+      "RB": {
+        "name": "Corey Dillon",
+        "jersey": 28,
+        "height": "6'1\"",
+        "weight": 225,
+        "stat": "199 carries"
+      },
+      "WR1": {
+        "name": "Reche Caldwell",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 210,
+        "stat": "61 targets"
+      },
+      "WR2": {
+        "name": "Troy Brown",
+        "jersey": 80,
+        "height": "5'10\"",
+        "weight": 196,
+        "stat": "44 targets"
+      },
+      "TE": {
+        "name": "Benjamin Watson",
+        "jersey": 84,
+        "height": "6'3\"",
+        "weight": 255,
+        "stat": "50 targets"
+      }
+    }
+  },
+  {
+    "season": 2006,
+    "team": "NO",
+    "teamName": "New Orleans Saints",
+    "slots": {
+      "QB": {
+        "name": "Drew Brees",
+        "jersey": 9,
+        "height": "6'0\"",
+        "weight": 209,
+        "stat": "555 attempts"
+      },
+      "RB": {
+        "name": "Deuce McAllister",
+        "jersey": 26,
+        "height": "6'1\"",
+        "weight": 232,
+        "stat": "245 carries"
+      },
+      "WR1": {
+        "name": "Marques Colston",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 231,
+        "stat": "70 targets"
+      },
+      "WR2": {
+        "name": "Joe Horn",
+        "jersey": 87,
+        "height": "6'1\"",
+        "weight": 213,
+        "stat": "37 targets"
+      },
+      "TE": {
+        "name": "Mark Campbell",
+        "jersey": 80,
+        "height": "6'6\"",
+        "weight": 260,
+        "stat": "18 targets"
+      }
+    }
+  },
+  {
+    "season": 2007,
+    "team": "GB",
+    "teamName": "Green Bay Packers",
+    "slots": {
+      "QB": {
+        "name": "Brett Favre",
+        "jersey": 4,
+        "height": "6'2\"",
+        "weight": 222,
+        "stat": "535 attempts"
+      },
+      "RB": {
+        "name": "Ryan Grant",
+        "jersey": 25,
+        "height": "6'1\"",
+        "weight": 224,
+        "stat": "188 carries"
+      },
+      "WR1": {
+        "name": "Donald Driver",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 190,
+        "stat": "83 targets"
+      },
+      "WR2": {
+        "name": "Greg Jennings",
+        "jersey": 85,
+        "height": "5'11\"",
+        "weight": 197,
+        "stat": "53 targets"
+      },
+      "TE": {
+        "name": "Donald Lee",
+        "jersey": 86,
+        "height": "6'4\"",
+        "weight": 248,
+        "stat": "48 targets"
+      }
+    }
+  },
+  {
+    "season": 2007,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "578 attempts"
+      },
+      "RB": {
+        "name": "Laurence Maroney",
+        "jersey": 39,
+        "height": "5'11\"",
+        "weight": 220,
+        "stat": "185 carries"
+      },
+      "WR1": {
+        "name": "Wes Welker",
+        "jersey": 83,
+        "height": "5'9\"",
+        "weight": 185,
+        "stat": "112 targets"
+      },
+      "WR2": {
+        "name": "Randy Moss",
+        "jersey": 81,
+        "height": "6'4\"",
+        "weight": 210,
+        "stat": "98 targets"
+      },
+      "TE": {
+        "name": "Benjamin Watson",
+        "jersey": 84,
+        "height": "6'3\"",
+        "weight": 255,
+        "stat": "36 targets"
+      }
+    }
+  },
+  {
+    "season": 2007,
+    "team": "NYG",
+    "teamName": "New York Giants",
+    "slots": {
+      "QB": {
+        "name": "Eli Manning",
+        "jersey": 10,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "528 attempts"
+      },
+      "RB": {
+        "name": "Brandon Jacobs",
+        "jersey": 27,
+        "height": "6'4\"",
+        "weight": 264,
+        "stat": "200 carries"
+      },
+      "WR1": {
+        "name": "Plaxico Burress",
+        "jersey": 17,
+        "height": "6'5\"",
+        "weight": 232,
+        "stat": "70 targets"
+      },
+      "WR2": {
+        "name": "Amani Toomer",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 203,
+        "stat": "59 targets"
+      },
+      "TE": {
+        "name": "Jeremy Shockey",
+        "jersey": 80,
+        "height": "6'5\"",
+        "weight": 251,
+        "stat": "57 targets"
+      }
+    }
+  },
+  {
+    "season": 2008,
+    "team": "ARI",
+    "teamName": "Arizona Cardinals",
+    "slots": {
+      "QB": {
+        "name": "Kurt Warner",
+        "jersey": 13,
+        "height": "6'2\"",
+        "weight": 218,
+        "stat": "599 attempts"
+      },
+      "RB": {
+        "name": "Tim Hightower",
+        "jersey": 34,
+        "height": "6'0\"",
+        "weight": 224,
+        "stat": "143 carries"
+      },
+      "WR1": {
+        "name": "Larry Fitzgerald",
+        "jersey": 11,
+        "height": "6'3\"",
+        "weight": 220,
+        "stat": "96 targets"
+      },
+      "WR2": {
+        "name": "Anquan Boldin",
+        "jersey": 81,
+        "height": "6'1\"",
+        "weight": 217,
+        "stat": "89 targets"
+      },
+      "TE": {
+        "name": "Ben Patrick",
+        "jersey": 89,
+        "height": "6'3\"",
+        "weight": 260,
+        "stat": "12 targets"
+      }
+    }
+  },
+  {
+    "season": 2008,
+    "team": "BAL",
+    "teamName": "Baltimore Ravens",
+    "slots": {
+      "QB": {
+        "name": "Joe Flacco",
+        "jersey": 5,
+        "height": "6'6\"",
+        "weight": 230,
+        "stat": "428 attempts"
+      },
+      "RB": {
+        "name": "Willis McGahee",
+        "jersey": 23,
+        "height": "6'0\"",
+        "weight": 232,
+        "stat": "170 carries"
+      },
+      "WR1": {
+        "name": "Derrick Mason",
+        "jersey": 85,
+        "height": "5'10\"",
+        "weight": 192,
+        "stat": "80 targets"
+      },
+      "WR2": {
+        "name": "Mark Clayton",
+        "jersey": 89,
+        "height": "5'10\"",
+        "weight": 190,
+        "stat": "41 targets"
+      },
+      "TE": {
+        "name": "Todd Heap",
+        "jersey": 86,
+        "height": "6'5\"",
+        "weight": 250,
+        "stat": "36 targets"
+      }
+    }
+  },
+  {
+    "season": 2008,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Donovan McNabb",
+        "jersey": 5,
+        "height": "6'2\"",
+        "weight": 240,
+        "stat": "571 attempts"
+      },
+      "RB": {
+        "name": "Brian Westbrook",
+        "jersey": 36,
+        "height": "5'10\"",
+        "weight": 203,
+        "stat": "233 carries"
+      },
+      "WR1": {
+        "name": "DeSean Jackson",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 175,
+        "stat": "62 targets"
+      },
+      "WR2": {
+        "name": "Kevin Curtis",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 186,
+        "stat": "33 targets"
+      },
+      "TE": {
+        "name": "L.J. Smith",
+        "jersey": 82,
+        "height": "6'3\"",
+        "weight": 258,
+        "stat": "37 targets"
+      }
+    }
+  },
+  {
+    "season": 2008,
+    "team": "PIT",
+    "teamName": "Pittsburgh Steelers",
+    "slots": {
+      "QB": {
+        "name": "Ben Roethlisberger",
+        "jersey": 7,
+        "height": "6'5\"",
+        "weight": 241,
+        "stat": "470 attempts"
+      },
+      "RB": {
+        "name": "Willie Parker",
+        "jersey": 39,
+        "height": "5'10\"",
+        "weight": 209,
+        "stat": "209 carries"
+      },
+      "WR1": {
+        "name": "Hines Ward",
+        "jersey": 86,
+        "height": "6'0\"",
+        "weight": 205,
+        "stat": "82 targets"
+      },
+      "WR2": {
+        "name": "Santonio Holmes",
+        "jersey": 10,
+        "height": "5'11\"",
+        "weight": 192,
+        "stat": "55 targets"
+      },
+      "TE": {
+        "name": "Heath Miller",
+        "jersey": 83,
+        "height": "6'5\"",
+        "weight": 256,
+        "stat": "48 targets"
+      }
+    }
+  },
+  {
+    "season": 2009,
+    "team": "IND",
+    "teamName": "Indianapolis Colts",
+    "slots": {
+      "QB": {
+        "name": "Peyton Manning",
+        "jersey": 18,
+        "height": "6'5\"",
+        "weight": 230,
+        "stat": "571 attempts"
+      },
+      "RB": {
+        "name": "Joseph Addai",
+        "jersey": 29,
+        "height": "5'11\"",
+        "weight": 214,
+        "stat": "219 carries"
+      },
+      "WR1": {
+        "name": "Reggie Wayne",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 198,
+        "stat": "149 targets"
+      },
+      "WR2": {
+        "name": "Pierre Garcon",
+        "jersey": 85,
+        "height": "6'0\"",
+        "weight": 210,
+        "stat": "92 targets"
+      },
+      "TE": {
+        "name": "Dallas Clark",
+        "jersey": 44,
+        "height": "6'3\"",
+        "weight": 252,
+        "stat": "132 targets"
+      }
+    }
+  },
+  {
+    "season": 2009,
+    "team": "MIN",
+    "teamName": "Minnesota Vikings",
+    "slots": {
+      "QB": {
+        "name": "Brett Favre",
+        "jersey": 4,
+        "height": "6'2\"",
+        "weight": 222,
+        "stat": "532 attempts"
+      },
+      "RB": {
+        "name": "Adrian Peterson",
+        "jersey": 28,
+        "height": "6'1\"",
+        "weight": 217,
+        "stat": "315 carries"
+      },
+      "WR1": {
+        "name": "Sidney Rice",
+        "jersey": 18,
+        "height": "6'4\"",
+        "weight": 202,
+        "stat": "122 targets"
+      },
+      "WR2": {
+        "name": "Bernard Berrian",
+        "jersey": 87,
+        "height": "6'1\"",
+        "weight": 185,
+        "stat": "92 targets"
+      },
+      "TE": {
+        "name": "Visanthe Shiancoe",
+        "jersey": 81,
+        "height": "6'4\"",
+        "weight": 250,
+        "stat": "79 targets"
+      }
+    }
+  },
+  {
+    "season": 2009,
+    "team": "NO",
+    "teamName": "New Orleans Saints",
+    "slots": {
+      "QB": {
+        "name": "Drew Brees",
+        "jersey": 9,
+        "height": "6'0\"",
+        "weight": 209,
+        "stat": "514 attempts"
+      },
+      "RB": {
+        "name": "Mike Bell",
+        "jersey": 21,
+        "height": "6'0\"",
+        "weight": 225,
+        "stat": "172 carries"
+      },
+      "WR1": {
+        "name": "Marques Colston",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "106 targets"
+      },
+      "WR2": {
+        "name": "Devery Henderson",
+        "jersey": 19,
+        "height": "5'11\"",
+        "weight": 200,
+        "stat": "83 targets"
+      },
+      "TE": {
+        "name": "Jeremy Shockey",
+        "jersey": 88,
+        "height": "6'5\"",
+        "weight": 251,
+        "stat": "67 targets"
+      }
+    }
+  },
+  {
+    "season": 2009,
+    "team": "NYJ",
+    "teamName": "New York Jets",
+    "slots": {
+      "QB": {
+        "name": "Mark Sanchez",
+        "jersey": 6,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "363 attempts"
+      },
+      "RB": {
+        "name": "Thomas Jones",
+        "jersey": 20,
+        "height": "5'10\"",
+        "weight": 212,
+        "stat": "332 carries"
+      },
+      "WR1": {
+        "name": "Jerricho Cotchery",
+        "jersey": 89,
+        "height": "6'0\"",
+        "weight": 203,
+        "stat": "96 targets"
+      },
+      "WR2": {
+        "name": "Braylon Edwards",
+        "jersey": 17,
+        "height": "6'3\"",
+        "weight": 215,
+        "stat": "72 targets"
+      },
+      "TE": {
+        "name": "Dustin Keller",
+        "jersey": 81,
+        "height": "6'2\"",
+        "weight": 248,
+        "stat": "82 targets"
+      }
+    }
+  },
+  {
+    "season": 2010,
+    "team": "CHI",
+    "teamName": "Chicago Bears",
+    "slots": {
+      "QB": {
+        "name": "Jay Cutler",
+        "jersey": 6,
+        "height": "6'3\"",
+        "weight": 233,
+        "stat": "432 attempts"
+      },
+      "RB": {
+        "name": "Matt Forte",
+        "jersey": 22,
+        "height": "6'2\"",
+        "weight": 218,
+        "stat": "237 carries"
+      },
+      "WR1": {
+        "name": "Johnny Knox",
+        "jersey": 13,
+        "height": "6'0\"",
+        "weight": 185,
+        "stat": "99 targets"
+      },
+      "WR2": {
+        "name": "Devin Hester",
+        "jersey": 23,
+        "height": "5'11\"",
+        "weight": 190,
+        "stat": "73 targets"
+      },
+      "TE": {
+        "name": "Greg Olsen",
+        "jersey": 82,
+        "height": "6'5\"",
+        "weight": 255,
+        "stat": "69 targets"
+      }
+    }
+  },
+  {
+    "season": 2010,
+    "team": "GB",
+    "teamName": "Green Bay Packers",
+    "slots": {
+      "QB": {
+        "name": "Aaron Rodgers",
+        "jersey": 12,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "475 attempts"
+      },
+      "RB": {
+        "name": "Brandon Jackson",
+        "jersey": 32,
+        "height": "5'10\"",
+        "weight": 216,
+        "stat": "190 carries"
+      },
+      "WR1": {
+        "name": "Greg Jennings",
+        "jersey": 85,
+        "height": "5'11\"",
+        "weight": 198,
+        "stat": "125 targets"
+      },
+      "WR2": {
+        "name": "James Jones",
+        "jersey": 89,
+        "height": "6'1\"",
+        "weight": 208,
+        "stat": "87 targets"
+      },
+      "TE": {
+        "name": "Andrew Quarless",
+        "jersey": 81,
+        "height": "6'4\"",
+        "weight": 252,
+        "stat": "33 targets"
+      }
+    }
+  },
+  {
+    "season": 2010,
+    "team": "NYJ",
+    "teamName": "New York Jets",
+    "slots": {
+      "QB": {
+        "name": "Mark Sanchez",
+        "jersey": 6,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "507 attempts"
+      },
+      "RB": {
+        "name": "LaDainian Tomlinson",
+        "jersey": 21,
+        "height": "5'10\"",
+        "weight": 215,
+        "stat": "219 carries"
+      },
+      "WR1": {
+        "name": "Braylon Edwards",
+        "jersey": 17,
+        "height": "6'3\"",
+        "weight": 214,
+        "stat": "101 targets"
+      },
+      "WR2": {
+        "name": "Santonio Holmes",
+        "jersey": 10,
+        "height": "5'11\"",
+        "weight": 192,
+        "stat": "96 targets"
+      },
+      "TE": {
+        "name": "Dustin Keller",
+        "jersey": 81,
+        "height": "6'2\"",
+        "weight": 250,
+        "stat": "100 targets"
+      }
+    }
+  },
+  {
+    "season": 2010,
+    "team": "PIT",
+    "teamName": "Pittsburgh Steelers",
+    "slots": {
+      "QB": {
+        "name": "Ben Roethlisberger",
+        "jersey": 7,
+        "height": "6'5\"",
+        "weight": 241,
+        "stat": "389 attempts"
+      },
+      "RB": {
+        "name": "Rashard Mendenhall",
+        "jersey": 34,
+        "height": "5'10\"",
+        "weight": 225,
+        "stat": "324 carries"
+      },
+      "WR1": {
+        "name": "Mike Wallace",
+        "jersey": 17,
+        "height": "6'0\"",
+        "weight": 199,
+        "stat": "98 targets"
+      },
+      "WR2": {
+        "name": "Hines Ward",
+        "jersey": 86,
+        "height": "6'0\"",
+        "weight": 205,
+        "stat": "93 targets"
+      },
+      "TE": {
+        "name": "Heath Miller",
+        "jersey": 83,
+        "height": "6'5\"",
+        "weight": 256,
+        "stat": "67 targets"
+      }
+    }
+  },
+  {
+    "season": 2011,
+    "team": "BAL",
+    "teamName": "Baltimore Ravens",
+    "slots": {
+      "QB": {
+        "name": "Joe Flacco",
+        "jersey": 5,
+        "height": "6'6\"",
+        "weight": 245,
+        "stat": "542 attempts"
+      },
+      "RB": {
+        "name": "Ray Rice",
+        "jersey": 27,
+        "height": "5'8\"",
+        "weight": 212,
+        "stat": "291 carries"
+      },
+      "WR1": {
+        "name": "Anquan Boldin",
+        "jersey": 81,
+        "height": "6'1\"",
+        "weight": 223,
+        "stat": "106 targets"
+      },
+      "WR2": {
+        "name": "Torrey Smith",
+        "jersey": 82,
+        "height": "6'1\"",
+        "weight": 205,
+        "stat": "96 targets"
+      },
+      "TE": {
+        "name": "Ed Dickson",
+        "jersey": 84,
+        "height": "6'4\"",
+        "weight": 255,
+        "stat": "89 targets"
+      }
+    }
+  },
+  {
+    "season": 2011,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "611 attempts"
+      },
+      "RB": {
+        "name": "BenJarvus Green-Ellis",
+        "jersey": 42,
+        "height": "5'11\"",
+        "weight": 215,
+        "stat": "181 carries"
+      },
+      "WR1": {
+        "name": "Wes Welker",
+        "jersey": 83,
+        "height": "5'9\"",
+        "weight": 185,
+        "stat": "173 targets"
+      },
+      "WR2": {
+        "name": "Deion Branch",
+        "jersey": 84,
+        "height": "5'9\"",
+        "weight": 195,
+        "stat": "90 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "124 targets"
+      }
+    }
+  },
+  {
+    "season": 2011,
+    "team": "NYG",
+    "teamName": "New York Giants",
+    "slots": {
+      "QB": {
+        "name": "Eli Manning",
+        "jersey": 10,
+        "height": "6'4\"",
+        "weight": 218,
+        "stat": "589 attempts"
+      },
+      "RB": {
+        "name": "Ahmad Bradshaw",
+        "jersey": 44,
+        "height": "5'10\"",
+        "weight": 214,
+        "stat": "171 carries"
+      },
+      "WR1": {
+        "name": "Hakeem Nicks",
+        "jersey": 88,
+        "height": "6'1\"",
+        "weight": 208,
+        "stat": "133 targets"
+      },
+      "WR2": {
+        "name": "Victor Cruz",
+        "jersey": 80,
+        "height": "6'0\"",
+        "weight": 204,
+        "stat": "131 targets"
+      },
+      "TE": {
+        "name": "Jake Ballard",
+        "jersey": 85,
+        "height": "6'6\"",
+        "weight": 275,
+        "stat": "61 targets"
+      }
+    }
+  },
+  {
+    "season": 2011,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Alex Smith",
+        "jersey": 11,
+        "height": "6'4\"",
+        "weight": 217,
+        "stat": "445 attempts"
+      },
+      "RB": {
+        "name": "Frank Gore",
+        "jersey": 21,
+        "height": "5'9\"",
+        "weight": 217,
+        "stat": "282 carries"
+      },
+      "WR1": {
+        "name": "Michael Crabtree",
+        "jersey": 15,
+        "height": "6'1\"",
+        "weight": 214,
+        "stat": "114 targets"
+      },
+      "WR2": {
+        "name": "Braylon Edwards",
+        "jersey": 17,
+        "height": "6'3\"",
+        "weight": 214,
+        "stat": "34 targets"
+      },
+      "TE": {
+        "name": "Vernon Davis",
+        "jersey": 85,
+        "height": "6'3\"",
+        "weight": 250,
+        "stat": "95 targets"
+      }
+    }
+  },
+  {
+    "season": 2012,
+    "team": "ATL",
+    "teamName": "Atlanta Falcons",
+    "slots": {
+      "QB": {
+        "name": "Matt Ryan",
+        "jersey": 2,
+        "height": "6'4\"",
+        "weight": 217,
+        "stat": "615 attempts"
+      },
+      "RB": {
+        "name": "Michael Turner",
+        "jersey": 33,
+        "height": "5'10\"",
+        "weight": 247,
+        "stat": "222 carries"
+      },
+      "WR1": {
+        "name": "Roddy White",
+        "jersey": 84,
+        "height": "6'0\"",
+        "weight": 211,
+        "stat": "143 targets"
+      },
+      "WR2": {
+        "name": "Julio Jones",
+        "jersey": 11,
+        "height": "6'3\"",
+        "weight": 220,
+        "stat": "129 targets"
+      },
+      "TE": {
+        "name": "Tony Gonzalez",
+        "jersey": 88,
+        "height": "6'5\"",
+        "weight": 247,
+        "stat": "124 targets"
+      }
+    }
+  },
+  {
+    "season": 2012,
+    "team": "BAL",
+    "teamName": "Baltimore Ravens",
+    "slots": {
+      "QB": {
+        "name": "Joe Flacco",
+        "jersey": 5,
+        "height": "6'6\"",
+        "weight": 245,
+        "stat": "531 attempts"
+      },
+      "RB": {
+        "name": "Ray Rice",
+        "jersey": 27,
+        "height": "5'8\"",
+        "weight": 212,
+        "stat": "257 carries"
+      },
+      "WR1": {
+        "name": "Anquan Boldin",
+        "jersey": 81,
+        "height": "6'1\"",
+        "weight": 220,
+        "stat": "112 targets"
+      },
+      "WR2": {
+        "name": "Torrey Smith",
+        "jersey": 82,
+        "height": "6'0\"",
+        "weight": 205,
+        "stat": "110 targets"
+      },
+      "TE": {
+        "name": "Dennis Pitta",
+        "jersey": 88,
+        "height": "6'4\"",
+        "weight": 245,
+        "stat": "94 targets"
+      }
+    }
+  },
+  {
+    "season": 2012,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "637 attempts"
+      },
+      "RB": {
+        "name": "Stevan Ridley",
+        "jersey": 22,
+        "height": "5'11\"",
+        "weight": 220,
+        "stat": "290 carries"
+      },
+      "WR1": {
+        "name": "Wes Welker",
+        "jersey": 83,
+        "height": "5'9\"",
+        "weight": 185,
+        "stat": "175 targets"
+      },
+      "WR2": {
+        "name": "Brandon Lloyd",
+        "jersey": 85,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "130 targets"
+      },
+      "TE": {
+        "name": "Aaron Hernandez",
+        "jersey": 81,
+        "height": "6'1\"",
+        "weight": 245,
+        "stat": "83 targets"
+      }
+    }
+  },
+  {
+    "season": 2012,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Alex Smith",
+        "jersey": 11,
+        "height": "6'4\"",
+        "weight": 217,
+        "stat": "218 attempts"
+      },
+      "RB": {
+        "name": "Frank Gore",
+        "jersey": 21,
+        "height": "5'9\"",
+        "weight": 217,
+        "stat": "258 carries"
+      },
+      "WR1": {
+        "name": "Michael Crabtree",
+        "jersey": 15,
+        "height": "6'1\"",
+        "weight": 214,
+        "stat": "126 targets"
+      },
+      "WR2": {
+        "name": "Mario Manningham",
+        "jersey": 82,
+        "height": "6'0\"",
+        "weight": 185,
+        "stat": "57 targets"
+      },
+      "TE": {
+        "name": "Vernon Davis",
+        "jersey": 85,
+        "height": "6'3\"",
+        "weight": 250,
+        "stat": "61 targets"
+      }
+    }
+  },
+  {
+    "season": 2013,
+    "team": "DEN",
+    "teamName": "Denver Broncos",
+    "slots": {
+      "QB": {
+        "name": "Peyton Manning",
+        "jersey": 18,
+        "height": "6'5\"",
+        "weight": 230,
+        "stat": "659 attempts"
+      },
+      "RB": {
+        "name": "Knowshon Moreno",
+        "jersey": 27,
+        "height": "5'11\"",
+        "weight": 220,
+        "stat": "241 carries"
+      },
+      "WR1": {
+        "name": "Demaryius Thomas",
+        "jersey": 88,
+        "height": "6'3\"",
+        "weight": 229,
+        "stat": "142 targets"
+      },
+      "WR2": {
+        "name": "Eric Decker",
+        "jersey": 87,
+        "height": "6'3\"",
+        "weight": 214,
+        "stat": "136 targets"
+      },
+      "TE": {
+        "name": "Julius Thomas",
+        "jersey": 80,
+        "height": "6'5\"",
+        "weight": 250,
+        "stat": "90 targets"
+      }
+    }
+  },
+  {
+    "season": 2013,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "628 attempts"
+      },
+      "RB": {
+        "name": "Stevan Ridley",
+        "jersey": 22,
+        "height": "5'11\"",
+        "weight": 220,
+        "stat": "178 carries"
+      },
+      "WR1": {
+        "name": "Julian Edelman",
+        "jersey": 11,
+        "height": "5'10\"",
+        "weight": 198,
+        "stat": "151 targets"
+      },
+      "WR2": {
+        "name": "Danny Amendola",
+        "jersey": 80,
+        "height": "5'11\"",
+        "weight": 195,
+        "stat": "83 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "66 targets"
+      }
+    }
+  },
+  {
+    "season": 2013,
+    "team": "SEA",
+    "teamName": "Seattle Seahawks",
+    "slots": {
+      "QB": {
+        "name": "Russell Wilson",
+        "jersey": 3,
+        "height": "5'11\"",
+        "weight": 206,
+        "stat": "407 attempts"
+      },
+      "RB": {
+        "name": "Marshawn Lynch",
+        "jersey": 24,
+        "height": "5'11\"",
+        "weight": 215,
+        "stat": "301 carries"
+      },
+      "WR1": {
+        "name": "Golden Tate",
+        "jersey": 81,
+        "height": "5'10\"",
+        "weight": 202,
+        "stat": "98 targets"
+      },
+      "WR2": {
+        "name": "Doug Baldwin",
+        "jersey": 89,
+        "height": "5'10\"",
+        "weight": 189,
+        "stat": "73 targets"
+      },
+      "TE": {
+        "name": "Zach Miller",
+        "jersey": 86,
+        "height": "6'5\"",
+        "weight": 255,
+        "stat": "56 targets"
+      }
+    }
+  },
+  {
+    "season": 2013,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Colin Kaepernick",
+        "jersey": 7,
+        "height": "6'4\"",
+        "weight": 230,
+        "stat": "416 attempts"
+      },
+      "RB": {
+        "name": "Frank Gore",
+        "jersey": 21,
+        "height": "5'9\"",
+        "weight": 217,
+        "stat": "276 carries"
+      },
+      "WR1": {
+        "name": "Anquan Boldin",
+        "jersey": 81,
+        "height": "6'1\"",
+        "weight": 220,
+        "stat": "129 targets"
+      },
+      "WR2": {
+        "name": "Michael Crabtree",
+        "jersey": 15,
+        "height": "6'1\"",
+        "weight": 214,
+        "stat": "33 targets"
+      },
+      "TE": {
+        "name": "Vernon Davis",
+        "jersey": 85,
+        "height": "6'3\"",
+        "weight": 250,
+        "stat": "84 targets"
+      }
+    }
+  },
+  {
+    "season": 2014,
+    "team": "GB",
+    "teamName": "Green Bay Packers",
+    "slots": {
+      "QB": {
+        "name": "Aaron Rodgers",
+        "jersey": 12,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "520 attempts"
+      },
+      "RB": {
+        "name": "Eddie Lacy",
+        "jersey": 27,
+        "height": "5'11\"",
+        "weight": 230,
+        "stat": "246 carries"
+      },
+      "WR1": {
+        "name": "Jordy Nelson",
+        "jersey": 87,
+        "height": "6'3\"",
+        "weight": 217,
+        "stat": "151 targets"
+      },
+      "WR2": {
+        "name": "Randall Cobb",
+        "jersey": 18,
+        "height": "5'10\"",
+        "weight": 192,
+        "stat": "127 targets"
+      },
+      "TE": {
+        "name": "Andrew Quarless",
+        "jersey": 81,
+        "height": "6'4\"",
+        "weight": 252,
+        "stat": "46 targets"
+      }
+    }
+  },
+  {
+    "season": 2014,
+    "team": "IND",
+    "teamName": "Indianapolis Colts",
+    "slots": {
+      "QB": {
+        "name": "Andrew Luck",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 240,
+        "stat": "616 attempts"
+      },
+      "RB": {
+        "name": "Ahmad Bradshaw",
+        "jersey": 44,
+        "height": "5'10\"",
+        "weight": 217,
+        "stat": "90 carries"
+      },
+      "WR1": {
+        "name": "T.Y. Hilton",
+        "jersey": 13,
+        "height": "5'9\"",
+        "weight": 178,
+        "stat": "131 targets"
+      },
+      "WR2": {
+        "name": "Reggie Wayne",
+        "jersey": 87,
+        "height": "6'0\"",
+        "weight": 203,
+        "stat": "116 targets"
+      },
+      "TE": {
+        "name": "Coby Fleener",
+        "jersey": 80,
+        "height": "6'6\"",
+        "weight": 251,
+        "stat": "92 targets"
+      }
+    }
+  },
+  {
+    "season": 2014,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "582 attempts"
+      },
+      "RB": {
+        "name": "Shane Vereen",
+        "jersey": 34,
+        "height": "5'10\"",
+        "weight": 205,
+        "stat": "96 carries"
+      },
+      "WR1": {
+        "name": "Julian Edelman",
+        "jersey": 11,
+        "height": "5'10\"",
+        "weight": 200,
+        "stat": "134 targets"
+      },
+      "WR2": {
+        "name": "Brandon LaFell",
+        "jersey": 19,
+        "height": "6'3\"",
+        "weight": 210,
+        "stat": "119 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "131 targets"
+      }
+    }
+  },
+  {
+    "season": 2014,
+    "team": "SEA",
+    "teamName": "Seattle Seahawks",
+    "slots": {
+      "QB": {
+        "name": "Russell Wilson",
+        "jersey": 3,
+        "height": "5'11\"",
+        "weight": 206,
+        "stat": "452 attempts"
+      },
+      "RB": {
+        "name": "Marshawn Lynch",
+        "jersey": 24,
+        "height": "5'11\"",
+        "weight": 215,
+        "stat": "280 carries"
+      },
+      "WR1": {
+        "name": "Doug Baldwin",
+        "jersey": 89,
+        "height": "5'10\"",
+        "weight": 189,
+        "stat": "98 targets"
+      },
+      "WR2": {
+        "name": "Jermaine Kearse",
+        "jersey": 15,
+        "height": "6'1\"",
+        "weight": 209,
+        "stat": "69 targets"
+      },
+      "TE": {
+        "name": "Luke Willson",
+        "jersey": 82,
+        "height": "6'5\"",
+        "weight": 252,
+        "stat": "40 targets"
+      }
+    }
+  },
+  {
+    "season": 2015,
+    "team": "ARI",
+    "teamName": "Arizona Cardinals",
+    "slots": {
+      "QB": {
+        "name": "Carson Palmer",
+        "jersey": 3,
+        "height": "6'5\"",
+        "weight": 235,
+        "stat": "537 attempts"
+      },
+      "RB": {
+        "name": "Chris Johnson",
+        "jersey": 23,
+        "height": "5'11\"",
+        "weight": 203,
+        "stat": "196 carries"
+      },
+      "WR1": {
+        "name": "Larry Fitzgerald",
+        "jersey": 11,
+        "height": "6'3\"",
+        "weight": 218,
+        "stat": "145 targets"
+      },
+      "WR2": {
+        "name": "John Brown",
+        "jersey": 12,
+        "height": "5'11\"",
+        "weight": 179,
+        "stat": "101 targets"
+      },
+      "TE": {
+        "name": "Jermaine Gresham",
+        "jersey": 84,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "32 targets"
+      }
+    }
+  },
+  {
+    "season": 2015,
+    "team": "CAR",
+    "teamName": "Carolina Panthers",
+    "slots": {
+      "QB": {
+        "name": "Cam Newton",
+        "jersey": 1,
+        "height": "6'5\"",
+        "weight": 245,
+        "stat": "495 attempts"
+      },
+      "RB": {
+        "name": "Jonathan Stewart",
+        "jersey": 28,
+        "height": "5'10\"",
+        "weight": 235,
+        "stat": "242 carries"
+      },
+      "WR1": {
+        "name": "Ted Ginn",
+        "jersey": 19,
+        "height": "5'11\"",
+        "weight": 185,
+        "stat": "96 targets"
+      },
+      "WR2": {
+        "name": "Jerricho Cotchery",
+        "jersey": 82,
+        "height": "6'1\"",
+        "weight": 205,
+        "stat": "54 targets"
+      },
+      "TE": {
+        "name": "Greg Olsen",
+        "jersey": 88,
+        "height": "6'5\"",
+        "weight": 253,
+        "stat": "124 targets"
+      }
+    }
+  },
+  {
+    "season": 2015,
+    "team": "DEN",
+    "teamName": "Denver Broncos",
+    "slots": {
+      "QB": {
+        "name": "Peyton Manning",
+        "jersey": 18,
+        "height": "6'5\"",
+        "weight": 230,
+        "stat": "331 attempts"
+      },
+      "RB": {
+        "name": "Ronnie Hillman",
+        "jersey": 23,
+        "height": "5'10\"",
+        "weight": 195,
+        "stat": "207 carries"
+      },
+      "WR1": {
+        "name": "Demaryius Thomas",
+        "jersey": 88,
+        "height": "6'3\"",
+        "weight": 229,
+        "stat": "177 targets"
+      },
+      "WR2": {
+        "name": "Emmanuel Sanders",
+        "jersey": 10,
+        "height": "5'11\"",
+        "weight": 180,
+        "stat": "137 targets"
+      },
+      "TE": {
+        "name": "Owen Daniels",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 245,
+        "stat": "77 targets"
+      }
+    }
+  },
+  {
+    "season": 2015,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "624 attempts"
+      },
+      "RB": {
+        "name": "LeGarrette Blount",
+        "jersey": 29,
+        "height": "6'0\"",
+        "weight": 250,
+        "stat": "165 carries"
+      },
+      "WR1": {
+        "name": "Julian Edelman",
+        "jersey": 11,
+        "height": "5'10\"",
+        "weight": 200,
+        "stat": "88 targets"
+      },
+      "WR2": {
+        "name": "Danny Amendola",
+        "jersey": 80,
+        "height": "5'11\"",
+        "weight": 190,
+        "stat": "87 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "120 targets"
+      }
+    }
+  },
+  {
+    "season": 2016,
+    "team": "ATL",
+    "teamName": "Atlanta Falcons",
+    "slots": {
+      "QB": {
+        "name": "Matt Ryan",
+        "jersey": 2,
+        "height": "6'4\"",
+        "weight": 220,
+        "stat": "534 attempts"
+      },
+      "RB": {
+        "name": "Devonta Freeman",
+        "jersey": 24,
+        "height": "5'8\"",
+        "weight": 206,
+        "stat": "227 carries"
+      },
+      "WR1": {
+        "name": "Julio Jones",
+        "jersey": 11,
+        "height": "6'3\"",
+        "weight": 220,
+        "stat": "129 targets"
+      },
+      "WR2": {
+        "name": "Mohamed Sanu",
+        "jersey": 12,
+        "height": "6'2\"",
+        "weight": 210,
+        "stat": "81 targets"
+      },
+      "TE": {
+        "name": "Jacob Tamme",
+        "jersey": 83,
+        "height": "6'3\"",
+        "weight": 230,
+        "stat": "31 targets"
+      }
+    }
+  },
+  {
+    "season": 2016,
+    "team": "GB",
+    "teamName": "Green Bay Packers",
+    "slots": {
+      "QB": {
+        "name": "Aaron Rodgers",
+        "jersey": 12,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "610 attempts"
+      },
+      "RB": {
+        "name": "Eddie Lacy",
+        "jersey": 27,
+        "height": "5'11\"",
+        "weight": 234,
+        "stat": "71 carries"
+      },
+      "WR1": {
+        "name": "Jordy Nelson",
+        "jersey": 87,
+        "height": "6'3\"",
+        "weight": 217,
+        "stat": "152 targets"
+      },
+      "WR2": {
+        "name": "Davante Adams",
+        "jersey": 17,
+        "height": "6'1\"",
+        "weight": 215,
+        "stat": "121 targets"
+      },
+      "TE": {
+        "name": "Jared Cook",
+        "jersey": 89,
+        "height": "6'5\"",
+        "weight": 254,
+        "stat": "51 targets"
+      }
+    }
+  },
+  {
+    "season": 2016,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "432 attempts"
+      },
+      "RB": {
+        "name": "LeGarrette Blount",
+        "jersey": 29,
+        "height": "6'0\"",
+        "weight": 250,
+        "stat": "299 carries"
+      },
+      "WR1": {
+        "name": "Julian Edelman",
+        "jersey": 11,
+        "height": "5'10\"",
+        "weight": 200,
+        "stat": "159 targets"
+      },
+      "WR2": {
+        "name": "Chris Hogan",
+        "jersey": 15,
+        "height": "6'1\"",
+        "weight": 210,
+        "stat": "58 targets"
+      },
+      "TE": {
+        "name": "Martellus Bennett",
+        "jersey": 88,
+        "height": "6'6\"",
+        "weight": 275,
+        "stat": "73 targets"
+      }
+    }
+  },
+  {
+    "season": 2016,
+    "team": "PIT",
+    "teamName": "Pittsburgh Steelers",
+    "slots": {
+      "QB": {
+        "name": "Ben Roethlisberger",
+        "jersey": 7,
+        "height": "6'5\"",
+        "weight": 240,
+        "stat": "509 attempts"
+      },
+      "RB": {
+        "name": "Le'Veon Bell",
+        "jersey": 26,
+        "height": "6'1\"",
+        "weight": 225,
+        "stat": "261 carries"
+      },
+      "WR1": {
+        "name": "Antonio Brown",
+        "jersey": 84,
+        "height": "5'10\"",
+        "weight": 181,
+        "stat": "154 targets"
+      },
+      "WR2": {
+        "name": "Eli Rogers",
+        "jersey": 17,
+        "height": "5'10\"",
+        "weight": 187,
+        "stat": "66 targets"
+      },
+      "TE": {
+        "name": "Jesse James",
+        "jersey": 81,
+        "height": "6'7\"",
+        "weight": 261,
+        "stat": "60 targets"
+      }
+    }
+  },
+  {
+    "season": 2017,
+    "team": "JAX",
+    "teamName": "Jacksonville Jaguars",
+    "slots": {
+      "QB": {
+        "name": "Blake Bortles",
+        "jersey": 5,
+        "height": "6'5\"",
+        "weight": 236,
+        "stat": "523 attempts"
+      },
+      "RB": {
+        "name": "Leonard Fournette",
+        "jersey": 27,
+        "height": "6'0\"",
+        "weight": 228,
+        "stat": "268 carries"
+      },
+      "WR1": {
+        "name": "Marqise Lee",
+        "jersey": 11,
+        "height": "6'0\"",
+        "weight": 196,
+        "stat": "96 targets"
+      },
+      "WR2": {
+        "name": "Keelan Cole",
+        "jersey": 84,
+        "height": "6'1\"",
+        "weight": 194,
+        "stat": "83 targets"
+      },
+      "TE": {
+        "name": "Marcedes Lewis",
+        "jersey": 89,
+        "height": "6'6\"",
+        "weight": 280,
+        "stat": "48 targets"
+      }
+    }
+  },
+  {
+    "season": 2017,
+    "team": "MIN",
+    "teamName": "Minnesota Vikings",
+    "slots": {
+      "QB": {
+        "name": "Case Keenum",
+        "jersey": 7,
+        "height": "6'1\"",
+        "weight": 205,
+        "stat": "481 attempts"
+      },
+      "RB": {
+        "name": "Latavius Murray",
+        "jersey": 25,
+        "height": "6'3\"",
+        "weight": 230,
+        "stat": "216 carries"
+      },
+      "WR1": {
+        "name": "Adam Thielen",
+        "jersey": 19,
+        "height": "6'2\"",
+        "weight": 200,
+        "stat": "142 targets"
+      },
+      "WR2": {
+        "name": "Stefon Diggs",
+        "jersey": 14,
+        "height": "6'0\"",
+        "weight": 191,
+        "stat": "95 targets"
+      },
+      "TE": {
+        "name": "Kyle Rudolph",
+        "jersey": 82,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "81 targets"
+      }
+    }
+  },
+  {
+    "season": 2017,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "581 attempts"
+      },
+      "RB": {
+        "name": "Dion Lewis",
+        "jersey": 33,
+        "height": "5'8\"",
+        "weight": 195,
+        "stat": "180 carries"
+      },
+      "WR1": {
+        "name": "Brandin Cooks",
+        "jersey": 14,
+        "height": "5'10\"",
+        "weight": 189,
+        "stat": "114 targets"
+      },
+      "WR2": {
+        "name": "Danny Amendola",
+        "jersey": 80,
+        "height": "5'11\"",
+        "weight": 190,
+        "stat": "86 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "105 targets"
+      }
+    }
+  },
+  {
+    "season": 2017,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Carson Wentz",
+        "jersey": 11,
+        "height": "6'5\"",
+        "weight": 237,
+        "stat": "440 attempts"
+      },
+      "RB": {
+        "name": "LeGarrette Blount",
+        "jersey": 29,
+        "height": "6'0\"",
+        "weight": 250,
+        "stat": "173 carries"
+      },
+      "WR1": {
+        "name": "Alshon Jeffery",
+        "jersey": 17,
+        "height": "6'3\"",
+        "weight": 218,
+        "stat": "120 targets"
+      },
+      "WR2": {
+        "name": "Nelson Agholor",
+        "jersey": 13,
+        "height": "6'0\"",
+        "weight": 198,
+        "stat": "95 targets"
+      },
+      "TE": {
+        "name": "Zach Ertz",
+        "jersey": 86,
+        "height": "6'5\"",
+        "weight": 250,
+        "stat": "110 targets"
+      }
+    }
+  },
+  {
+    "season": 2018,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'3\"",
+        "weight": 230,
+        "stat": "580 attempts"
+      },
+      "RB": {
+        "name": "Kareem Hunt",
+        "jersey": 27,
+        "height": "5'11\"",
+        "weight": 216,
+        "stat": "181 carries"
+      },
+      "WR1": {
+        "name": "Tyreek Hill",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 185,
+        "stat": "137 targets"
+      },
+      "WR2": {
+        "name": "Sammy Watkins",
+        "jersey": 14,
+        "height": "6'1\"",
+        "weight": 211,
+        "stat": "55 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "150 targets"
+      }
+    }
+  },
+  {
+    "season": 2018,
+    "team": "LA",
+    "teamName": "Los Angeles Rams",
+    "slots": {
+      "QB": {
+        "name": "Jared Goff",
+        "jersey": 16,
+        "height": "6'4\"",
+        "weight": 223,
+        "stat": "561 attempts"
+      },
+      "RB": {
+        "name": "Todd Gurley",
+        "jersey": 30,
+        "height": "6'1\"",
+        "weight": 227,
+        "stat": "256 carries"
+      },
+      "WR1": {
+        "name": "Robert Woods",
+        "jersey": 17,
+        "height": "6'0\"",
+        "weight": 193,
+        "stat": "130 targets"
+      },
+      "WR2": {
+        "name": "Brandin Cooks",
+        "jersey": 12,
+        "height": "5'10\"",
+        "weight": 189,
+        "stat": "117 targets"
+      },
+      "TE": {
+        "name": "Gerald Everett",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 245,
+        "stat": "50 targets"
+      }
+    }
+  },
+  {
+    "season": 2018,
+    "team": "NE",
+    "teamName": "New England Patriots",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "570 attempts"
+      },
+      "RB": {
+        "name": "Sony Michel",
+        "jersey": 26,
+        "height": "5'11\"",
+        "weight": 215,
+        "stat": "209 carries"
+      },
+      "WR1": {
+        "name": "Julian Edelman",
+        "jersey": 11,
+        "height": "5'10\"",
+        "weight": 200,
+        "stat": "108 targets"
+      },
+      "WR2": {
+        "name": "Josh Gordon",
+        "jersey": 10,
+        "height": "6'3\"",
+        "weight": 225,
+        "stat": "68 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "72 targets"
+      }
+    }
+  },
+  {
+    "season": 2018,
+    "team": "NO",
+    "teamName": "New Orleans Saints",
+    "slots": {
+      "QB": {
+        "name": "Drew Brees",
+        "jersey": 9,
+        "height": "6'0\"",
+        "weight": 209,
+        "stat": "489 attempts"
+      },
+      "RB": {
+        "name": "Alvin Kamara",
+        "jersey": 41,
+        "height": "5'10\"",
+        "weight": 215,
+        "stat": "194 carries"
+      },
+      "WR1": {
+        "name": "Michael Thomas",
+        "jersey": 13,
+        "height": "6'3\"",
+        "weight": 212,
+        "stat": "147 targets"
+      },
+      "WR2": {
+        "name": "Tre'Quan Smith",
+        "jersey": 10,
+        "height": "6'1\"",
+        "weight": 210,
+        "stat": "44 targets"
+      },
+      "TE": {
+        "name": "Benjamin Watson",
+        "jersey": 82,
+        "height": "6'3\"",
+        "weight": 251,
+        "stat": "46 targets"
+      }
+    }
+  },
+  {
+    "season": 2019,
+    "team": "GB",
+    "teamName": "Green Bay Packers",
+    "slots": {
+      "QB": {
+        "name": "Aaron Rodgers",
+        "jersey": 12,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "569 attempts"
+      },
+      "RB": {
+        "name": "Aaron Jones",
+        "jersey": 33,
+        "height": "5'9\"",
+        "weight": 208,
+        "stat": "236 carries"
+      },
+      "WR1": {
+        "name": "Davante Adams",
+        "jersey": 17,
+        "height": "6'1\"",
+        "weight": 215,
+        "stat": "127 targets"
+      },
+      "WR2": {
+        "name": "Marquez Valdes-Scantling",
+        "jersey": 83,
+        "height": "6'4\"",
+        "weight": 207,
+        "stat": "56 targets"
+      },
+      "TE": {
+        "name": "Jimmy Graham",
+        "jersey": 80,
+        "height": "6'7\"",
+        "weight": 265,
+        "stat": "60 targets"
+      }
+    }
+  },
+  {
+    "season": 2019,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'3\"",
+        "weight": 230,
+        "stat": "484 attempts"
+      },
+      "RB": {
+        "name": "Damien Williams",
+        "jersey": 26,
+        "height": "5'11\"",
+        "weight": 224,
+        "stat": "111 carries"
+      },
+      "WR1": {
+        "name": "Sammy Watkins",
+        "jersey": 14,
+        "height": "6'1\"",
+        "weight": 211,
+        "stat": "90 targets"
+      },
+      "WR2": {
+        "name": "Tyreek Hill",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 185,
+        "stat": "89 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "136 targets"
+      }
+    }
+  },
+  {
+    "season": 2019,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Jimmy Garoppolo",
+        "jersey": 10,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "476 attempts"
+      },
+      "RB": {
+        "name": "Raheem Mostert",
+        "jersey": 31,
+        "height": "5'10\"",
+        "weight": 197,
+        "stat": "137 carries"
+      },
+      "WR1": {
+        "name": "Deebo Samuel",
+        "jersey": 19,
+        "height": "6'0\"",
+        "weight": 214,
+        "stat": "81 targets"
+      },
+      "WR2": {
+        "name": "Emmanuel Sanders",
+        "jersey": 17,
+        "height": "5'11\"",
+        "weight": 180,
+        "stat": "53 targets"
+      },
+      "TE": {
+        "name": "George Kittle",
+        "jersey": 85,
+        "height": "6'4\"",
+        "weight": 250,
+        "stat": "107 targets"
+      }
+    }
+  },
+  {
+    "season": 2019,
+    "team": "TEN",
+    "teamName": "Tennessee Titans",
+    "slots": {
+      "QB": {
+        "name": "Ryan Tannehill",
+        "jersey": 17,
+        "height": "6'4\"",
+        "weight": 207,
+        "stat": "286 attempts"
+      },
+      "RB": {
+        "name": "Derrick Henry",
+        "jersey": 22,
+        "height": "6'3\"",
+        "weight": 247,
+        "stat": "303 carries"
+      },
+      "WR1": {
+        "name": "A.J. Brown",
+        "jersey": 11,
+        "height": "6'1\"",
+        "weight": 226,
+        "stat": "84 targets"
+      },
+      "WR2": {
+        "name": "Corey Davis",
+        "jersey": 84,
+        "height": "6'3\"",
+        "weight": 209,
+        "stat": "69 targets"
+      },
+      "TE": {
+        "name": "Jonnu Smith",
+        "jersey": 81,
+        "height": "6'3\"",
+        "weight": 248,
+        "stat": "44 targets"
+      }
+    }
+  },
+  {
+    "season": 2020,
+    "team": "BUF",
+    "teamName": "Buffalo Bills",
+    "slots": {
+      "QB": {
+        "name": "Josh Allen",
+        "jersey": 17,
+        "height": "6'5\"",
+        "weight": 237,
+        "stat": "572 attempts"
+      },
+      "RB": {
+        "name": "Devin Singletary",
+        "jersey": 26,
+        "height": "5'7\"",
+        "weight": 203,
+        "stat": "156 carries"
+      },
+      "WR1": {
+        "name": "Stefon Diggs",
+        "jersey": 14,
+        "height": "6'0\"",
+        "weight": 191,
+        "stat": "166 targets"
+      },
+      "WR2": {
+        "name": "Cole Beasley",
+        "jersey": 11,
+        "height": "5'8\"",
+        "weight": 174,
+        "stat": "107 targets"
+      },
+      "TE": {
+        "name": "Dawson Knox",
+        "jersey": 88,
+        "height": "6'4\"",
+        "weight": 254,
+        "stat": "44 targets"
+      }
+    }
+  },
+  {
+    "season": 2020,
+    "team": "GB",
+    "teamName": "Green Bay Packers",
+    "slots": {
+      "QB": {
+        "name": "Aaron Rodgers",
+        "jersey": 12,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "526 attempts"
+      },
+      "RB": {
+        "name": "Aaron Jones",
+        "jersey": 33,
+        "height": "5'9\"",
+        "weight": 208,
+        "stat": "201 carries"
+      },
+      "WR1": {
+        "name": "Davante Adams",
+        "jersey": 17,
+        "height": "6'1\"",
+        "weight": 215,
+        "stat": "149 targets"
+      },
+      "WR2": {
+        "name": "Marquez Valdes-Scantling",
+        "jersey": 83,
+        "height": "6'4\"",
+        "weight": 207,
+        "stat": "63 targets"
+      },
+      "TE": {
+        "name": "Robert Tonyan",
+        "jersey": 85,
+        "height": "6'5\"",
+        "weight": 237,
+        "stat": "59 targets"
+      }
+    }
+  },
+  {
+    "season": 2020,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'3\"",
+        "weight": 230,
+        "stat": "588 attempts"
+      },
+      "RB": {
+        "name": "Clyde Edwards-Helaire",
+        "jersey": 25,
+        "height": "5'8\"",
+        "weight": 209,
+        "stat": "181 carries"
+      },
+      "WR1": {
+        "name": "Tyreek Hill",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 185,
+        "stat": "135 targets"
+      },
+      "WR2": {
+        "name": "Mecole Hardman",
+        "jersey": 17,
+        "height": "5'10\"",
+        "weight": 187,
+        "stat": "62 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "145 targets"
+      }
+    }
+  },
+  {
+    "season": 2020,
+    "team": "TB",
+    "teamName": "Tampa Bay Buccaneers",
+    "slots": {
+      "QB": {
+        "name": "Tom Brady",
+        "jersey": 12,
+        "height": "6'4\"",
+        "weight": 225,
+        "stat": "610 attempts"
+      },
+      "RB": {
+        "name": "Ronald Jones",
+        "jersey": 27,
+        "height": "5'11\"",
+        "weight": 208,
+        "stat": "192 carries"
+      },
+      "WR1": {
+        "name": "Mike Evans",
+        "jersey": 13,
+        "height": "6'5\"",
+        "weight": 231,
+        "stat": "109 targets"
+      },
+      "WR2": {
+        "name": "Chris Godwin",
+        "jersey": 14,
+        "height": "6'1\"",
+        "weight": 209,
+        "stat": "84 targets"
+      },
+      "TE": {
+        "name": "Rob Gronkowski",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 265,
+        "stat": "77 targets"
+      }
+    }
+  },
+  {
+    "season": 2021,
+    "team": "CIN",
+    "teamName": "Cincinnati Bengals",
+    "slots": {
+      "QB": {
+        "name": "Joe Burrow",
+        "jersey": 9,
+        "height": "6'4\"",
+        "weight": 216,
+        "stat": "520 attempts"
+      },
+      "RB": {
+        "name": "Joe Mixon",
+        "jersey": 28,
+        "height": "6'1\"",
+        "weight": 220,
+        "stat": "292 carries"
+      },
+      "WR1": {
+        "name": "Ja'Marr Chase",
+        "jersey": 1,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "128 targets"
+      },
+      "WR2": {
+        "name": "Tee Higgins",
+        "jersey": 85,
+        "height": "6'4\"",
+        "weight": 210,
+        "stat": "110 targets"
+      },
+      "TE": {
+        "name": "C.J. Uzomah",
+        "jersey": 87,
+        "height": "6'6\"",
+        "weight": 260,
+        "stat": "63 targets"
+      }
+    }
+  },
+  {
+    "season": 2021,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'3\"",
+        "weight": 230,
+        "stat": "658 attempts"
+      },
+      "RB": {
+        "name": "Darrel Williams",
+        "jersey": 31,
+        "height": "5'11\"",
+        "weight": 224,
+        "stat": "144 carries"
+      },
+      "WR1": {
+        "name": "Tyreek Hill",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 185,
+        "stat": "159 targets"
+      },
+      "WR2": {
+        "name": "Mecole Hardman",
+        "jersey": 17,
+        "height": "5'10\"",
+        "weight": 187,
+        "stat": "83 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "134 targets"
+      }
+    }
+  },
+  {
+    "season": 2021,
+    "team": "LA",
+    "teamName": "Los Angeles Rams",
+    "slots": {
+      "QB": {
+        "name": "Matthew Stafford",
+        "jersey": 9,
+        "height": "6'3\"",
+        "weight": 220,
+        "stat": "601 attempts"
+      },
+      "RB": {
+        "name": "Sony Michel",
+        "jersey": 25,
+        "height": "5'11\"",
+        "weight": 215,
+        "stat": "208 carries"
+      },
+      "WR1": {
+        "name": "Cooper Kupp",
+        "jersey": 10,
+        "height": "6'2\"",
+        "weight": 208,
+        "stat": "191 targets"
+      },
+      "WR2": {
+        "name": "Van Jefferson",
+        "jersey": 12,
+        "height": "6'1\"",
+        "weight": 197,
+        "stat": "89 targets"
+      },
+      "TE": {
+        "name": "Tyler Higbee",
+        "jersey": 89,
+        "height": "6'6\"",
+        "weight": 257,
+        "stat": "85 targets"
+      }
+    }
+  },
+  {
+    "season": 2021,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Jimmy Garoppolo",
+        "jersey": 10,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "441 attempts"
+      },
+      "RB": {
+        "name": "Elijah Mitchell",
+        "jersey": 25,
+        "height": "5'10\"",
+        "weight": 221,
+        "stat": "207 carries"
+      },
+      "WR1": {
+        "name": "Deebo Samuel",
+        "jersey": 19,
+        "height": "6'0\"",
+        "weight": 214,
+        "stat": "121 targets"
+      },
+      "WR2": {
+        "name": "Brandon Aiyuk",
+        "jersey": 11,
+        "height": "6'0\"",
+        "weight": 206,
+        "stat": "84 targets"
+      },
+      "TE": {
+        "name": "George Kittle",
+        "jersey": 85,
+        "height": "6'4\"",
+        "weight": 250,
+        "stat": "94 targets"
+      }
+    }
+  },
+  {
+    "season": 2022,
+    "team": "CIN",
+    "teamName": "Cincinnati Bengals",
+    "slots": {
+      "QB": {
+        "name": "Joe Burrow",
+        "jersey": 9,
+        "height": "6'4\"",
+        "weight": 216,
+        "stat": "606 attempts"
+      },
+      "RB": {
+        "name": "Joe Mixon",
+        "jersey": 28,
+        "height": "6'1\"",
+        "weight": 220,
+        "stat": "210 carries"
+      },
+      "WR1": {
+        "name": "Ja'Marr Chase",
+        "jersey": 1,
+        "height": "6'0\"",
+        "weight": 200,
+        "stat": "134 targets"
+      },
+      "WR2": {
+        "name": "Tee Higgins",
+        "jersey": 85,
+        "height": "6'4\"",
+        "weight": 210,
+        "stat": "109 targets"
+      },
+      "TE": {
+        "name": "Hayden Hurst",
+        "jersey": 88,
+        "height": "6'4\"",
+        "weight": 245,
+        "stat": "68 targets"
+      }
+    }
+  },
+  {
+    "season": 2022,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'2\"",
+        "weight": 230,
+        "stat": "648 attempts"
+      },
+      "RB": {
+        "name": "Isiah Pacheco",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 215,
+        "stat": "170 carries"
+      },
+      "WR1": {
+        "name": "JuJu Smith-Schuster",
+        "jersey": 9,
+        "height": "6'1\"",
+        "weight": 215,
+        "stat": "101 targets"
+      },
+      "WR2": {
+        "name": "Marquez Valdes-Scantling",
+        "jersey": 11,
+        "height": "6'4\"",
+        "weight": 207,
+        "stat": "81 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "152 targets"
+      }
+    }
+  },
+  {
+    "season": 2022,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Jalen Hurts",
+        "jersey": 1,
+        "height": "6'1\"",
+        "weight": 218,
+        "stat": "460 attempts"
+      },
+      "RB": {
+        "name": "Miles Sanders",
+        "jersey": 26,
+        "height": "5'11\"",
+        "weight": 211,
+        "stat": "259 carries"
+      },
+      "WR1": {
+        "name": "A.J. Brown",
+        "jersey": 11,
+        "height": "6'1\"",
+        "weight": 226,
+        "stat": "145 targets"
+      },
+      "WR2": {
+        "name": "DeVonta Smith",
+        "jersey": 6,
+        "height": "6'0\"",
+        "weight": 165,
+        "stat": "136 targets"
+      },
+      "TE": {
+        "name": "Dallas Goedert",
+        "jersey": 88,
+        "height": "6'5\"",
+        "weight": 256,
+        "stat": "69 targets"
+      }
+    }
+  },
+  {
+    "season": 2022,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Jimmy Garoppolo",
+        "jersey": 10,
+        "height": "6'2\"",
+        "weight": 225,
+        "stat": "308 attempts"
+      },
+      "RB": {
+        "name": "Christian McCaffrey",
+        "jersey": 23,
+        "height": "5'11\"",
+        "weight": 205,
+        "stat": "159 carries"
+      },
+      "WR1": {
+        "name": "Brandon Aiyuk",
+        "jersey": 11,
+        "height": "6'0\"",
+        "weight": 206,
+        "stat": "114 targets"
+      },
+      "WR2": {
+        "name": "Deebo Samuel",
+        "jersey": 19,
+        "height": "6'0\"",
+        "weight": 214,
+        "stat": "94 targets"
+      },
+      "TE": {
+        "name": "George Kittle",
+        "jersey": 85,
+        "height": "6'4\"",
+        "weight": 250,
+        "stat": "86 targets"
+      }
+    }
+  },
+  {
+    "season": 2023,
+    "team": "BAL",
+    "teamName": "Baltimore Ravens",
+    "slots": {
+      "QB": {
+        "name": "Lamar Jackson",
+        "jersey": 8,
+        "height": "6'2\"",
+        "weight": 212,
+        "stat": "457 attempts"
+      },
+      "RB": {
+        "name": "Gus Edwards",
+        "jersey": 35,
+        "height": "6'1\"",
+        "weight": 238,
+        "stat": "198 carries"
+      },
+      "WR1": {
+        "name": "Zay Flowers",
+        "jersey": 4,
+        "height": "5'9\"",
+        "weight": 172,
+        "stat": "108 targets"
+      },
+      "WR2": {
+        "name": "Odell Beckham",
+        "jersey": 3,
+        "height": "5'11\"",
+        "weight": 198,
+        "stat": "64 targets"
+      },
+      "TE": {
+        "name": "Mark Andrews",
+        "jersey": 89,
+        "height": "6'5\"",
+        "weight": 255,
+        "stat": "61 targets"
+      }
+    }
+  },
+  {
+    "season": 2023,
+    "team": "DET",
+    "teamName": "Detroit Lions",
+    "slots": {
+      "QB": {
+        "name": "Jared Goff",
+        "jersey": 16,
+        "height": "6'4\"",
+        "weight": 223,
+        "stat": "605 attempts"
+      },
+      "RB": {
+        "name": "David Montgomery",
+        "jersey": 5,
+        "height": "5'11\"",
+        "weight": 222,
+        "stat": "219 carries"
+      },
+      "WR1": {
+        "name": "Amon-Ra St. Brown",
+        "jersey": 14,
+        "height": "6'0\"",
+        "weight": 195,
+        "stat": "164 targets"
+      },
+      "WR2": {
+        "name": "Josh Reynolds",
+        "jersey": 8,
+        "height": "6'3\"",
+        "weight": 196,
+        "stat": "64 targets"
+      },
+      "TE": {
+        "name": "Sam LaPorta",
+        "jersey": 87,
+        "height": "6'3\"",
+        "weight": 249,
+        "stat": "120 targets"
+      }
+    }
+  },
+  {
+    "season": 2023,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'2\"",
+        "weight": 230,
+        "stat": "597 attempts"
+      },
+      "RB": {
+        "name": "Isiah Pacheco",
+        "jersey": 10,
+        "height": "5'10\"",
+        "weight": 215,
+        "stat": "205 carries"
+      },
+      "WR1": {
+        "name": "Rashee Rice",
+        "jersey": 4,
+        "height": "6'1\"",
+        "weight": 203,
+        "stat": "102 targets"
+      },
+      "WR2": {
+        "name": "Justin Watson",
+        "jersey": 84,
+        "height": "6'2\"",
+        "weight": 215,
+        "stat": "53 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "121 targets"
+      }
+    }
+  },
+  {
+    "season": 2023,
+    "team": "SF",
+    "teamName": "San Francisco 49ers",
+    "slots": {
+      "QB": {
+        "name": "Brock Purdy",
+        "jersey": 13,
+        "height": "6'1\"",
+        "weight": 212,
+        "stat": "444 attempts"
+      },
+      "RB": {
+        "name": "Christian McCaffrey",
+        "jersey": 23,
+        "height": "5'11\"",
+        "weight": 205,
+        "stat": "272 carries"
+      },
+      "WR1": {
+        "name": "Brandon Aiyuk",
+        "jersey": 11,
+        "height": "6'0\"",
+        "weight": 206,
+        "stat": "105 targets"
+      },
+      "WR2": {
+        "name": "Deebo Samuel Sr.",
+        "jersey": 19,
+        "height": "6'0\"",
+        "weight": 214,
+        "stat": "89 targets"
+      },
+      "TE": {
+        "name": "George Kittle",
+        "jersey": 85,
+        "height": "6'4\"",
+        "weight": 250,
+        "stat": "90 targets"
+      }
+    }
+  },
+  {
+    "season": 2024,
+    "team": "BUF",
+    "teamName": "Buffalo Bills",
+    "slots": {
+      "QB": {
+        "name": "Josh Allen",
+        "jersey": 17,
+        "height": "6'5\"",
+        "weight": 237,
+        "stat": "483 attempts"
+      },
+      "RB": {
+        "name": "James Cook",
+        "jersey": 4,
+        "height": "5'11\"",
+        "weight": 190,
+        "stat": "207 carries"
+      },
+      "WR1": {
+        "name": "Khalil Shakir",
+        "jersey": 10,
+        "height": "6'0\"",
+        "weight": 190,
+        "stat": "100 targets"
+      },
+      "WR2": {
+        "name": "Keon Coleman",
+        "jersey": 0,
+        "height": "6'4\"",
+        "weight": 215,
+        "stat": "57 targets"
+      },
+      "TE": {
+        "name": "Dalton Kincaid",
+        "jersey": 86,
+        "height": "6'4\"",
+        "weight": 240,
+        "stat": "75 targets"
+      }
+    }
+  },
+  {
+    "season": 2024,
+    "team": "KC",
+    "teamName": "Kansas City Chiefs",
+    "slots": {
+      "QB": {
+        "name": "Patrick Mahomes",
+        "jersey": 15,
+        "height": "6'2\"",
+        "weight": 230,
+        "stat": "581 attempts"
+      },
+      "RB": {
+        "name": "Kareem Hunt",
+        "jersey": 29,
+        "height": "5'11\"",
+        "weight": 216,
+        "stat": "200 carries"
+      },
+      "WR1": {
+        "name": "Xavier Worthy",
+        "jersey": 1,
+        "height": "5'11\"",
+        "weight": 172,
+        "stat": "98 targets"
+      },
+      "WR2": {
+        "name": "DeAndre Hopkins",
+        "jersey": 8,
+        "height": "6'1\"",
+        "weight": 212,
+        "stat": "59 targets"
+      },
+      "TE": {
+        "name": "Travis Kelce",
+        "jersey": 87,
+        "height": "6'5\"",
+        "weight": 260,
+        "stat": "133 targets"
+      }
+    }
+  },
+  {
+    "season": 2024,
+    "team": "PHI",
+    "teamName": "Philadelphia Eagles",
+    "slots": {
+      "QB": {
+        "name": "Jalen Hurts",
+        "jersey": 1,
+        "height": "6'1\"",
+        "weight": 218,
+        "stat": "361 attempts"
+      },
+      "RB": {
+        "name": "Saquon Barkley",
+        "jersey": 26,
+        "height": "6'0\"",
+        "weight": 233,
+        "stat": "345 carries"
+      },
+      "WR1": {
+        "name": "A.J. Brown",
+        "jersey": 11,
+        "height": "6'1\"",
+        "weight": 226,
+        "stat": "97 targets"
+      },
+      "WR2": {
+        "name": "DeVonta Smith",
+        "jersey": 6,
+        "height": "6'0\"",
+        "weight": 165,
+        "stat": "89 targets"
+      },
+      "TE": {
+        "name": "Dallas Goedert",
+        "jersey": 88,
+        "height": "6'5\"",
+        "weight": 256,
+        "stat": "52 targets"
+      }
+    }
+  },
+  {
+    "season": 2024,
+    "team": "WAS",
+    "teamName": "Washington Commanders",
+    "slots": {
+      "QB": {
+        "name": "Jayden Daniels",
+        "jersey": 5,
+        "height": "6'4\"",
+        "weight": 210,
+        "stat": "480 attempts"
+      },
+      "RB": {
+        "name": "Brian Robinson",
+        "jersey": 8,
+        "height": "6'1\"",
+        "weight": 228,
+        "stat": "187 carries"
+      },
+      "WR1": {
+        "name": "Terry McLaurin",
+        "jersey": 17,
+        "height": "6'0\"",
+        "weight": 210,
+        "stat": "117 targets"
+      },
+      "WR2": {
+        "name": "Olamide Zaccheaus",
+        "jersey": 14,
+        "height": "5'8\"",
+        "weight": 193,
+        "stat": "64 targets"
+      },
+      "TE": {
+        "name": "Zach Ertz",
+        "jersey": 86,
+        "height": "6'5\"",
+        "weight": 250,
+        "stat": "91 targets"
+      }
+    }
+  }
+]
