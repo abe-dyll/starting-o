@@ -184,7 +184,16 @@ if (require.main === module) {
       seasons.push(year);
     }
 
-    const puzzles = await buildPuzzles({ fetchImpl: fetch, seasons });
+    const puzzles = [];
+    for (const year of seasons) {
+      try {
+        const seasonPuzzles = await buildPuzzles({ fetchImpl: fetch, seasons: [year] });
+        puzzles.push(...seasonPuzzles);
+      } catch (err) {
+        console.warn(`Skipping season ${year}: ${err.message}`);
+      }
+    }
+
     const outputPath = path.join(__dirname, '..', 'data', 'puzzles.json');
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, JSON.stringify(puzzles, null, 2));
