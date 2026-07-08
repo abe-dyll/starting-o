@@ -71,6 +71,31 @@ function statLabel(position, value) {
   return `${value} targets`; // WR1, WR2, TE
 }
 
+const AUTOCOMPLETE_STAT_BY_POSITION = { QB: 'attempts', RB: 'carries', WR: 'targets', TE: 'targets' };
+
+// Every player who recorded a real regular-season snap at a tracked
+// position, not just the 5 divisional-round-winner starters — used as a
+// wider, real-player autocomplete/misdirect pool.
+function collectNamesByPosition(statsRows) {
+  const byPosition = { QB: new Set(), RB: new Set(), WR: new Set(), TE: new Set() };
+
+  for (const row of statsRows) {
+    if (row.seasonType !== 'REG') continue;
+    const statKey = AUTOCOMPLETE_STAT_BY_POSITION[row.position];
+    if (!statKey) continue;
+    if (row[statKey] > 0) {
+      byPosition[row.position].add(row.playerDisplayName);
+    }
+  }
+
+  return {
+    QB: [...byPosition.QB].sort(),
+    RB: [...byPosition.RB].sort(),
+    WR: [...byPosition.WR].sort(),
+    TE: [...byPosition.TE].sort(),
+  };
+}
+
 function selectRosterInfo(rosterRows, { playerId, playerName, team, season, targetWeek }) {
   const bySeason = rosterRows.filter((r) => r.season === season);
   let candidates = bySeason.filter((r) => r.gsisId === playerId);
@@ -170,7 +195,7 @@ async function buildPuzzles({ fetchImpl, seasons }) {
   return puzzles;
 }
 
-module.exports = { buildPuzzles, findDivisionalWinners, selectRosterInfo, formatHeight, statLabel };
+module.exports = { buildPuzzles, findDivisionalWinners, selectRosterInfo, formatHeight, statLabel, collectNamesByPosition };
 
 if (require.main === module) {
   (async () => {
@@ -185,18 +210,40 @@ if (require.main === module) {
     }
 
     const puzzles = [];
+    const namePool = { QB: new Set(), RB: new Set(), WR: new Set(), TE: new Set() };
+
     for (const year of seasons) {
       try {
         const seasonPuzzles = await buildPuzzles({ fetchImpl: fetch, seasons: [year] });
         puzzles.push(...seasonPuzzles);
+
+        const statsRecords = await fetchCsv(fetch, PLAYER_STATS_URL(year));
+        const seasonNames = collectNamesByPosition(parsePlayerStatsRows(statsRecords));
+        for (const position of Object.keys(namePool)) {
+          for (const name of seasonNames[position]) namePool[position].add(name);
+        }
       } catch (err) {
         console.warn(`Skipping season ${year}: ${err.message}`);
       }
     }
 
-    const outputPath = path.join(__dirname, '..', 'data', 'puzzles.json');
-    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-    fs.writeFileSync(outputPath, JSON.stringify(puzzles, null, 2));
-    console.log(`Wrote ${puzzles.length} puzzles to ${outputPath}`);
+    const namesByPosition = {
+      QB: [...namePool.QB].sort(),
+      RB: [...namePool.RB].sort(),
+      WR: [...namePool.WR].sort(),
+      TE: [...namePool.TE].sort(),
+    };
+
+    const puzzlesPath = path.join(__dirname, '..', 'data', 'puzzles.json');
+    fs.mkdirSync(path.dirname(puzzlesPath), { recursive: true });
+    fs.writeFileSync(puzzlesPath, JSON.stringify(puzzles, null, 2));
+    console.log(`Wrote ${puzzles.length} puzzles to ${puzzlesPath}`);
+
+    const namesPath = path.join(__dirname, '..', 'data', 'playerNames.json');
+    fs.writeFileSync(namesPath, JSON.stringify(namesByPosition, null, 2));
+    console.log(
+      `Wrote autocomplete name pool (QB:${namesByPosition.QB.length}, RB:${namesByPosition.RB.length}, ` +
+        `WR:${namesByPosition.WR.length}, TE:${namesByPosition.TE.length}) to ${namesPath}`
+    );
   })();
 }

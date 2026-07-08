@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { buildPuzzles, findDivisionalWinners, selectRosterInfo, formatHeight, statLabel } = require('./pull-data');
+const { buildPuzzles, findDivisionalWinners, selectRosterInfo, formatHeight, statLabel, collectNamesByPosition } = require('./pull-data');
 
 const GAMES_CSV = [
   'season,game_type,week,home_team,home_score,away_team,away_score',
@@ -75,6 +75,25 @@ test('selectRosterInfo falls back to normalized-name match when the ID does not 
   const result = selectRosterInfo(rosterRows, { playerId: 'no-match', playerName: 'Peyton Manning', team: 'DEN', season: 2013, targetWeek: 20 });
 
   assert.equal(result.jerseyNumber, '18');
+});
+
+test('collectNamesByPosition includes every player with a real stat, not just starters, deduped and sorted', () => {
+  const statsRows = [
+    { seasonType: 'REG', position: 'QB', playerDisplayName: 'Peyton Manning', attempts: 30, carries: 0, targets: 0 },
+    { seasonType: 'REG', position: 'QB', playerDisplayName: 'Brock Osweiler', attempts: 5, carries: 0, targets: 0 },
+    { seasonType: 'REG', position: 'QB', playerDisplayName: 'Peyton Manning', attempts: 28, carries: 0, targets: 0 },
+    { seasonType: 'REG', position: 'WR', playerDisplayName: 'Demaryius Thomas', attempts: 0, carries: 0, targets: 10 },
+    { seasonType: 'POST', position: 'QB', playerDisplayName: 'Playoff Only Guy', attempts: 40, carries: 0, targets: 0 },
+    { seasonType: 'REG', position: 'K', playerDisplayName: 'Some Kicker', attempts: 0, carries: 0, targets: 0 },
+    { seasonType: 'REG', position: 'QB', playerDisplayName: 'Zero Attempts Guy', attempts: 0, carries: 0, targets: 0 },
+  ];
+
+  const names = collectNamesByPosition(statsRows);
+
+  assert.deepEqual(names.QB, ['Brock Osweiler', 'Peyton Manning']);
+  assert.deepEqual(names.WR, ['Demaryius Thomas']);
+  assert.deepEqual(names.RB, []);
+  assert.deepEqual(names.TE, []);
 });
 
 test('buildPuzzles joins schedules, stats, and rosters into one puzzle entry per divisional winner', async () => {

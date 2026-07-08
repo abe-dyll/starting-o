@@ -1,5 +1,6 @@
 const SLOTS = ['QB', 'RB', 'WR1', 'WR2', 'TE'];
 const STORAGE_KEY = 'nfl-puzzle-state';
+const DATALIST_ID_BY_SLOT = { QB: 'datalist-QB', RB: 'datalist-RB', WR1: 'datalist-WR', WR2: 'datalist-WR', TE: 'datalist-TE' };
 
 function todayUtcDateString() {
   return new Date().toISOString().slice(0, 10);
@@ -27,6 +28,24 @@ function emptySlotStates() {
 
 let state = null;
 
+const MIN_AUTOCOMPLETE_CHARS = 3;
+const MAX_AUTOCOMPLETE_SUGGESTIONS = 8;
+const CATEGORY_BY_SLOT = { QB: 'QB', RB: 'RB', WR1: 'WR', WR2: 'WR', TE: 'TE' };
+
+function updateAutocomplete(slot, query) {
+  const datalist = document.getElementById(DATALIST_ID_BY_SLOT[slot]);
+  if (!query || query.trim().length < MIN_AUTOCOMPLETE_CHARS) {
+    datalist.innerHTML = '';
+    return;
+  }
+
+  const lowerQuery = query.trim().toLowerCase();
+  const candidates = state.namesByPosition[CATEGORY_BY_SLOT[slot]] || [];
+  const matches = candidates.filter((name) => name.toLowerCase().includes(lowerQuery)).slice(0, MAX_AUTOCOMPLETE_SUGGESTIONS);
+
+  datalist.innerHTML = matches.map((name) => `<option value="${name}"></option>`).join('');
+}
+
 async function fetchTodaysPuzzle() {
   const res = await fetch('/api/puzzle');
   if (!res.ok) throw new Error('failed to load puzzle');
@@ -47,13 +66,14 @@ async function fetchTodaysPuzzle() {
     slots,
     gameOver: false,
     score: 0,
+    namesByPosition: data.namesByPosition,
   };
   saveState(state);
 }
 
 function formatHints(hints) {
   const parts = [];
-  if (hints.jersey) parts.push(`#${hints.jersey}`);
+  if (hints.jersey !== undefined && hints.jersey !== null) parts.push(`#${hints.jersey}`);
   if (hints.height && hints.weight) parts.push(`${hints.height}, ${hints.weight}lbs`);
   if (hints.stat) parts.push(hints.stat);
   if (hints.lastInitial) parts.push(`Last initial: ${hints.lastInitial}.`);
@@ -62,22 +82,43 @@ function formatHints(hints) {
   return parts.join(' · ');
 }
 
+function renderRoundTracker() {
+  const dots = document.querySelectorAll('#round-tracker .round-dot');
+  dots.forEach((dot) => {
+    const dotRound = Number(dot.dataset.round);
+    dot.classList.remove('is-current', 'is-past');
+    if (state.gameOver || dotRound < state.round) {
+      dot.classList.add('is-past');
+    } else if (dotRound === state.round) {
+      dot.classList.add('is-current');
+    }
+  });
+}
+
 function render() {
-  document.getElementById('puzzle-heading').textContent =
-    `${state.season} ${state.teamName} — Round ${state.round} of 5`;
+  document.getElementById('puzzle-heading').textContent = state.gameOver
+    ? `${state.season} ${state.teamName} — Final`
+    : `${state.season} ${state.teamName} — Round ${state.round} of 5`;
 
   for (const slot of SLOTS) {
+    const slotEl = document.getElementById(`slot-${slot}`);
     const content = document.getElementById(`content-${slot}`);
     const slotState = state.slots[slot];
+
+    slotEl.classList.toggle('is-solved', slotState.solved);
 
     if (slotState.solved) {
       content.innerHTML = `<div class="solved">${slotState.name}</div><div class="hints">${formatHints(slotState.hints)}</div>`;
     } else {
-      content.innerHTML = `<input type="text" id="guess-${slot}" autocomplete="off" /><div class="hints">${formatHints(slotState.hints)}</div>`;
+      const datalistId = DATALIST_ID_BY_SLOT[slot];
+      content.innerHTML = `<input type="text" id="guess-${slot}" list="${datalistId}" autocomplete="off" placeholder="Type a name…" /><div class="hints">${formatHints(slotState.hints)}</div>`;
+      const input = document.getElementById(`guess-${slot}`);
+      input.addEventListener('input', () => updateAutocomplete(slot, input.value));
     }
   }
 
-  document.getElementById('score-display').textContent = `Score: ${state.score}/1000`;
+  document.getElementById('score-value').textContent = state.score;
+  renderRoundTracker();
 
   const submitBtn = document.getElementById('submit-btn');
   const shareSection = document.getElementById('share-section');
@@ -117,7 +158,7 @@ async function submitRound() {
       state.slots[slot] = {
         solved: true,
         name: result.name,
-        hints: state.slots[slot].hints,
+        hints: result.hints,
         roundSolved: roundBeforeSubmit,
       };
     } else if (!result.correct && data.gameOver) {

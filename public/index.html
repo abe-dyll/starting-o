@@ -7,46 +7,74 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <main>
-      <h1 id="puzzle-heading">Loading today's puzzle…</h1>
-      <div id="score-display">Score: 0/1000</div>
+    <div class="app">
+      <header class="app-header">
+        <h1 class="app-title">🏈 Divisional Daily</h1>
+        <p class="app-subtitle" id="puzzle-heading">Loading today's puzzle…</p>
+      </header>
+
+      <div class="scoreboard">
+        <div class="score-pill">
+          <span class="score-value" id="score-value">0</span>
+          <span class="score-max">/ 1000</span>
+        </div>
+        <div class="round-tracker" id="round-tracker" aria-label="Round progress">
+          <span class="round-dot" data-round="1"></span>
+          <span class="round-dot" data-round="2"></span>
+          <span class="round-dot" data-round="3"></span>
+          <span class="round-dot" data-round="4"></span>
+          <span class="round-dot" data-round="5"></span>
+        </div>
+      </div>
 
       <div class="field">
-        <div class="field-row scrimmage">
-          <div class="slot" id="slot-WR1">
-            <label>WR1</label>
-            <div class="slot-content" id="content-WR1"></div>
-          </div>
-          <div class="slot" id="slot-QB">
-            <label>QB</label>
-            <div class="slot-content" id="content-QB"></div>
-          </div>
-          <div class="slot-group">
-            <div class="slot" id="slot-TE">
-              <label>TE</label>
-              <div class="slot-content" id="content-TE"></div>
-            </div>
-            <div class="slot" id="slot-WR2">
-              <label>WR2</label>
-              <div class="slot-content" id="content-WR2"></div>
-            </div>
-          </div>
+        <div class="yard-lines" aria-hidden="true"></div>
+        <div class="slot" id="slot-WR1">
+          <span class="slot-label">WR1</span>
+          <div class="slot-content" id="content-WR1"></div>
         </div>
-        <div class="field-row backfield">
-          <div class="slot" id="slot-RB">
-            <label>RB</label>
-            <div class="slot-content" id="content-RB"></div>
-          </div>
+        <div class="slot" id="slot-QB">
+          <span class="slot-label">QB</span>
+          <div class="slot-content" id="content-QB"></div>
+        </div>
+        <div class="slot" id="slot-TE">
+          <span class="slot-label">TE</span>
+          <div class="slot-content" id="content-TE"></div>
+        </div>
+        <div class="slot" id="slot-WR2">
+          <span class="slot-label">WR2</span>
+          <div class="slot-content" id="content-WR2"></div>
+        </div>
+        <div class="slot" id="slot-RB">
+          <span class="slot-label">RB</span>
+          <div class="slot-content" id="content-RB"></div>
         </div>
       </div>
 
-      <button type="button" id="submit-btn">Submit round</button>
+      <details class="hint-legend">
+        <summary>What do the rounds reveal?</summary>
+        <ul>
+          <li><strong>Round 1:</strong> No hints — cold guess.</li>
+          <li><strong>Round 2:</strong> Jersey #, height/weight, season stat.</li>
+          <li><strong>Round 3:</strong> Last name initial.</li>
+          <li><strong>Round 4:</strong> First name initial.</li>
+          <li><strong>Round 5:</strong> Full first name.</li>
+        </ul>
+      </details>
 
-      <div id="share-section" hidden>
-        <button type="button" id="share-btn">Share results</button>
-        <span id="share-status"></span>
+      <button type="button" id="submit-btn" class="btn btn-primary">Submit Guesses</button>
+
+      <div id="share-section" class="share-card" hidden>
+        <p class="share-heading">Nice game! 🎉</p>
+        <button type="button" id="share-btn" class="btn btn-secondary">📋 Share Results</button>
+        <span id="share-status" class="share-status"></span>
       </div>
-    </main>
+
+      <datalist id="datalist-QB"></datalist>
+      <datalist id="datalist-RB"></datalist>
+      <datalist id="datalist-WR"></datalist>
+      <datalist id="datalist-TE"></datalist>
+    </div>
     <script src="/shareText.js"></script>
     <script src="/app.js"></script>
   </body>
