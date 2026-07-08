@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NFL Divisional Daily Puzzle</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1 class="app-title">🏈 Starting-O</h1>
+        <p class="app-subtitle" id="puzzle-heading">Loading today's puzzle…</p>
+      </header>
+
+      <div class="how-to-play">
+        <p><strong>How to play:</strong> Guess all 5 starters for this team. You get 5 rounds — every round you don't get a player, a new hint unlocks for them.</p>
+        <ol class="hint-schedule">
+          <li><strong>Round 1</strong> — no hints yet</li>
+          <li><strong>Round 2</strong> — jersey #, height/weight, season stat</li>
+          <li><strong>Round 3</strong> — last name initial</li>
+          <li><strong>Round 4</strong> — first name initial</li>
+          <li><strong>Round 5</strong> — full first name</li>
+        </ol>
+        <p class="how-to-play-note">Fill in a guess for every open position before you submit a round — you can't submit partway.</p>
+      </div>
+
+      <div class="scoreboard">
+        <div class="score-pill">
+          <span class="score-value" id="score-value">0</span>
+          <span class="score-max">/ 1000</span>
+        </div>
+        <div class="round-tracker" id="round-tracker" aria-label="Round progress">
+          <span class="round-dot" data-round="1"></span>
+          <span class="round-dot" data-round="2"></span>
+          <span class="round-dot" data-round="3"></span>
+          <span class="round-dot" data-round="4"></span>
+          <span class="round-dot" data-round="5"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="yard-lines" aria-hidden="true"></div>
+        <div class="slot" id="slot-WR1">
+          <span class="slot-label">WR1</span>
+          <div class="slot-content" id="content-WR1"></div>
+        </div>
+        <div class="slot" id="slot-QB">
+          <span class="slot-label">QB</span>
+          <div class="slot-content" id="content-QB"></div>
+        </div>
+        <div class="slot" id="slot-TE">
+          <span class="slot-label">TE</span>
+          <div class="slot-content" id="content-TE"></div>
+        </div>
+        <div class="slot" id="slot-WR2">
+          <span class="slot-label">WR2</span>
+          <div class="slot-content" id="content-WR2"></div>
+        </div>
+        <div class="slot" id="slot-RB">
+          <span class="slot-label">RB</span>
+          <div class="slot-content" id="content-RB"></div>
+        </div>
+      </div>
+
+      <p class="submit-error" id="submit-error" hidden>Please fill in every position before submitting.</p>
+      <button type="button" id="submit-btn" class="btn btn-primary">Submit Guesses</button>
+
+      <div id="share-section" class="share-card" hidden>
+        <p class="share-heading">Nice game! 🎉</p>
+        <button type="button" id="share-btn" class="btn btn-secondary">📋 Share Results</button>
+        <span id="share-status" class="share-status"></span>
+      </div>
+
+      <datalist id="datalist-QB"></datalist>
+      <datalist id="datalist-RB"></datalist>
+      <datalist id="datalist-WR"></datalist>
+      <datalist id="datalist-TE"></datalist>
+    </div>
+    <script src="/shareText.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

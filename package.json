@@ -1,16 +1,20 @@
 {
-  "name": "starting-o",
-  "version": "0.1.0",
+  "name": "nfl-starter-guessing-game",
+  "version": "1.0.0",
   "private": true,
+  "description": "Guess the 5 starting skill players for one NFL divisional-round playoff winner, a new team each day.",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "test": "node --test",
+    "dev": "vercel dev",
+    "pull-data": "node scripts/pull-data.js"
   },
   "dependencies": {
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18"
+    "csv-parse": "^7.0.1"
+  },
+  "devDependencies": {
+    "vercel": "^54.21.1"
   }
 }
