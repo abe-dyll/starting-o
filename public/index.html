@@ -13,6 +13,18 @@
         <p class="app-subtitle" id="puzzle-heading">Loading today's puzzle…</p>
       </header>
 
+      <div class="how-to-play">
+        <p><strong>How to play:</strong> Guess all 5 starters for this team. You get 5 rounds — every round you don't get a player, a new hint unlocks for them.</p>
+        <ol class="hint-schedule">
+          <li><strong>Round 1</strong> — no hints yet</li>
+          <li><strong>Round 2</strong> — jersey #, height/weight, season stat</li>
+          <li><strong>Round 3</strong> — last name initial</li>
+          <li><strong>Round 4</strong> — first name initial</li>
+          <li><strong>Round 5</strong> — full first name</li>
+        </ol>
+        <p class="how-to-play-note">Fill in a guess for every open position before you submit a round — you can't submit partway.</p>
+      </div>
+
       <div class="scoreboard">
         <div class="score-pill">
           <span class="score-value" id="score-value">0</span>
@@ -51,17 +63,7 @@
         </div>
       </div>
 
-      <details class="hint-legend">
-        <summary>What do the rounds reveal?</summary>
-        <ul>
-          <li><strong>Round 1:</strong> No hints — cold guess.</li>
-          <li><strong>Round 2:</strong> Jersey #, height/weight, season stat.</li>
-          <li><strong>Round 3:</strong> Last name initial.</li>
-          <li><strong>Round 4:</strong> First name initial.</li>
-          <li><strong>Round 5:</strong> Full first name.</li>
-        </ul>
-      </details>
-
+      <p class="submit-error" id="submit-error" hidden>Please fill in every position before submitting.</p>
       <button type="button" id="submit-btn" class="btn btn-primary">Submit Guesses</button>
 
       <div id="share-section" class="share-card" hidden>

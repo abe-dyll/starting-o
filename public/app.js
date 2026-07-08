@@ -100,6 +100,8 @@ function render() {
     ? `${state.season} ${state.teamName} — Final`
     : `${state.season} ${state.teamName} — Round ${state.round} of 5`;
 
+  document.getElementById('submit-error').hidden = true;
+
   for (const slot of SLOTS) {
     const slotEl = document.getElementById(`slot-${slot}`);
     const content = document.getElementById(`content-${slot}`);
@@ -126,7 +128,32 @@ function render() {
   shareSection.hidden = !state.gameOver;
 }
 
+function validateAllFieldsFilled() {
+  const emptyInputs = [];
+  for (const slot of SLOTS) {
+    if (state.slots[slot].solved) continue;
+    const input = document.getElementById(`guess-${slot}`);
+    input.classList.remove('input-error');
+    if (!input.value.trim()) {
+      emptyInputs.push(input);
+    }
+  }
+
+  const errorMessage = document.getElementById('submit-error');
+  if (emptyInputs.length > 0) {
+    emptyInputs.forEach((input) => input.classList.add('input-error'));
+    errorMessage.hidden = false;
+    emptyInputs[0].focus();
+    return false;
+  }
+
+  errorMessage.hidden = true;
+  return true;
+}
+
 async function submitRound() {
+  if (!validateAllFieldsFilled()) return;
+
   const guesses = {};
   for (const slot of SLOTS) {
     if (!state.slots[slot].solved) {
