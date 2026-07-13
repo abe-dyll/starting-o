@@ -19,6 +19,7 @@ module.exports = (req, res) => {
 
     res.status(200).json(response);
   } catch (err) {
+    console.error('GET /api/puzzle failed:', err);
     res.status(500).json({ error: "Could not load today's puzzle. Please try again." });
   }
 };

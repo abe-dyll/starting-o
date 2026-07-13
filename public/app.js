@@ -235,7 +235,12 @@ async function init() {
   if (stored) {
     state = stored;
   } else {
-    await fetchTodaysPuzzle();
+    try {
+      await fetchTodaysPuzzle();
+    } catch (err) {
+      document.getElementById('puzzle-heading').textContent = "Couldn't load today's puzzle — please refresh to try again.";
+      return;
+    }
   }
   render();
 

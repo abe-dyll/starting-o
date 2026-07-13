@@ -19,6 +19,7 @@ module.exports = (req, res) => {
 
     res.status(status).json(body);
   } catch (err) {
+    console.error('POST /api/guess failed:', err);
     res.status(500).json({ error: 'Something went wrong grading that round. Please try again.' });
   }
 };
